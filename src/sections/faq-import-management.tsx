@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircleQuestion } from "lucide-react";
 import Link from "next/link";
 
-const FaqMoving = () => {
+const FaqImportManagement = () => {
     return (
         <section className=" bg-white py-10 mb-12 md:mb-0 md:py-40">
             <Wrapper className="flex flex-col items-center">
@@ -22,27 +22,25 @@ const FaqMoving = () => {
                 <div className=" w-full max-w-3xl mt-8">
                     <Accordion className="flex flex-col gap-2" type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>Can our team use Lexos to create inventories on-site?</AccordionTrigger>
+                            <AccordionTrigger>How can Lexos help with bulk import tracking?</AccordionTrigger>
                             <AccordionContent>
-                                Yes. Your sales reps can take photos during in-home or virtual walkthroughs, and Lexos will automatically generate a full inventory list with volume and weight that syncs to your CRM.
-                            </AccordionContent>
+                                Lexos allows your team to photograph incoming shipments and automatically converts them into structured inventories, complete with weight and volume estimates.                            </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
-                            <AccordionTrigger>Can we send the inventory form to customers instead?</AccordionTrigger>
+                            <AccordionTrigger>Can Lexos track and group inventory by shipment or container?</AccordionTrigger>
                             <AccordionContent>
-                                Absolutely. You can send a branded photo link to your customer, and they can take and upload images on their own schedule. The inventory will then generate instantly and appear in your dashboard.
-                            </AccordionContent>
+                                Yes. Photos and items can be grouped by lot, container, or shipment ID, making it easy to track what came in and where it needs to go.                            </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
-                            <AccordionTrigger>How do we track if a customer has completed their walkthrough?</AccordionTrigger>
+                            <AccordionTrigger>Can we integrate Lexos into our existing logistics or ERP tools?</AccordionTrigger>
                             <AccordionContent>
-                                You’ll receive an email notification as soon as a new inventory is completed by your customer, and it will be matched to their profile in your CRM.
+                                We offer flexible integration options, including CSV exports, API access, and custom mappings to your existing systems.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-4">
-                            <AccordionTrigger>Can we edit the inventory after it generates?</AccordionTrigger>
+                            <AccordionTrigger>Do we need to scan barcodes or enter SKUs?</AccordionTrigger>
                             <AccordionContent>
-                                Yes. Your team can modify or delete any item directly from the “View Inventory” page—whether the photos came from your reps or the customer.
+                                Not necessarily. Lexos works off of visual input (photos), but SKUs or tags can be manually added if needed to align with your catalog or customs records.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -61,4 +59,4 @@ const FaqMoving = () => {
     );
 }
 
-export default FaqMoving;
+export default FaqImportManagement;

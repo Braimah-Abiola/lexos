@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircleQuestion } from "lucide-react";
+import Link from "next/link";
 
 const Faq = () => {
     return (
@@ -68,7 +69,9 @@ const Faq = () => {
                             <h4 className=" font-medium text-lg">Still have questions?</h4>
                             <p className=" text-base text-foreground opacity-70">We understand. Let’s get in touch directly with our team, then.</p>
                         </div>
-                        <Button className=" mt-4 md:mt-0">Contact Us <ArrowRight /></Button>
+                        <Link href="/demo">
+                            <Button className=" mt-4 md:mt-0">Contact Us <ArrowRight /></Button>
+                        </Link>
                     </div>
                 </div>
             </Wrapper>

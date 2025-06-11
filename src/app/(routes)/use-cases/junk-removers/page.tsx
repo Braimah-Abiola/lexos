@@ -2,7 +2,7 @@ import ProblemCard from "@/components/common/problem-card";
 import SolutionCard from "@/components/common/solution-card";
 import Wrapper from "@/components/common/wrapper";
 import Cta from "@/sections/cta";
-import Faq from "@/sections/faq";
+import FaqJunkRemovers from "@/sections/faq-junk-removers";
 import UseCaseHero2 from "@/sections/use-case-hero-2";
 import { CircleCheck, Stars } from "lucide-react";
 import Image from "next/image";
@@ -20,9 +20,9 @@ const JunkRemovers = () => {
                     <h2 className="mt-2 font-manrope text-5xl font-bold text-center">Challenges</h2>
 
                     <div className="grid grid-cols-3 gap-6 mt-10">
-                        <ProblemCard title="Challenge 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <ProblemCard title="Challenge 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <ProblemCard title="Challenge 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                        <ProblemCard title="Challenge 1" description="Pricing jobs accurately is hard without visiting the site in person." />
+                        <ProblemCard title="Challenge 2" description="Field crews lose time manually recording item details for pickups." />
+                        <ProblemCard title="Challenge 3" description="Customers often don’t provide enough detail when scheduling jobs online." />
                     </div>
                 </div>
             </Wrapper>
@@ -36,9 +36,9 @@ const JunkRemovers = () => {
                     <h2 className="mt-2 font-manrope text-5xl font-bold text-center">How Lexos Solves <br /> These Challenges</h2>
 
                     <div className="grid grid-cols-3 gap-6 mt-10">
-                        <SolutionCard title="Solution 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <SolutionCard title="Solution 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <SolutionCard title="Solution 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                        <SolutionCard title="Solution 1" description="Customers can upload photos pre-job via a branded Lexos link—no site visit needed." />
+                        <SolutionCard title="Solution 2" description="Crews use Lexos on-site to snap photos—instantly generating inventory for records and pricing." />
+                        <SolutionCard title="Solution 3" description="Lexos ensures customer-submitted images are converted into clear, complete job summaries." />
                     </div>
                 </div>
             </Wrapper>
@@ -46,12 +46,12 @@ const JunkRemovers = () => {
             <Wrapper className=" w-full flex flex-col items-center py-12">
                 <div className=" max-w-7xl mx-auto flex flex-col items-center">
                     <Image width={60} height={60} src="/assets/quote.svg" alt="Quote" />
-                    <h5 className=" font-medium text-3xl leading-11 text-center max-w-3xl mt-6 mb-4">Just in the 2 surveys I have done, Lexos has helped me land two jobs for about <span className=" bg-primary text-white">$20k! Not to mention the amount of admin time the software eliminates.</span></h5>
+                    <h5 className=" font-medium text-3xl leading-11 text-center max-w-3xl mt-6 mb-4">Having a fully itemized inventory cleaned up our entire process<span className=" bg-primary text-white">—especially in an industry where everything we handle is, well, junk.</span></h5>
                     <div className="flex items-center gap-4 mt-6">
-                        <Image width={52} height={52} src="/assets/customer-1.png" className=" object-cover" alt="Lexos customer" />
+                        <Image width={52} height={52} src="/assets/lu.png" className=" object-cover" alt="Lexos customer" />
                         <div className=" flex flex-col items-start gap-0">
-                            <p className=" font-medium text-xl">John Doe</p>
-                            <span className=" font-normal text-lg text-foreground opacity-70">Manager @Olympia</span>
+                            <p className=" font-medium text-xl">Lu Annatone</p>
+                            <span className=" font-normal text-lg text-foreground opacity-70">Owner of The Junk Removers</span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const JunkRemovers = () => {
                     </div>
                 </div>
             </Wrapper>
-            <Faq />
+            <FaqJunkRemovers />
             <Cta />
         </div>
     );

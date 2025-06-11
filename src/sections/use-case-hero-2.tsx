@@ -10,8 +10,8 @@ const UseCaseHero2 = () => {
             <Wrapper className=" max-w-[1480px]">
                 <div className="flex flex-col items-start absolute top-1/2 -translate-y-1/2 z-20">
                     <span className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
-                        <Image width={24} height={24} src="/assets/olympia.png" alt="Olympia moving" />
-                        <span className=" text-sm">Olympia: AI Transforms Inventory</span>
+                        <Image width={24} height={24} src="/assets/miami.png" alt="Online Movers Miami" />
+                        <span className=" text-sm">Online Movers Miami: Customer Story</span>
                         <ArrowRight className=" size-4" />
                     </span>
                     <h1 className=" text-4xl md:text-5xl font-bold font-manrope text-white mt-2">

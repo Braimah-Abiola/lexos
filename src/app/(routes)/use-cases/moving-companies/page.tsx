@@ -48,7 +48,7 @@ const MovingCompanies = () => {
                     <Image width={60} height={60} src="/assets/quote.svg" alt="Quote" />
                     <h5 className=" font-medium text-3xl leading-11 text-center max-w-3xl mt-6 mb-4">Just in the 2 surveys I have done, Lexos has helped me land <span className=" bg-primary text-white">two jobs for about $20k! Not to mention the amount of admin time the software eliminates</span></h5>
                     <div className="flex items-center gap-4 mt-6">
-                        <Image width={52} height={52} src="/assets/customer-1.png" className=" object-cover" alt="Lexos customer" />
+                        <Image width={52} height={52} src="/assets/sarah.png" className=" object-cover" alt="Lexos customer" />
                         <div className=" flex flex-col items-start gap-0">
                             <p className=" font-medium text-xl">Sara Bauman</p>
                             <span className=" font-normal text-lg text-foreground opacity-70">Insides Sales Manager @All Service Moving</span>

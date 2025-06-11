@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircleQuestion } from "lucide-react";
 import Link from "next/link";
 
-const FaqMoving = () => {
+const FaqJunkRemovers = () => {
     return (
         <section className=" bg-white py-10 mb-12 md:mb-0 md:py-40">
             <Wrapper className="flex flex-col items-center">
@@ -22,27 +22,27 @@ const FaqMoving = () => {
                 <div className=" w-full max-w-3xl mt-8">
                     <Accordion className="flex flex-col gap-2" type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>Can our team use Lexos to create inventories on-site?</AccordionTrigger>
+                            <AccordionTrigger>Can my field team use Lexos to assess job sites?</AccordionTrigger>
                             <AccordionContent>
-                                Yes. Your sales reps can take photos during in-home or virtual walkthroughs, and Lexos will automatically generate a full inventory list with volume and weight that syncs to your CRM.
+                                Yes. Crews can use their phones or tablets on-site to take photos, and Lexos will instantly calculate total volume and weight to help price and plan removals.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
-                            <AccordionTrigger>Can we send the inventory form to customers instead?</AccordionTrigger>
+                            <AccordionTrigger>Can customers take photos themselves before the job?</AccordionTrigger>
                             <AccordionContent>
-                                Absolutely. You can send a branded photo link to your customer, and they can take and upload images on their own schedule. The inventory will then generate instantly and appear in your dashboard.
+                                Yes. Send them a self-survey link, and Lexos will generate the full inventory list once their photos are submitted.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
-                            <AccordionTrigger>How do we track if a customer has completed their walkthrough?</AccordionTrigger>
+                            <AccordionTrigger>How do we get notified when a customer completes their survey?</AccordionTrigger>
                             <AccordionContent>
-                                You’ll receive an email notification as soon as a new inventory is completed by your customer, and it will be matched to their profile in your CRM.
+                                You’ll receive an alert and the job will automatically appear in your dashboard, fully itemized and ready for action.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-4">
-                            <AccordionTrigger>Can we edit the inventory after it generates?</AccordionTrigger>
+                            <AccordionTrigger>Can we make changes if the customer’s photos miss anything?</AccordionTrigger>
                             <AccordionContent>
-                                Yes. Your team can modify or delete any item directly from the “View Inventory” page—whether the photos came from your reps or the customer.
+                                Definitely. You can edit or add items manually after the inventory is generated.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -61,4 +61,4 @@ const FaqMoving = () => {
     );
 }
 
-export default FaqMoving;
+export default FaqJunkRemovers;

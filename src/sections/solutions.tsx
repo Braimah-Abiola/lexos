@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Solutions = () => {
     return (
-        <section className=" pt-20 bg-accent">
+        <section id="about" className=" pt-20 bg-accent">
             <Wrapper className="flex flex-col items-center">
                 <span className=" bg-primary/10 text-primary rounded-full py-2 pl-2 pr-4 inline-flex items-center gap-2">
                     <Stars />

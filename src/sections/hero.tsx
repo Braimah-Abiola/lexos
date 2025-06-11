@@ -69,7 +69,7 @@ const Hero = () => {
                     className=" pt-12 z-20 w-full flex flex-col items-center bg-gradient-to-b rounded-xl border border-input border-t-0 overflow-hidden from-white to-primary h-full relative"
                 >
                     <motion.div variants={itemVariants} className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
-                        <Image width={24} height={24} src="/assets/olympia.png" alt="Olympia moving" />
+                        <Image width={24} height={24} src="/assets/miami.png" alt="Online Movers Miami" />
                         <span className=" text-sm flex gap-1"><span className=" hidden md:inline-flex">Online Movers Miami:</span> AI Transforms Inventory</span>
                         <ArrowRight className=" size-4" />
                     </motion.div>

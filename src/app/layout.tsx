@@ -29,7 +29,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${manrope.variable} ${plexSans.variable}`}>
+        <html lang="en" className={` scroll-smooth ${manrope.variable} ${plexSans.variable}`}>
             <body className="antialiased font-plex-sans select-none">
                 <Navigation />
                 <main className="min-h-screen">

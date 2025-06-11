@@ -102,11 +102,11 @@ export function NavGroup() {
                                     <div className=" relative w-full h-[12rem] mb-3 mt-2">
                                         <Image fill src="/assets/case.png" className=" rounded-lg object-cover" alt="Customer story" quality={100} />
                                     </div>
-                                    <h6 className=" font-medium text-[15px] ">Olympia: AI Transforms Inventory</h6>
+                                    <h6 className=" font-medium text-[15px] ">Online Movers Miami: Customer Story</h6>
                                     <p className=" text-sm">
-                                        Olympia, a leading moving company, leveraged our AI to transform photos into detailed inventories, reducing manual effort and improving data accuracy.
+                                        Online Movers Miami, a leading moving company, leveraged our AI to transform photos into detailed inventories, reducing manual effort and improving data accuracy.
                                     </p>
-                                    <Link href="/customer-stories/olympia">
+                                    <Link href="/customer-stories/online-movers-miami">
                                         <Button className=" text-primary px-0 md:px-0 has-[>svg]:pl-0 has-[>svg]:pr-0" variant="ghost">Read Customer Story<ArrowRight /></Button>
                                     </Link>
                                 </div>
@@ -127,7 +127,7 @@ export function NavGroup() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                        <Link href="/about">About Us</Link>
+                        <Link href="/#about">About Us</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>

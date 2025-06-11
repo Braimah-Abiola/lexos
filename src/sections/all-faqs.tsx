@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const faqCategories = ["General", "Account & Technical", "For Moving Companies", "Other"];
@@ -156,7 +157,9 @@ const AllFaq = () => {
                             <h4 className=" font-medium text-lg">Still have questions?</h4>
                             <p className=" text-base text-foreground opacity-70 text-start">We understand. Let’s get in touch directly with our team, then.</p>
                         </div>
-                        <Button className="shrink-0">Contact Us <ArrowRight className="ml-2 size-4" /></Button>
+                        <Link href="/demo">
+                            <Button className=" mt-4 md:mt-0">Contact Us <ArrowRight /></Button>
+                        </Link>
                     </div>
                 </div>
             </Wrapper>

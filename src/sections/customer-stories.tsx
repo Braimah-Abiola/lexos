@@ -100,7 +100,7 @@ const CustomerStories = () => {
                                 picture="/assets/customer-1.png"
                                 position="Manager of Olympia Moving"
                                 review="Just in the 2 surveys I have done, Lexos has helped me land two jobs for about $20k! Not to mention the amount of admin time the software eliminates."
-                                url="/customer-stories/olympia"
+                                url="/customer-stories/online-movers-miami"
                             />
                             <CustomerStoryCard
                                 logo="/assets/olympia-logo.png"

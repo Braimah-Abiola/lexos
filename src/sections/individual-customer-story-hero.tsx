@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CustomerStoryHero = () => {
     return (
@@ -11,19 +12,23 @@ const CustomerStoryHero = () => {
                 <div className=" w-full">
                     <div className=" max-w-[31rem]">
                         <span className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
-                            <Image width={24} height={24} src="/assets/olympia.png" alt="Olympia moving" />
-                            <span className=" text-sm">Olympia<span className=" hidden md:inline-flex">: AI Transforms Inventory</span></span>
+                            <Image width={24} height={24} src="/assets/miami.png" alt="Online Movers Miami" />
+                            <span className=" text-sm">Online Movers Miami<span className=" hidden md:inline-flex">+ Lexos</span></span>
                             <span className=" text-sm text-primary">Case Study</span>
                         </span>
-                        <h1 className=" mt-2 font-manrope text-4xl md:text-5xl font-bold text-start">How John Doe Landed Two $20,000 Jobs with Lexos</h1>
+                        <h1 className=" mt-2 font-manrope text-4xl md:text-5xl font-bold text-start">
+                            How Online Movers Miami Slashed Admin Time and Scaled Faster with Lexos
+                        </h1>
                         <p className=" mt-2 md:mt-4 text-foreground opacity-70 text-base">
-                            See how leading businesses achieve unparalleled efficiency, accuracy, and growth with our AI inventory platform. Explore their real transformations.
+                            See how this fast-growing Florida-based mover used Lexos to automate their quoting workflow, reduce operational delays, and increase rep productivity without adding headcount.
                         </p>
-                        <Button className=" mt-4 md:mt-6">Read Story <ArrowDown /> </Button>
+                        <Link href="/customer-stories/online-movers-miami/#case">
+                            <Button className=" mt-4 md:mt-6">Read Story <ArrowDown /> </Button>
+                        </Link>
                     </div>
                 </div>
                 <div className=" w-full h-[16rem] md:h-[30rem] relative">
-                    <Image fill src="/assets/story.png" className=" rounded-xl object-cover" alt="Olympia" />
+                    <Image fill src="/assets/case.png" className=" rounded-xl object-cover" alt="Olympia" />
                 </div>
             </Wrapper>
             <Wrapper className="md:max-w-[1480px] mt-12 md:mt-20">
