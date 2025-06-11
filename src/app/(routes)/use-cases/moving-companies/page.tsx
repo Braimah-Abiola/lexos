@@ -2,7 +2,7 @@ import ProblemCard from "@/components/common/problem-card";
 import SolutionCard from "@/components/common/solution-card";
 import Wrapper from "@/components/common/wrapper";
 import Cta from "@/sections/cta";
-import Faq from "@/sections/faq";
+import FaqMoving from "@/sections/faq-moving";
 import UseCaseHero1 from "@/sections/use-case-hero-1";
 import { CircleCheck, Stars } from "lucide-react";
 import Image from "next/image";
@@ -20,9 +20,9 @@ const MovingCompanies = () => {
                     <h2 className="mt-2 font-manrope text-5xl font-bold text-center">Challenges</h2>
 
                     <div className="grid grid-cols-3 gap-6 mt-10">
-                        <ProblemCard title="Challenge 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <ProblemCard title="Challenge 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <ProblemCard title="Challenge 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                        <ProblemCard title="Challenge 1" description="Sales reps waste time manually recording inventory during walkthroughs." />
+                        <ProblemCard title="Challenge 2" description="Customer-submitted photos are unstructured and often missing key items." />
+                        <ProblemCard title="Challenge 3" description="CRMs don’t provide automated tools for weight/volume estimates, causing quoting delays." />
                     </div>
                 </div>
             </Wrapper>
@@ -36,9 +36,9 @@ const MovingCompanies = () => {
                     <h2 className="mt-2 font-manrope text-5xl font-bold text-center">How Lexos Solves <br /> These Challenges</h2>
 
                     <div className="grid grid-cols-3 gap-6 mt-10">
-                        <SolutionCard title="Solution 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <SolutionCard title="Solution 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                        <SolutionCard title="Solution 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                        <SolutionCard title="Solution 1" description="Lexos converts rep-taken photos into structured inventory with weights/volumes in seconds." />
+                        <SolutionCard title="Solution 2" description="Send a branded photo link to customers—Lexos organizes everything automatically." />
+                        <SolutionCard title="Solution 3" description="Inventories instantly sync to your CRM with volume and weight, ready for quoting or dispatch." />
                     </div>
                 </div>
             </Wrapper>
@@ -46,12 +46,12 @@ const MovingCompanies = () => {
             <Wrapper className=" w-full flex flex-col items-center py-12">
                 <div className=" max-w-7xl mx-auto flex flex-col items-center">
                     <Image width={60} height={60} src="/assets/quote.svg" alt="Quote" />
-                    <h5 className=" font-medium text-3xl leading-11 text-center max-w-3xl mt-6 mb-4">Just in the 2 surveys I have done, Lexos has helped me land two jobs for about <span className=" bg-primary text-white">$20k! Not to mention the amount of admin time the software eliminates.</span></h5>
+                    <h5 className=" font-medium text-3xl leading-11 text-center max-w-3xl mt-6 mb-4">Just in the 2 surveys I have done, Lexos has helped me land <span className=" bg-primary text-white">two jobs for about $20k! Not to mention the amount of admin time the software eliminates</span></h5>
                     <div className="flex items-center gap-4 mt-6">
                         <Image width={52} height={52} src="/assets/customer-1.png" className=" object-cover" alt="Lexos customer" />
                         <div className=" flex flex-col items-start gap-0">
-                            <p className=" font-medium text-xl">John Doe</p>
-                            <span className=" font-normal text-lg text-foreground opacity-70">Manager @Olympia</span>
+                            <p className=" font-medium text-xl">Sara Bauman</p>
+                            <span className=" font-normal text-lg text-foreground opacity-70">Insides Sales Manager @All Service Moving</span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const MovingCompanies = () => {
                     </div>
                 </div>
             </Wrapper>
-            <Faq />
+            <FaqMoving />
             <Cta />
         </div>
     );
