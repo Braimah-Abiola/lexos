@@ -9,7 +9,7 @@ const SocialProof = () => {
                 <h1 className="mt-2 font-manrope text-4xl font-bold text-center">Trusted By 40+ Leading Companies</h1>
                 <p className="text-base mt-2 text-foreground opacity-70">Movers, junk removers, and importers from around the world use Lexos in their day to day workflow.</p>
             </Wrapper>
-            <div className=" max-w-7xl mx-auto relative w-full flex flex-col -space-y-3 mt-8">
+            <div className=" max-w-7xl mx-auto relative w-full flex flex-col -space-y-1.5 mt-8">
                 <div className="pointer-events-none absolute z-20 inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
 
                 <Marquee pauseOnHover className="[--duration:30s] [--gap:0.5rem]">
