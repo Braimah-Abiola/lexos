@@ -24,7 +24,7 @@ const CustomerStoryDetails = () => {
             </p>
 
             <div className=" w-full relative h-[16rem] md:h-[28rem] my-4 md:my-6">
-                <Image fill src="/assets/story.png" className=" rounded-xl object-cover" alt="Olympia" />
+                <Image fill src="/assets/case-1.png" className=" rounded-xl object-cover" alt="Online Movers Miami" />
             </div>
             <div className=" border-l-[2px] border-l-primary my-4">
                 <p className=" text-base md:text-lg font-normal pl-4 text-primary">
