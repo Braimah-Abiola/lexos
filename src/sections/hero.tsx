@@ -76,7 +76,20 @@ const Hero = () => {
                     <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center">Replace manual inventory <br className=" hidden md:block" /> with
                         <span className=" relative ml-2 pl-2 pr-2">
                             AI technology
-                            <div className=" bg-primary/40 border-2 border-primary -z-[1] absolute inset-0 hidden md:block">
+                            <div
+                                className="border-2 border-primary -z-[1] absolute inset-0 hidden md:block"
+                            >
+                                <motion.div
+                                    className="bg-primary/40 absolute inset-0"
+                                    initial={{ clipPath: "inset(0 100% 0 0)" }}
+                                    animate={{ clipPath: "inset(0 0% 0 0)" }}
+                                    transition={{
+                                        duration: 1.2,
+                                        delay: 0.5,
+                                        ease: "easeInOut",
+                                    }}
+                                />
+                                {/* Corner squares - now children of the static border div, not the animated one */}
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -left-[5px]" />
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -right-[5px]" />
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -left-[5px]" />
