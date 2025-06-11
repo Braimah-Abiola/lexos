@@ -12,10 +12,8 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
-// Define FAQ categories
 const faqCategories = ["General", "Account & Technical", "For Moving Companies", "Other"];
 
-// Define a type for your FAQ items
 interface FaqItem {
     id: string;
     question: string;
@@ -23,7 +21,6 @@ interface FaqItem {
     category: string;
 }
 
-// Sample FAQ data with categories
 const allFaqData: FaqItem[] = [
     {
         id: "item-1",
@@ -67,8 +64,49 @@ const allFaqData: FaqItem[] = [
         answer: "Yes, we offer a 14-day free trial with full access to all features. No credit card required to get started.",
         category: "Other",
     },
+    {
+        id: "item-8",
+        question: "What is Lexos?",
+        answer: "Lexos is a photo-based inventory automation platform. Whether you're managing a move, clearing out junk, or importing goods, Lexos turns photos into instant inventory lists with weight and volume data—synced directly to your workflow.",
+        category: "General",
+    },
+    {
+        id: "item-9",
+        question: "How are inventories created?",
+        answer: "You or your customers take photos—Lexos handles the rest. Upload images internally or send a branded link to customers so they can complete it themselves.",
+        category: "General",
+    },
+    {
+        id: "item-10",
+        question: "Do I need to download an app?",
+        answer: "No. Lexos works entirely in the browser. You and your customers can use any device—desktop or mobile—to submit photos or view inventories.",
+        category: "Account & Technical",
+    },
+    {
+        id: "item-11",
+        question: "Can I make edits after the inventory is created?",
+        answer: "Yes. You can adjust weights, volumes, or item names directly in the dashboard.",
+        category: "General",
+    },
+    {
+        id: "item-12",
+        question: "Can Lexos integrate directly into our website?",
+        answer: "Yes. Lexos can be embedded into your website so customers can complete photo-based inventories without ever leaving your site. It’s fully branded, seamless, and designed to match your workflow.",
+        category: "For Moving Companies",
+    },
+    {
+        id: "item-13",
+        question: "What CRMs or systems does Lexos work with?",
+        answer: "Lexos can integrate with many CRMs and logistics systems via CSV, API, or custom mapping. We tailor integrations to your team’s workflow.",
+        category: "For Moving Companies",
+    },
+    {
+        id: "item-14",
+        question: "Will I be notified when a customer submits an inventory?",
+        answer: "Yes. As soon as a customer completes a photo walkthrough, you’ll receive an email alert and the inventory will appear in your dashboard.",
+        category: "For Moving Companies",
+    },
 ];
-
 const AllFaq = () => {
     const [activeCategory, setActiveCategory] = useState<string>(faqCategories[0]);
 
@@ -80,7 +118,6 @@ const AllFaq = () => {
     return (
         <section className=" -mt-[38rem] md:-mt-[42rem] relative z-20 mb-40">
             <Wrapper className="flex flex-col items-center">
-                {/* Category Filter Buttons */}
                 <div className="mb-8 flex flex-wrap items-center justify-center gap-2 md:gap-3">
                     {faqCategories.map((category) => (
                         <Button

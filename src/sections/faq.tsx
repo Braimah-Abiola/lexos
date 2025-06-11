@@ -21,27 +21,45 @@ const Faq = () => {
                 <div className=" w-full max-w-3xl mt-8">
                     <Accordion className="flex flex-col gap-2" type="single" collapsible>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger>Can I do a virtual walkthrough on my computer?</AccordionTrigger>
+                            <AccordionTrigger>What is Lexos?</AccordionTrigger>
                             <AccordionContent>
-                                Yes, you can do a virtual walkthrough on your computer, except instead of taking photos you will have to upload them. We recommend using your phone for an added level of convenience.
+                                Lexos is a photo-based inventory automation platform. Whether you&apos;re managing a move, clearing out junk, or importing goods, Lexos turns photos into instant inventory lists with weight and volume data—synced directly to your workflow.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
-                            <AccordionTrigger>Can I edit my inventory after it generates?</AccordionTrigger>
+                            <AccordionTrigger>How are inventories created?</AccordionTrigger>
                             <AccordionContent>
-                                You can edit or delete any specific item by clicking &apos;Edit&apos; on the &apos;View Inventory&apos; page and scrolling down to the item you wish to modify.
+                                You or your customers take photos—Lexos handles the rest. Upload images internally or send a branded link to customers so they can complete it themselves.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
-                            <AccordionTrigger>How do I join a Guided Survey with my customer?</AccordionTrigger>
+                            <AccordionTrigger>Do I need to download an app?</AccordionTrigger>
                             <AccordionContent>
-                                When you start a new inventory from your Dashboard, you can either schedule a Guided Survey or begin one immediately. If you choose to start it right away, a link to join the survey call will appear in the confirmation pop-up. If you schedule it for later, you&apos;ll receive a calendar invite by email with the call details.
+                                No. Lexos works entirely in the browser. You and your customers can use any device—desktop or mobile—to submit photos or view inventories.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-4">
-                            <AccordionTrigger>If I send a &apos;Self-Survey&apos; to one of my customers, how will I know <br /> if they have completed the walkthrough?</AccordionTrigger>
+                            <AccordionTrigger>Can I make edits after the inventory is created?</AccordionTrigger>
                             <AccordionContent>
-                                You&apos;ll receive an email notification whenever a new inventory is completed in your dashboard.
+                                Yes. You can adjust weights, volumes, or item names directly in the dashboard.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-5">
+                            <AccordionTrigger>Can Lexos integrate directly into our website?</AccordionTrigger>
+                            <AccordionContent>
+                                Yes. Lexos can be embedded into your website so customers can complete photo-based inventories without ever leaving your site. It’s fully branded, seamless, and designed to match your workflow.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-6">
+                            <AccordionTrigger>What CRMs or systems does Lexos work with?</AccordionTrigger>
+                            <AccordionContent>
+                                Lexos can integrate with many CRMs and logistics systems via CSV, API, or custom mapping. We tailor integrations to your team’s workflow.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-7">
+                            <AccordionTrigger>Will I be notified when a customer submits an inventory?</AccordionTrigger>
+                            <AccordionContent>
+                                Yes. As soon as a customer completes a photo walkthrough, you’ll receive an email alert and the inventory will appear in your dashboard.
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
