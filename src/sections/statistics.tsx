@@ -1,6 +1,49 @@
+"use client";
+
 import Wrapper from "@/components/common/wrapper";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { useEffect, useState } from "react";
+import { animate } from "framer-motion";
+
+interface AnimatedStatProps {
+    targetValue: number;
+    suffix?: string;
+    prefix?: string;
+    duration?: number;
+    decimals?: number;
+    className?: string;
+}
+
+const AnimatedStat: React.FC<AnimatedStatProps> = ({
+    targetValue,
+    suffix = "",
+    prefix = "",
+    duration = 2,
+    decimals = 0,
+    className = "",
+}) => {
+    const [currentValue, setCurrentValue] = useState(0);
+
+    useEffect(() => {
+        const controls = animate(0, targetValue, {
+            duration,
+            ease: "easeOut",
+            onUpdate: (latest) => {
+                setCurrentValue(parseFloat(latest.toFixed(decimals)));
+            },
+        });
+        return () => controls.stop();
+    }, [targetValue, duration, decimals]);
+
+    return (
+        <span className={className}>
+            {prefix}
+            {currentValue}
+            {suffix}
+        </span>
+    );
+};
 
 const Statistics = () => {
     return (
@@ -23,7 +66,11 @@ const Statistics = () => {
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
                                 <p className=" font-medium text-foreground text-base md:text-lg">Operational Cost Reduction</p>
-                                <h6 className=" font-semibold text-primary text-4xl md:text-5xl">93%</h6>
+                                <AnimatedStat
+                                    targetValue={93}
+                                    suffix="%"
+                                    className="font-semibold text-primary text-4xl md:text-5xl"
+                                />
                             </div>
                             <span className="text-[15px] text-foreground opacity-70">Average reduction in operational costs for <br /> clients, driven by optimized inventory.</span>
                         </div>
@@ -31,7 +78,11 @@ const Statistics = () => {
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
                                 <p className=" font-medium text-foreground text-base md:text-lg">Time Saved</p>
-                                <h6 className=" font-semibold text-primary text-4xl md:text-5xl">800 +</h6>
+                                <AnimatedStat
+                                    targetValue={800}
+                                    suffix=" +"
+                                    className="font-semibold text-primary text-4xl md:text-5xl"
+                                />
                             </div>
                             <span className="text-[15px] text-foreground opacity-70">Cumulative hours saved by clients each year <br /> through automated inventory processes.</span>
                         </div>
@@ -39,7 +90,11 @@ const Statistics = () => {
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
                                 <p className=" font-medium text-foreground text-base md:text-lg">Items Processed</p>
-                                <h6 className=" font-semibold text-primary text-4xl md:text-5xl">1M+</h6>
+                                <AnimatedStat
+                                    targetValue={1} // Animate to 1
+                                    suffix="M+"    // Add "M+" as suffix
+                                    className="font-semibold text-primary text-4xl md:text-5xl"
+                                />
                             </div>
                             <span className="text-[15px] text-foreground opacity-70">AI-processed items, delivering unparalleled <br /> accuracy and detail for every inventory.</span>
                         </div>
@@ -47,7 +102,11 @@ const Statistics = () => {
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
                                 <p className=" font-medium text-foreground text-base md:text-lg">Efficiency Gain</p>
-                                <h6 className=" font-semibold text-primary text-4xl md:text-5xl">75%</h6>
+                                <AnimatedStat
+                                    targetValue={75}
+                                    suffix="%"
+                                    className="font-semibold text-primary text-4xl md:text-5xl"
+                                />
                             </div>
                             <span className="text-[15px] text-foreground opacity-70">Average time saved on inventory creation <br /> compared  to traditional manual methods.</span>
                         </div>

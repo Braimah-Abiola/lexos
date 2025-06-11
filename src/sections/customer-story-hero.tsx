@@ -1,17 +1,20 @@
 import Wrapper from "@/components/common/wrapper";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CustomerStoryHero = () => {
     return (
         <section className=" w-full h-screen">
             <Wrapper className="px-2 md:px-6 w-full h-full">
                 <div className=" h-full w-full relative flex flex-col items-center pt-20 md:pt-32">
-                    <span className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
-                        <Image width={24} height={24} src="/assets/miami.png" alt="Online Movers Miami" />
-                        <span className=" text-sm flex gap-1"><span className=" hidden md:inline-flex">Online Movers Miami:</span> AI Transforms Inventory</span>
-                        <ArrowRight className=" size-4" />
-                    </span>
+                    <Link href="/customer-stories/online-movers-miami">
+                        <span className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
+                            <Image width={24} height={24} src="/assets/miami.png" alt="Online Movers Miami" />
+                            <span className=" text-sm flex gap-1"><span className=" hidden md:inline-flex">Online Movers Miami:</span> AI Transforms Inventory</span>
+                            <ArrowRight className=" size-4" />
+                        </span>
+                    </Link>
                     <h1 className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center">
                         Your Next Success <br className=" hidden md:block" />
                         <span className=" relative md:ml-2 pl-2 pr-2">

@@ -7,7 +7,7 @@ const CustomerStoryCard = ({ logo, detailedCase, review, name, position, picture
     return (
         <div className=" p-6 flex flex-col items-start w-full max-w-lg bg-accent rounded-xl border border-black/10 hover:bg-gradient-to-r from-accent to-primary/30">
             <div className=" w-full flex items-center justify-between">
-                <div className=" relative w-[140px] h-[40px]">
+                <div className=" relative w-[140px] md:w-[110px] h-[40px]">
                     <Image fill src={logo} className=" object-contain" alt={name} />
                 </div>
                 {detailedCase && (

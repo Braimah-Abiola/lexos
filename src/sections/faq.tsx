@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Faq = () => {
     return (
-        <section className=" bg-white py-10 mb-12 md:mb-0 md:py-40">
+        <section className=" bg-white py-10 mb-12 md:py-24 md:mb-20">
             <Wrapper className="flex flex-col items-center">
                 <span className=" bg-primary/10 text-primary rounded-full py-2 pl-2 pr-4 inline-flex items-center gap-2">
                     <MessageCircleQuestion />
