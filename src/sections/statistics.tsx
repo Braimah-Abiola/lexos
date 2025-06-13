@@ -2,9 +2,11 @@
 
 import Wrapper from "@/components/common/wrapper";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, TrendingUp } from "lucide-react";
-import { useEffect, useState } from "react";
 import { animate } from "framer-motion";
+import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface AnimatedStatProps {
     targetValue: number;
@@ -46,69 +48,96 @@ const AnimatedStat: React.FC<AnimatedStatProps> = ({
 };
 
 const Statistics = () => {
+    const t = useTranslations("Statistics");
+
     return (
         <section className=" w-full py-20">
             <Wrapper>
                 <div className=" max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12 md:gap-32 justify-between">
-                    <div className=" flex flex-col items-center md:items-start w-full md:max-w-sm">
+                    <div className=" flex flex-col items-center md:items-start w-full md:max-w-md">
                         <span className=" bg-primary/10 text-primary rounded-full py-2 pl-2 pr-4 inline-flex items-center gap-2">
                             <TrendingUp />
-                            <p>Statistics</p>
+                            <p>{t("badgeText")}</p>
                         </span>
-                        <h1 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center md:text-start">Our Impact <span className=" hidden md:block">by the Numbers</span></h1>
-                        <p className="text-base mt-2 text-foreground opacity-70 text-center px-8 md:px-0 md:text-start">Our proven AI technology is transforming inventory management, delivering tangible results for businesses worldwide.</p>
+                        <h1 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center md:text-start">
+                            {t.rich("title", {
+                                span: (chunks) => <span className=" hidden md:block">{chunks}</span>
+                            })}
+                        </h1>
+                        <p className="text-base mt-2 text-foreground opacity-70 text-center px-8 md:px-0 md:text-start">{t("description")}</p>
                         <aside className="inline-flex items-center gap-4 mt-4">
-                            <Button>Case Studies <ArrowUpRight /></Button>
-                            <Button variant="outline">Book Demo</Button>
+
+                            <Link href="/customer-stories">
+                                <Button>{t("caseStudiesButton")} <ArrowUpRight /></Button>
+                            </Link>
+                            <Link href="/demo">
+                                <Button variant="outline">{t("bookDemoButton")}</Button>
+                            </Link>
                         </aside>
                     </div>
                     <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-12 w-fit mx-auto md:w-full">
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
-                                <p className=" font-medium text-foreground text-base md:text-lg">Operational Cost Reduction</p>
+                                <p className=" font-medium text-foreground text-base md:text-lg">{t("stat1Title")}</p>
                                 <AnimatedStat
                                     targetValue={93}
                                     suffix="%"
                                     className="font-semibold text-primary text-4xl md:text-5xl"
                                 />
                             </div>
-                            <span className="text-[15px] text-foreground opacity-70">Average reduction in operational costs for <br /> clients, driven by optimized inventory.</span>
+                            <span className="text-[15px] text-foreground opacity-70">
+                                {t.rich("stat1Description", {
+                                    br: () => <br />
+                                })}
+                            </span>
                         </div>
 
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
-                                <p className=" font-medium text-foreground text-base md:text-lg">Time Saved</p>
+                                <p className=" font-medium text-foreground text-base md:text-lg">{t("stat2Title")}</p>
                                 <AnimatedStat
                                     targetValue={800}
                                     suffix=" +"
                                     className="font-semibold text-primary text-4xl md:text-5xl"
                                 />
                             </div>
-                            <span className="text-[15px] text-foreground opacity-70">Cumulative hours saved by clients each year <br /> through automated inventory processes.</span>
+                            <span className="text-[15px] text-foreground opacity-70">
+                                {t.rich("stat2Description", {
+                                    br: () => <br />
+                                })}
+                            </span>
                         </div>
 
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
-                                <p className=" font-medium text-foreground text-base md:text-lg">Items Processed</p>
+                                <p className=" font-medium text-foreground text-base md:text-lg">{t("stat3Title")}</p>
                                 <AnimatedStat
-                                    targetValue={1} // Animate to 1
-                                    suffix="M+"    // Add "M+" as suffix
+                                    targetValue={1}
+                                    suffix="M+"
                                     className="font-semibold text-primary text-4xl md:text-5xl"
                                 />
                             </div>
-                            <span className="text-[15px] text-foreground opacity-70">AI-processed items, delivering unparalleled <br /> accuracy and detail for every inventory.</span>
+                            <span className="text-[15px] text-foreground opacity-70">
+                                {t.rich("stat3Description", {
+                                    br: () => <br />
+                                })}
+                            </span>
                         </div>
 
                         <div className="flex flex-col gap-4">
                             <div className=" flex flex-col gap-8 border-l pl-8">
-                                <p className=" font-medium text-foreground text-base md:text-lg">Efficiency Gain</p>
+                                <p className=" font-medium text-foreground text-base md:text-lg">{t("stat4Title")}</p>
                                 <AnimatedStat
                                     targetValue={75}
                                     suffix="%"
                                     className="font-semibold text-primary text-4xl md:text-5xl"
                                 />
                             </div>
-                            <span className="text-[15px] text-foreground opacity-70">Average time saved on inventory creation <br /> compared  to traditional manual methods.</span>
+                            <span className="text-[15px] text-foreground opacity-70">
+                                {t.rich("stat4Description", {
+                                    br: () => <br />
+                                })}
+                            </span>
                         </div>
                     </div>
                 </div>

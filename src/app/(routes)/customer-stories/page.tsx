@@ -4,8 +4,11 @@ import Cta2 from "@/sections/cta-2";
 import CustomerStoriesMarquee from "@/sections/cusomter-stories-marquee";
 import CustomerStoryHero from "@/sections/customer-story-hero";
 import Statistics from "@/sections/statistics";
+import { useTranslations } from "next-intl";
 
 const CustomerStories = () => {
+    const t = useTranslations("CustomerStoriesMarquee");
+
     return (
         <div>
             <CustomerStoryHero />
@@ -14,37 +17,37 @@ const CustomerStories = () => {
                 <CustomerStoryCard
                     logo="/assets/story-1.png"
                     detailedCase
-                    name="Saady Bijani"
+                    name={t("story1Name")}
                     picture="/assets/customer-1.png"
-                    position="CEO @Online Movers Miami"
-                    review="We used to spend too much time piecing together photos and writing up inventory lists. Lexos does it for us in minutes. Our team doesn't dread surveys anymore."
+                    position={t("story1Position")}
+                    review={t("story1Review")}
                     url="/customer-stories/online-movers-miami"
                 />
                 <CustomerStoryCard
                     logo="/assets/story-2.png"
                     detailedCase={false}
-                    name="Julia"
+                    name={t("story2Name")}
                     picture="/assets/customer-2.png"
-                    position="Sales Manager @Flash Moving & Storage"
-                    review="The CRM sync was surprisingly seamless. It also allows us to have our customers' information all in one place. It has saved Flash a lot of time, especially during peak season."
+                    position={t("story2Position")}
+                    review={t("story2Review")}
                     url="/"
                 />
                 <CustomerStoryCard
                     logo="/assets/story-3.png"
                     detailedCase={false}
-                    name="Michael Cattan"
+                    name={t("story3Name")}
                     picture="/assets/customer-3.png"
-                    position="Owner @Michael’s Moving & Storage"
-                    review="We’ve tried a bunch of tools over the years, but Lexos is the first one that actually fits the way we work. It’s simple, and gives my team a complete inventory without all the back and forth."
+                    position={t("story3Position")}
+                    review={t("story3Review")}
                     url="/"
                 />
                 <CustomerStoryCard
                     logo="/assets/story-4.png"
                     detailedCase={false}
-                    name="Alex"
+                    name={t("story4Name")}
                     picture="/assets/customer-4.png"
-                    position="Owner @Best Quality Moving"
-                    review="With Lexos, quoting is easier—our team uploads photos and instantly gets weight and volume, making us look more transparent and professional to customers."
+                    position={t("story4Position")}
+                    review={t("story4Review")}
                     url="/"
                 />
             </Wrapper>

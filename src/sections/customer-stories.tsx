@@ -2,12 +2,14 @@
 
 import CustomerStoryCard from "@/components/common/customer-story-card";
 import Wrapper from "@/components/common/wrapper";
-import { Button } from "@/components/ui/button"; 
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, ArrowRight, Stars } from "lucide-react"; 
-import { useEffect, useRef, useState } from "react"; 
+import { ArrowLeft, ArrowRight, Stars } from "lucide-react";
+import { useTranslations } from "next-intl"; // Import useTranslations
+import { useEffect, useRef, useState } from "react";
 
 const CustomerStories = () => {
+    const t = useTranslations("CustomerStories"); // Initialize useTranslations
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);
@@ -54,10 +56,10 @@ const CustomerStories = () => {
                 <div className=" w-full flex flex-col items-center">
                     <span className=" bg-primary/10 text-primary rounded-full py-2 pl-2 pr-4 inline-flex items-center gap-2">
                         <Stars />
-                        <p>Customer Stories</p>
+                        <p>{t("badgeText")}</p>
                     </span>
                     <h2 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center">
-                        See what our customers say
+                        {t("title")}
                     </h2>
 
                     {/* <div className=" hidden md:grid md:grid-cols-5 gap-8 px-20 mt-12">
@@ -95,73 +97,73 @@ const CustomerStories = () => {
                             <CustomerStoryCard
                                 logo="/assets/story-1.png"
                                 detailedCase
-                                name="Saady Bijani"
+                                name={t("story1Name")}
                                 picture="/assets/customer-1.png"
-                                position="CEO @Online Movers Miami"
-                                review="We used to spend too much time piecing together photos and writing up inventory lists. Lexos does it for us in minutes. Our team doesn't dread surveys anymore."
+                                position={t("story1Position")}
+                                review={t("story1Review")}
                                 url="/customer-stories/online-movers-miami"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-2.png"
                                 detailedCase={false}
-                                name="Julia"
+                                name={t("story2Name")}
                                 picture="/assets/customer-2.png"
-                                position="Sales Manager @Flash Moving & Storage"
-                                review="The CRM sync was surprisingly seamless. It also allows us to have our customers' information all in one place. It has saved Flash a lot of time, especially during peak season."
+                                position={t("story2Position")}
+                                review={t("story2Review")}
                                 url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-3.png"
                                 detailedCase={false}
-                                name="Michael Cattan"
+                                name={t("story3Name")}
                                 picture="/assets/customer-3.png"
-                                position="Owner @Michael’s Moving & Storage"
-                                review="We’ve tried a bunch of tools over the years, but Lexos is the first one that actually fits the way we work. It’s simple, and gives my team a complete inventory without all the back and forth."
+                                position={t("story3Position")}
+                                review={t("story3Review")}
                                 url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-4.png"
                                 detailedCase={false}
-                                name="Alex"
+                                name={t("story4Name")}
                                 picture="/assets/customer-4.png"
-                                position="Owner @Best Quality Moving"
-                                review="With Lexos, quoting is easier—our team uploads photos and instantly gets weight and volume, making us look more transparent and professional to customers."
+                                position={t("story4Position")}
+                                review={t("story4Review")}
                                 url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-5.png"
                                 detailedCase={false}
-                                name="Ash"
+                                name={t("story5Name")}
                                 picture="/assets/customer-5.png"
-                                position="Sales Manager @Royal Moving"
-                                review="Customers really like how easy it is to take photos through Lexos, and we love that we get clean inventories back without chasing them down"
+                                position={t("story5Position")}
+                                review={t("story5Review")}
                                 url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-6.png"
                                 detailedCase={false}
-                                name="Lu Annatone"
+                                name={t("story6Name")}
                                 picture="/assets/lu.png"
-                                position="Owner @The Junk Removers"
-                                review="Having a fully itemized inventory cleaned up our entire process—especially in an industry where everything we handle is, well, junk."
+                                position={t("story6Position")}
+                                review={t("story6Review")}
                                 url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-7.png"
                                 detailedCase={false}
-                                name="Sara Bauman"
+                                name={t("story7Name")}
                                 picture="/assets/customer-7.png"
-                                position="Inside Sales Manager @ All Service Moving"
-                                review="Just in the 2 surveys I have done, Lexos has helped me land two jobs for about $20k! Not to mention the amount of admin time the software eliminates"
+                                position={t("story7Position")}
+                                review={t("story7Review")}
                                 url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-8.png"
                                 detailedCase={false}
-                                name="Ali Olzhas"
+                                name={t("story8Name")}
                                 picture="/assets/customer-8.png"
-                                position="Owner @Amanat Moving & Storage"
-                                review="Lexos has helped us cut down on miscommunication and wasted trips, which, in Boston, is priceless."
+                                position={t("story8Position")}
+                                review={t("story8Review")}
                                 url="/"
                             />
                         </div>
@@ -175,7 +177,7 @@ const CustomerStories = () => {
                             className="rounded-full pointer-events-auto disabled:opacity-50 z-30"
                             onClick={() => handleScroll("left")}
                             disabled={!canScrollLeft}
-                            aria-label="Scroll left"
+                            aria-label={t("scrollLeftAriaLabel")}
                         >
                             <ArrowLeft className="h-6 w-6" />
                         </Button>
@@ -185,7 +187,7 @@ const CustomerStories = () => {
                             className="rounded-full pointer-events-auto disabled:opacity-50 z-30"
                             onClick={() => handleScroll("right")}
                             disabled={!canScrollRight}
-                            aria-label="Scroll right"
+                            aria-label={t("scrollRightAriaLabel")}
                         >
                             <ArrowRight className="h-6 w-6" />
                         </Button>

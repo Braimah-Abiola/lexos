@@ -1,11 +1,13 @@
 "use client";
 
 import Wrapper from "@/components/common/wrapper";
-import { Gem } from "lucide-react";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import { Gem } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const CareersHero = () => {
+    const t = useTranslations("CareersHero");
     const heroContentVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -30,7 +32,7 @@ const CareersHero = () => {
     };
 
     return (
-        <section className=" w-full min-h-screen">
+        <section className=" w-full h-screen min-h-screen">
             <Wrapper className="px-2 md:px-6 w-full h-full">
                 <motion.div
                     initial="hidden"
@@ -43,22 +45,21 @@ const CareersHero = () => {
                         className=" bg-white text-primary rounded-full pl-2 py-1.5 pr-3 inline-flex items-center gap-2"
                     >
                         <Gem />
-                        <p className=" text-foreground">Careers</p>
+                        <p className=" text-foreground">{t("badgeText")}</p>
                     </motion.span>
                     <motion.h1
                         variants={itemVariants}
                         className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] px-4 md:px-0 font-bold text-center"
-                    >
-                        Join Our Growing Team. <br className=" hidden md:block" /> Build the Future Of Lexos
-                    </motion.h1>
+                        dangerouslySetInnerHTML={{ __html: t.raw("title") }}
+                    />
                     <motion.p
                         variants={itemVariants}
                         className=" max-w-[48ch] px-6 md:px-0 mt-2 text-center text-base text-foreground opacity-70"
                     >
-                        We&apos;re seeking innovators ready to build cutting-edge AI solutions that transform how companies handle inventory.
+                        {t("description")}
                     </motion.p>
 
-                    <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" rounded-t-xl object-cover object-top z-[-1]" alt="Hero background" />
+                    <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />
                 </motion.div>
             </Wrapper>
         </section>

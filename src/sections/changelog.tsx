@@ -1,25 +1,26 @@
 import { Timeline } from "@/components/common/timeline";
 import Wrapper from "@/components/common/wrapper";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import React from "react";
 
 
 export function AllChangelogs() {
+  const t = useTranslations("AllChangelogs");
   const data = [
     {
-      title: "04 June 2025",
+      title: t("date1"),
       content: (
         <div>
           <h2 className=" text-xl md:text-2xl font-semibold font-plex-sans text-foreground tracking-tight">
-            QR Code Implementation
+            {t("title1")}
           </h2>
           <p className="text-foreground/70 text-base md:mt-4 mb-8">
-            Faster processing, enhanced accuracy, and expanded item recognition are now even more powerful with our new QR code implementation from desktop to phone.
+            {t("description1")}
           </p>
           <div className=" w-full h-auto aspect-video md:aspect-auto md:h-[28rem] relative">
             <Image
               src="/assets/qr-update.png"
-              alt="Changelog 1"
+              alt={t("image1Alt")}
               fill
               className="rounded-xl object-cover h-20 md:h-44 lg:h-60 w-full"
             />
@@ -28,19 +29,19 @@ export function AllChangelogs() {
       ),
     },
     {
-      title: "24 April 2025",
+      title: t("date2"),
       content: (
         <div>
           <h2 className=" text-xl md:text-2xl font-semibold font-plex-sans text-foreground tracking-tight">
-            Faster Processing & More Accurate Data
+            {t("title2")}
           </h2>
           <p className="text-foreground/70 text-base md:mt-4 mb-8">
-            We&apos;ve significantly optimized our algorithms, resulting in quicker inventory processing times and more precise data extraction from your uploads. Experience a smoother, more reliable workflow.
+            {t("description2")}
           </p>
           <div className=" w-full h-auto aspect-video md:aspect-auto md:h-[28rem] relative">
             <Image
               src="/assets/update-2.png"
-              alt="Changelog 2"
+              alt={t("image2Alt")}
               fill
               className="rounded-xl object-cover border border-black/20 h-20 md:h-44 lg:h-60 w-full"
             />
@@ -53,7 +54,7 @@ export function AllChangelogs() {
       content: (
         <div className=" h-fit">
           <h2 className=" text-xl md:text-2xl font-semibold font-plex-sans text-foreground tracking-tight">
-            That&apos;s all for now
+            {t("thatsAllText")}
           </h2>
         </div>
       ),

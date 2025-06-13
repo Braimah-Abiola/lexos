@@ -1,18 +1,21 @@
 "use client";
 
+import LocaleSwitcher from "@/components/common/locale-switcher";
+import MobileNavigation from "@/components/common/mobile-navigation";
 import { NavGroup } from "@/components/common/nav-group";
 import Wrapper from "@/components/common/wrapper";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import MobileNavigation from "@/components/common/mobile-navigation";
+import { useEffect, useState } from "react";
 
 const Navigation = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const t = useTranslations("Header");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -61,16 +64,17 @@ const Navigation = () => {
                     <NavGroup />
                 </nav>
                 <aside className="flex items-center gap-2 md:gap-4">
-                    <div className="shrink-0 flex-nowrap hidden md:inline-flex items-center gap-1 md:gap-2">
-                        <Image height={24} width={24} src="/assets/us-flag.svg" className=" object-cover" alt="Us flag" quality={100} />
-                        <ChevronDown className=" size-4 text-foreground" />
-                    </div>
+                    <LocaleSwitcher />
                     <span className="hidden md:block h-5">
                         <Separator orientation="vertical" className="h-full bg-black opacity-20" />
                     </span>
                     <div className=" inline-flex gap-2 z-50 mr-2">
-                        <Button variant="ghost">Sign In</Button>
-                        <Button className="has-[>svg]:pr-5 md:has-[>svg]:pr-3">Join Lexos <ArrowUpRight className=" hidden md:block" /></Button>
+                        <Button variant="ghost">
+                            {t("signIn")}
+                        </Button>
+                        <Button className="has-[>svg]:pr-5 md:has-[>svg]:pr-3">
+                            {t("join")}
+                            <ArrowUpRight className=" hidden md:block" /></Button>
                     </div>
                     <MobileNavigation />
                 </aside>

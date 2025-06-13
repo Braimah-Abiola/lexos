@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+
 const manrope = Manrope({
     variable: "--font-manrope",
     subsets: ["latin"],
@@ -18,30 +21,65 @@ const plexSans = IBM_Plex_Sans({
     display: 'swap',
 });
 
+const baseUrl = "https://lexos-stagging.vercel.app/";
+
 export const metadata: Metadata = {
-    title: "Lexos App",
-    description: "Your application description",
+    metadataBase: new URL(`${baseUrl}`),
+    keywords: [
+        "AI inventory management",
+        "Volumetric inventory",
+        "Moving company software",
+        "Junk removal software",
+        "Logistics inventory",
+        "Photo to inventory",
+        "Automated inventory",
+        "Inventory optimization",
+        "Lexos"
+    ],
+    title: "Lexos – AI-Powered Visual Inventory Management",
+    description: "Lexos uses AI to transform photos into accurate, volumetric inventories for moving companies, junk removers, and logistics. Streamline estimates, packing, and operations.",
+    openGraph: {
+        title: "Lexos – AI-Powered Visual Inventory Management",
+        siteName: "Lexos",
+        description: "Lexos uses AI to transform photos into accurate, volumetric inventories for moving companies, junk removers, and logistics. Streamline estimates, packing, and operations.",
+        images: ["/assets/thumbnail.png"],
+        url: `${baseUrl}`,
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Lexos – AI-Powered Visual Inventory Management",
+        description: "Lexos uses AI to transform photos into accurate, volumetric inventories for moving companies, junk removers, and logistics. Streamline estimates, packing, and operations.",
+        images: ["/assets/thumbnail.png"],
+        creator: "@lexosmove",
+    },
+    icons: "/favicon.ico",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+
+    const locale = await getLocale();
+    const messages = await getMessages();
+
     return (
-        <html lang="en" className={` scroll-smooth ${manrope.variable} ${plexSans.variable}`}>
+        <html lang={locale} className={` scroll-smooth ${manrope.variable} ${plexSans.variable}`}>
             <body className="antialiased font-plex-sans select-none">
-                <Navigation />
-                <main className="min-h-screen">
-                    {children}
-                </main>
-                <ChangelogDialog
-                    dialogId="changelog-qr-1"
-                    title="QR Code Implementation!"
-                    description="Faster processing, enhanced accuracy, and expanded item recognition are now even more powerful with our new QR code implementation from desktop to phone."
-                    imageSrc="/assets/qr-update.png"
-                />
-                <Footer />
+                <NextIntlClientProvider messages={messages}>
+                    <Navigation />
+                    <main className="min-h-screen">
+                        {children}
+                    </main>
+                    <ChangelogDialog
+                        dialogId="changelog-qr-1"
+                        title="QR Code Implementation!"
+                        description="Faster processing, enhanced accuracy, and expanded item recognition are now even more powerful with our new QR code implementation from desktop to phone."
+                        imageSrc="/assets/qr-update.png"
+                    />
+                    <Footer />
+                </NextIntlClientProvider>
             </body>
         </html>
     );

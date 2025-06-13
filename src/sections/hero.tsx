@@ -4,11 +4,13 @@ import Wrapper from "@/components/common/wrapper";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
 const Hero = () => {
+    const t = useTranslations("Hero");
     const particlesRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: particlesRef,
@@ -69,40 +71,49 @@ const Hero = () => {
                     className=" pt-12 z-20 w-full flex flex-col items-center bg-gradient-to-b rounded-xl border border-input border-t-0 overflow-hidden from-white to-primary h-full relative"
                 >
                     <motion.div variants={itemVariants} className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
-                        <Image width={24} height={24} src="/assets/miami.png" alt="Online Movers Miami" />
-                        <span className=" text-sm flex gap-1"><span className=" hidden md:inline-flex">Online Movers Miami:</span> AI Transforms Inventory</span>
+                        <Image width={24} height={24} src="/assets/miami.png" alt={t("onlineMoversMiamiAlt")} />
+                        <span className=" text-sm flex gap-1">
+                            <span className=" hidden md:inline-flex">{t("onlineMoversMiamiText")}</span> {t("aiTransformsInventoryText")}
+                        </span>
                         <ArrowRight className=" size-4" />
                     </motion.div>
-                    <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center">Replace manual inventory <br className=" hidden md:block" /> with
+                    <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center">
+                        {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "}
                         <span className=" relative ml-2 pl-2 pr-2">
-                            AI technology
+                            {t("aiTechnologyText")}
                             <div
                                 className="border-2 border-primary -z-[1] absolute inset-0 hidden md:block"
                             >
                                 <motion.div
                                     className="bg-primary/40 absolute inset-0"
-                                    initial={{ clipPath: "inset(0 100% 0 0)" }}
-                                    animate={{ clipPath: "inset(0 0% 0 0)" }}
+                                    initial={{ clipPath: "inset(0 0 100% 0)" }}
+                                    animate={{ clipPath: "inset(0 0 0% 0)" }}
                                     transition={{
                                         duration: 1.2,
-                                        delay: 0.5,
                                         ease: "easeInOut",
+                                        repeat: Infinity,
+                                        repeatType: "mirror",
+                                        repeatDelay: 0.5,
                                     }}
                                 />
-                                {/* Corner squares - now children of the static border div, not the animated one */}
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -left-[5px]" />
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -right-[5px]" />
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -left-[5px]" />
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -right-[5px]" />
                             </div>
-                        </span>{" "} </motion.h1>
-                    <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 text-center mt-2 px-6 md:px-0">Our AI transforms photos into inventories with weight and <br className=" hidden md:block" /> volume for each item, and syncs to your CRM in seconds.</motion.p>
+                        </span>{" "}
+                    </motion.h1>
+                    <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 max-w-[52ch] text-center mt-2 px-6 md:px-0">
+                        {t.rich("subHeading", {
+                            br: () => <br className=" hidden md:block" />
+                        })}
+                    </motion.p>
                     <motion.div variants={itemVariants} className=" inline-flex items-center gap-4 mt-4">
                         <Link href="/demo">
-                            <Button>Get Started Now</Button>
+                            <Button>{t("getStartedButton")}</Button>
                         </Link>
                         <Link href="/demo">
-                            <Button variant="outline">Book Demo</Button>
+                            <Button variant="outline">{t("bookDemoButton")}</Button>
                         </Link>
                     </motion.div>
                     <motion.div variants={videoVariants} className=" mt-8 max-w-6xl w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-t-3xl p-2 pb-0 h-[48rem] mx-auto">

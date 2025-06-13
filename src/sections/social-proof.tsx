@@ -1,14 +1,15 @@
 import { Marquee } from "@/components/common/marquee";
 import Wrapper from "@/components/common/wrapper";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const SocialProof = () => {
+    const t = useTranslations("SocialProof");
     return (
         <section className=" w-full py-20">
             <Wrapper className="flex flex-col items-center">
-                <h1 className="mt-2 font-manrope text-4xl font-bold text-center">Trusted By 40+ Leading Companies</h1>
-                <p className="text-base mt-2 text-foreground opacity-70">Movers, junk removers, and importers from around the world use Lexos in their day to day workflow.</p>
-            </Wrapper>
+                <h1 className="mt-2 font-manrope text-4xl font-bold text-center">{t("title")}</h1>
+                <p className="text-base mt-2 text-foreground opacity-70 text-center">{t("description")}</p>            </Wrapper>
             <div className=" max-w-7xl mx-auto relative w-full flex flex-col -space-y-1.5 mt-8">
                 <div className="pointer-events-none absolute z-20 inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
 

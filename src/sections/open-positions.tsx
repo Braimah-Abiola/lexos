@@ -3,8 +3,10 @@
 import CareerCard from "@/components/common/career-card";
 import Wrapper from "@/components/common/wrapper";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const OpenPositions = () => {
+    const t = useTranslations("OpenPositions");
     const sectionVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: {
@@ -41,12 +43,12 @@ const OpenPositions = () => {
                     variants={sectionVariants}
                 >
                     <motion.div variants={itemVariants} className="w-full md:w-1/3">
-                        <h6 className=" text-xl font-semibold ">Design</h6>
-                        <p className=" text-foreground opacity-70 mt-1">Open positions in our design team.</p>
+                        <h6 className=" text-xl font-semibold ">{t("designTitle")}</h6>
+                        <p className=" text-foreground opacity-70 mt-1">{t("designDescription")}</p>
                     </motion.div>
                     <motion.div className="flex flex-col gap-4 w-full md:w-2/3" variants={itemVariants}>
-                        <CareerCard category="Design" title="Product Designer" description="We’re looking for a mid-level product designer to join our team." location="Boston, MA" type="Full Time" compensation="$80k - 100k" />
-                        <CareerCard category="Design" title="UX Researcher" description="Help us understand our users and shape product strategy." location="Remote" type="Full Time" compensation="$90k - 110k" />
+                        <CareerCard category={t("designJob1Category")} title={t("designJob1Title")} description={t("designJob1Description")} location={t("designJob1Location")} type={t("designJob1Type")} compensation={t("designJob1Compensation")} />
+                        <CareerCard category={t("designJob2Category")} title={t("designJob2Title")} description={t("designJob2Description")} location={t("designJob2Location")} type={t("designJob2Type")} compensation={t("designJob2Compensation")} />
                     </motion.div>
                 </motion.div>
 
@@ -58,12 +60,12 @@ const OpenPositions = () => {
                     variants={sectionVariants}
                 >
                     <motion.div variants={itemVariants} className="w-full md:w-1/3">
-                        <h6 className=" text-xl font-semibold ">Software Development</h6>
-                        <p className=" text-foreground opacity-70 mt-1">Open positions in our software team.</p>
+                        <h6 className=" text-xl font-semibold ">{t("softwareDevelopmentTitle")}</h6>
+                        <p className=" text-foreground opacity-70 mt-1">{t("softwareDevelopmentDescription")}</p>
                     </motion.div>
                     <motion.div className="flex flex-col gap-4 w-full md:w-2/3" variants={itemVariants}>
-                        <CareerCard category="Software" title="Senior Frontend Engineer" description="Lead the development of our cutting-edge user interfaces." location="Boston, MA" type="Full Time" compensation="$120k - 150k" />
-                        <CareerCard category="Software" title="AI/ML Engineer" description="Develop and deploy machine learning models for inventory analysis." location="Remote" type="Full Time" compensation="$130k - 160k" />
+                        <CareerCard category={t("softwareJob1Category")} title={t("softwareJob1Title")} description={t("softwareJob1Description")} location={t("softwareJob1Location")} type={t("softwareJob1Type")} compensation={t("softwareJob1Compensation")} />
+                        <CareerCard category={t("softwareJob2Category")} title={t("softwareJob2Title")} description={t("softwareJob2Description")} location={t("softwareJob2Location")} type={t("softwareJob2Type")} compensation={t("softwareJob2Compensation")} />
                     </motion.div>
                 </motion.div>
 
@@ -75,12 +77,12 @@ const OpenPositions = () => {
                     variants={sectionVariants}
                 >
                     <motion.div variants={itemVariants} className="w-full md:w-1/3">
-                        <h6 className=" text-xl font-semibold ">Other</h6>
-                        <p className=" text-foreground opacity-70 mt-1">Other open positions in our core team.</p>
+                        <h6 className=" text-xl font-semibold ">{t("otherTitle")}</h6>
+                        <p className=" text-foreground opacity-70 mt-1">{t("otherDescription")}</p>
                     </motion.div>
                     <motion.div className="flex flex-col gap-4 w-full md:w-2/3" variants={itemVariants}>
-                        <CareerCard category="Marketing" title="Digital Marketing Manager" description="Drive our online presence and customer acquisition strategies." location="Boston, MA" type="Full Time" compensation="$90k - 110k" />
-                        <CareerCard category="Customer Success" title="Customer Success" description="Ensure our clients achieve maximum value from Lexos." location="Remote" type="Full Time" compensation="$75k - 95k" />
+                        <CareerCard category={t("otherJob1Category")} title={t("otherJob1Title")} description={t("otherJob1Description")} location={t("otherJob1Location")} type={t("otherJob1Type")} compensation={t("otherJob1Compensation")} />
+                        <CareerCard category={t("otherJob2Category")} title={t("otherJob2Title")} description={t("otherJob2Description")} location={t("otherJob2Location")} type={t("otherJob2Type")} compensation={t("otherJob2Compensation")} />
                     </motion.div>
                 </motion.div>
             </Wrapper>
