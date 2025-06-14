@@ -80,7 +80,7 @@ const Statistics = () => {
                             <div className=" flex flex-col gap-8 border-l pl-8">
                                 <p className=" font-medium text-foreground text-base md:text-lg">{t("stat1Title")}</p>
                                 <AnimatedStat
-                                    targetValue={93}
+                                    targetValue={53}
                                     suffix="%"
                                     className="font-semibold text-primary text-4xl md:text-5xl"
                                 />
@@ -128,7 +128,7 @@ const Statistics = () => {
                             <div className=" flex flex-col gap-8 border-l pl-8">
                                 <p className=" font-medium text-foreground text-base md:text-lg">{t("stat4Title")}</p>
                                 <AnimatedStat
-                                    targetValue={75}
+                                    targetValue={76}
                                     suffix="%"
                                     className="font-semibold text-primary text-4xl md:text-5xl"
                                 />

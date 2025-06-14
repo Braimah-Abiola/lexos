@@ -85,7 +85,6 @@ const CustomerStories = () => {
             </Wrapper>
 
             <div className="w-full relative mt-6 md:mt-16">
-                <div className=" hidden md:block absolute inset-y-0 left-0 md:left-20 z-20 bottom-0 h-full w-1/4 bg-gradient-to-r from-background" />
                 <div className="pl-2.5 md:pl-20 2xl:pl-[20rem] pr-2.5 md:pr-0">
                     <div
                         ref={scrollContainerRef}
@@ -102,6 +101,24 @@ const CustomerStories = () => {
                                 position={t("story1Position")}
                                 review={t("story1Review")}
                                 url="/customer-stories/online-movers-miami"
+                            />
+                            <CustomerStoryCard
+                                logo="/assets/story-7.png"
+                                detailedCase={false}
+                                name={t("story7Name")}
+                                picture="/assets/customer-7.png"
+                                position={t("story7Position")}
+                                review={t("story7Review")}
+                                url="/"
+                            />
+                            <CustomerStoryCard
+                                logo="/assets/story-6.png"
+                                detailedCase={false}
+                                name={t("story6Name")}
+                                picture="/assets/lu.png"
+                                position={t("story6Position")}
+                                review={t("story6Review")}
+                                url="/"
                             />
                             <CustomerStoryCard
                                 logo="/assets/story-2.png"
@@ -139,24 +156,8 @@ const CustomerStories = () => {
                                 review={t("story5Review")}
                                 url="/"
                             />
-                            <CustomerStoryCard
-                                logo="/assets/story-6.png"
-                                detailedCase={false}
-                                name={t("story6Name")}
-                                picture="/assets/lu.png"
-                                position={t("story6Position")}
-                                review={t("story6Review")}
-                                url="/"
-                            />
-                            <CustomerStoryCard
-                                logo="/assets/story-7.png"
-                                detailedCase={false}
-                                name={t("story7Name")}
-                                picture="/assets/customer-7.png"
-                                position={t("story7Position")}
-                                review={t("story7Review")}
-                                url="/"
-                            />
+
+
                             <CustomerStoryCard
                                 logo="/assets/story-8.png"
                                 detailedCase={false}

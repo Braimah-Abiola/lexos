@@ -62,7 +62,7 @@ const Hero = () => {
 
 
     return (
-        <section className=" relative h-[100dvh]">
+        <section className=" relative h-[120vh] md:h-[100vh]">
             <Wrapper className="h-full w-full px-4 md:px-6">
                 <motion.div
                     initial="hidden"

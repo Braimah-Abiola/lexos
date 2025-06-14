@@ -190,7 +190,7 @@ const PriceCards = ({ selected }: PriceCardProps) => {
         <div className=" w-full flex items-center justify-between">
           <p className="text-xl font-semibold font-manrope text-white">{t("advancedTitle")}</p>
 
-          <div className=" w-fit text-sm bg-white rounded-full px-4 py-1 flex items-center justify-center uppercase text-primary">
+          <div className=" w-fit text-xs bg-white rounded-full px-2 py-0.5 flex items-center justify-center uppercase text-primary">
             <p> {selected === "A" ? t("bestOfferBadge") : t("mostPopularBadge")}</p>
           </div>
         </div>
@@ -251,6 +251,10 @@ const PriceCards = ({ selected }: PriceCardProps) => {
           <Check className=" text-white" />
           <span className="text-base">{t("advancedFeature1")}</span>
         </div>
+        <div className="flex items-start gap-2 mb-2">
+          <Check className=" text-white" />
+          <span className="text-base">{t("advancedFeature5")}</span>
+        </div>
         <div className="flex items-center gap-2 mb-2">
           <Check className=" text-white" />
           <span className="text-base">{t("advancedFeature2")}</span>
@@ -262,10 +266,6 @@ const PriceCards = ({ selected }: PriceCardProps) => {
         <div className="flex items-start gap-2 mb-2">
           <Check className=" text-white" />
           <span className="text-base">{t("advancedFeature4")}</span>
-        </div>
-        <div className="flex items-start gap-2 mb-2">
-          <Check className=" text-white" />
-          <span className="text-base">{t("advancedFeature5")}</span>
         </div>
       </div>
 
@@ -303,7 +303,7 @@ const PriceCards = ({ selected }: PriceCardProps) => {
             )}
           </AnimatePresence>
         </div>
-        <Link href="https://calendly.com/dino-lexosmove/30min?back=1&month=2025-06">
+        <Link href="/custom-solutions">
           <motion.button
             whileHover={{ scale: 1.015 }}
             whileTap={{ scale: 0.985 }}
