@@ -668,5 +668,9 @@
     "title": "Para Más Información",
     "description": "Envíanos un correo electrónico para más información",
     "buttonText": "Contáctanos"
+  },
+  "MobileNavigation": {
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
   }
 }

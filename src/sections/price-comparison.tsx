@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 const PricingComparison = () => {
   const t = useTranslations("PricingComparison");
   return (
-    <div className=" bg-accent hidden md:block md:py-20 md:-mt-24 md:mb-20">
+    <div className=" bg-gradient-to-b from-transparent to-accent hidden md:block md:py-20 md:mb-20">
       <Wrapper>
         <h2 className="mt-2 font-manrope text-5xl font-bold text-center">{t("title")}</h2>
 

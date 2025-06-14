@@ -668,5 +668,9 @@
     "title": "For More Information",
     "description": "Send us an email for more information",
     "buttonText": "Contact Us"
+  },
+  "MobileNavigation": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   }
 }
