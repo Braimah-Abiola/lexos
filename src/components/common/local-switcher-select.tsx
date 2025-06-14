@@ -6,7 +6,7 @@ import { useTransition } from "react";
 
 import { Locale } from "@/i18n/config";
 import { setUserLocale } from "@/services/locale";
-import { CheckIcon, LanguagesIcon } from "lucide-react";
+import { CheckIcon, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 type Props = {
@@ -22,6 +22,10 @@ export default function LocaleSwitcherSelect({
 }: Props) {
   const [isPending, startTransition] = useTransition();
 
+  // Find the currently selected locale's flag
+  const selectedItem = items.find((item) => item.value === defaultValue);
+  const selectedFlag = selectedItem?.src || "/assets/us-flag.svg"; // Fallback if not found
+
   function onChange(value: string) {
     const locale = value as Locale;
     startTransition(async () => {
@@ -33,16 +37,22 @@ export default function LocaleSwitcherSelect({
   return (
     <div className="relative hidden md:block">
       <Select.Root defaultValue={defaultValue} onValueChange={onChange}>
+        {/* Custom trigger without using Select.Icon */}
         <Select.Trigger
           aria-label={label}
           className={clsx(
-            "rounded-full p-2 transition-colors hover:bg-accent  outline-none focus:border-2 focus:border-prmiary",
+            "rounded-full p-2 transition-colors hover:bg-transparent outline-none focus:border-none flex items-center justify-center gap-1",
             isPending && "pointer-events-none opacity-60"
           )}
         >
-          <Select.Icon>
-            <LanguagesIcon className="h-5 w-5 text-foreground opacity-70 group-hover:opacity-100 transition-opacity group-hover:text-black" />
-          </Select.Icon>
+          <Image
+            src={selectedFlag}
+            alt={selectedItem?.label || "Selected language"}
+            className="object-contain"
+            width={26}
+            height={26}
+          />
+          <ChevronDown className=" shrink-0 flex-nowrap h-4 w-4 text-foreground" />
         </Select.Trigger>
         <Select.Portal>
           <Select.Content
@@ -58,14 +68,15 @@ export default function LocaleSwitcherSelect({
                   value={item.value}
                 >
                   <Image
-                    className=" object-contain mr-2"
-                    height={24}
-                    width={24}
-                    quality={100}
+                    className="object-contain mr-2 h-6 w-6"
                     src={item.src}
                     alt={item.label}
+                    width={24}
+                    height={24}
                   />
-                  <span className="text-foreground flex-1 min-w-[120px]">{item.label}</span>
+                  <span className="text-foreground flex-1 min-w-[120px]">
+                    {item.label}
+                  </span>
                   <div className="ml-2 w-[1rem]">
                     {item.value === defaultValue && (
                       <CheckIcon className="h-5 w-5 text-foreground" />

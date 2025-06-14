@@ -62,7 +62,7 @@ const Hero = () => {
 
 
     return (
-        <section className=" relative h-[92vh]">
+        <section className=" relative h-[100dvh]">
             <Wrapper className="h-full w-full px-4 md:px-6">
                 <motion.div
                     initial="hidden"
@@ -78,9 +78,9 @@ const Hero = () => {
                         </span>
                         <ArrowRight className=" size-4" />
                     </motion.div>
-                    <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center">
+                    <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center px-4 md:px-0">
                         {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "}
-                        <span className=" relative ml-2 pl-2 pr-2">
+                        <span className=" relative md:ml-2 md:pl-2 pr-2">
                             {t("aiTechnologyText")}
                             <div
                                 className="border-2 border-primary -z-[1] absolute inset-0 hidden md:block"
