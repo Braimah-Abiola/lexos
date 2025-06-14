@@ -70,6 +70,7 @@ const Hero = () => {
                     variants={heroContentVariants}
                     className=" pt-12 z-20 w-full flex flex-col items-center bg-gradient-to-b rounded-xl border border-input border-t-0 overflow-hidden from-white to-primary h-full relative"
                 >
+                    <Link href="/customer-stories/online-movers-miami"></Link>
                     <motion.div variants={itemVariants} className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
                         <Image width={24} height={24} src="/assets/miami.png" alt={t("onlineMoversMiamiAlt")} />
                         <span className=" text-sm flex gap-1">
@@ -111,9 +112,6 @@ const Hero = () => {
                     <motion.div variants={itemVariants} className=" inline-flex items-center gap-4 mt-4">
                         <Link href="/demo">
                             <Button>{t("getStartedButton")}</Button>
-                        </Link>
-                        <Link href="/demo">
-                            <Button variant="outline">{t("bookDemoButton")}</Button>
                         </Link>
                     </motion.div>
                     <motion.div variants={videoVariants} className=" mt-8 max-w-6xl w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-t-3xl p-2 pb-0 h-[48rem] mx-auto">
