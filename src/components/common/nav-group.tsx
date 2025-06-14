@@ -170,7 +170,7 @@ export function NavGroup() {
                                     <ListItem href="/legals/privacy" title={t("resource5Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                         {t("resource5Description")}
                                     </ListItem>
-                                    <ListItem href="/support" title={t("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
+                                    <ListItem href="/custom-solutions" title={t("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
                                         {t("resource6Description")}
                                     </ListItem>
                                 </div>

@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className=" grid grid-cols-2 md:grid-cols-5 gap-6 w-full">
 
 
-                        <div className="flex flex-col gap-4 text-white">
+                        <div className="flex flex-col col-span-2 md:col-span-1 gap-4 text-white">
                             <span className=" text-base font-medium">{t("productTitle")}</span>
                             <div className="flex flex-col gap-3 text-sm">
                                 <Link href="">

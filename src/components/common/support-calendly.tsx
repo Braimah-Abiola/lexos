@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { InlineWidget } from "react-calendly";
 
-const Calendly = () => {
+const SupportCalendly = () => {
   const [height, setHeight] = useState("1050px");
 
   useEffect(() => {
@@ -30,10 +30,10 @@ const Calendly = () => {
         styles={{
           height: height,
         }}
-        url="https://calendly.com/dino-lexosmove/30min"
+        url="https://calendly.com/dino-lexosmove/custom-solution-request"
       />
     </div>
   );
 };
 
-export default Calendly;
+export default SupportCalendly;

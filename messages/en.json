@@ -275,7 +275,7 @@
   },
   "CareersHero": {
     "badgeText": "Careers",
-    "title": "Join Our Growing Team. Build the Future Of Lexos",
+    "title": "Join Our Growing Team.",
     "description": "We're seeking innovators ready to build cutting-edge AI solutions that transform how companies handle inventory.",
     "imageAlt": "Hero background"
   },
@@ -287,13 +287,13 @@
     "designJob1Description": "We’re looking for a mid-level product designer to join our team.",
     "designJob1Location": "Boston, MA",
     "designJob1Type": "Full Time",
-    "designJob1Compensation": "$80k - 100k",
+    "designJob1Compensation": "$90k - 110k",
     "designJob2Category": "Design",
     "designJob2Title": "UX Researcher",
     "designJob2Description": "Help us understand our users and shape product strategy.",
-    "designJob2Location": "Remote",
+    "designJob2Location": "Boston, MA",
     "designJob2Type": "Full Time",
-    "designJob2Compensation": "$90k - 110k",
+    "designJob2Compensation": "$80k - 100k",
     "softwareDevelopmentTitle": "Software Development",
     "softwareDevelopmentDescription": "Open positions in our software team.",
     "softwareJob1Category": "Software",
@@ -305,7 +305,7 @@
     "softwareJob2Category": "Software",
     "softwareJob2Title": "AI/ML Engineer",
     "softwareJob2Description": "Develop and deploy machine learning models for inventory analysis.",
-    "softwareJob2Location": "Remote",
+    "softwareJob2Location": "Boston, MA",
     "softwareJob2Type": "Full Time",
     "softwareJob2Compensation": "$130k - 160k",
     "otherTitle": "Other",
@@ -315,13 +315,13 @@
     "otherJob1Description": "Drive our online presence and customer acquisition strategies.",
     "otherJob1Location": "Boston, MA",
     "otherJob1Type": "Full Time",
-    "otherJob1Compensation": "$90k - 110k",
+    "otherJob1Compensation": "$75k - 95k",
     "otherJob2Category": "Customer Success",
     "otherJob2Title": "Customer Success",
     "otherJob2Description": "Ensure our clients achieve maximum value from Lexos.",
-    "otherJob2Location": "Remote",
+    "otherJob2Location": "Boston, MA",
     "otherJob2Type": "Full Time",
-    "otherJob2Compensation": "$75k - 95k"
+    "otherJob2Compensation": "$90k - 110k"
   },
   "ChangelogHero": {
     "versionText": "v 1.0.2",
@@ -435,9 +435,9 @@
   },
   "DemoHero": {
     "badgeText": "Calendly",
+    "imageAlt": "Hero background",
     "title": "Schedule Product Demo",
-    "description": "Meet with the Lexos team to go over how the product works.",
-    "imageAlt": "Hero background"
+    "description": "Meet with the Lexos team to go over how the product works."
   },
   "FaqsHero": {
     "badgeText": "FAQs",
@@ -657,5 +657,16 @@
     "stillHaveQuestionsTitle": "Still have questions?",
     "stillHaveQuestionsDescription": "We understand. Let’s get in touch directly with our team, then.",
     "contactUsButton": "Contact Us"
+  },
+  "CustomSolutionsHero": {
+    "badgeText": "Calendly",
+    "imageAlt": "Hero background",
+    "title": "Custom Solutions",
+    "desription": "Custom tailored solutions to meet your unique business needs. Whether you require specialized software, integration with existing systems."
+  },
+  "Contact": {
+    "title": "For More Information",
+    "description": "Send us an email for more information",
+    "buttonText": "Contact Us"
   }
 }

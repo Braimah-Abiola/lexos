@@ -49,7 +49,7 @@ const CareersHero = () => {
                     </motion.span>
                     <motion.h1
                         variants={itemVariants}
-                        className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] px-4 md:px-0 font-bold text-center"
+                        className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] md:max-w-[20ch] px-4 md:px-0 font-bold text-center"
                         dangerouslySetInnerHTML={{ __html: t.raw("title") }}
                     />
                     <motion.p
