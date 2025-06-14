@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 const PricingHero = () => {
     const t = useTranslations("Pricing");
     return (
-        <section className=" min-h-screen">
+        <section className=" h-fit min-h-screen">
             <Wrapper className="px-2 md:px-6 w-full h-full">
                 <div className=" h-full w-full relative flex flex-col items-center pt-20">
                     <span className=" bg-white text-primary rounded-full pl-2 py-1.5 pr-3 inline-flex items-center gap-2">

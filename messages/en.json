@@ -19,7 +19,7 @@
     "feature4Description": "Assist your customer on a live call as they use Lexos.",
     "updateTitle": "We’ve just released a new update",
     "updateDescription": "Faster processing, enhanced accuracy, and expanded item recognition are now even more powerful with our new QR code implementation from desktop to phone.",
-    "updateVersionButton": "Version 1.0.2",
+    "updateVersionButton": "Version 2.1.9",
     "qrUpdateAlt": "QR Code update",
     "unlockFutureTitle": "Unlock the Future of Inventory Management",
     "unlockFutureDescription": "Photos become itemized inventories with weight and volume, instantly syncing to your CRM. Experience unmatched accuracy and efficiency.",
@@ -324,7 +324,7 @@
     "otherJob2Compensation": "$90k - 110k"
   },
   "ChangelogHero": {
-    "versionText": "v 1.0.2",
+    "versionText": "v 2.1.9",
     "featureHighlight": "With QR Code Implementation",
     "titlePrefix": "Product",
     "title": "Changelog",

@@ -27,7 +27,7 @@ const ChangelogHero = () => {
                         {t("description")}
                     </p>
                     <aside className=" inline-flex gap-4 items-center mt-4 z-50">
-                        <Link href="/demo">
+                        <Link href="/login">
                             <Button>{t("getStartedButton")}</Button>
                         </Link>
                         <Link href="/demo">

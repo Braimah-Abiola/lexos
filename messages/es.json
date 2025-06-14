@@ -19,7 +19,7 @@
     "feature4Description": "Asiste a tu cliente en una llamada en vivo mientras usa Lexos.",
     "updateTitle": "Acabamos de lanzar una nueva actualización",
     "updateDescription": "Procesamiento más rápido, precisión mejorada y reconocimiento ampliado de artículos ahora son aún más potentes con nuestra nueva implementación de códigos QR de escritorio a teléfono.",
-    "updateVersionButton": "Versión 1.0.2",
+    "updateVersionButton": "Versión 2.1.9",
     "qrUpdateAlt": "Actualización de código QR",
     "unlockFutureTitle": "Desbloquea el Futuro de la Gestión de Inventarios",
     "unlockFutureDescription": "Las fotos se convierten en inventarios detallados con peso y volumen, sincronizándose instantáneamente con tu CRM. Experimenta una precisión y eficiencia inigualables.",
@@ -324,7 +324,7 @@
     "otherJob2Compensation": "$90k - 110k"
   },
   "ChangelogHero": {
-    "versionText": "v 1.0.2",
+    "versionText": "v 2.1.9",
     "featureHighlight": "Con Implementación de Código QR",
     "titlePrefix": "Producto",
     "title": "Registro de Cambios",

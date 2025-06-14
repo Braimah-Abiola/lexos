@@ -32,16 +32,16 @@ export function NavGroup() {
                             <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("features")}</span>
                                 <div>
-                                    <ListItem href="/" title={t("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/" title={t("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
                                         {t("feature1Description")}
                                     </ListItem>
-                                    <ListItem href="/" title={t("feature2Title")} icon="/assets/feature-2.svg" iconActive="/assets/feature-2-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/" title={t("feature2Title")} icon="/assets/feature-2.svg" iconActive="/assets/feature-2-active.svg">
                                         {t("feature2Description")}
                                     </ListItem>
-                                    <ListItem href="/" title={t("feature3Title")} icon="/assets/feature-3.svg" iconActive="/assets/feature-3-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/" title={t("feature3Title")} icon="/assets/feature-3.svg" iconActive="/assets/feature-3-active.svg">
                                         {t("feature3Description")}
                                     </ListItem>
-                                    <ListItem href="/" title={t("feature4Title")} icon="/assets/feature-4.svg" iconActive="/assets/feature-4-active.svg">
+                                    <ListItem comingSoon={true} hiring={false} href="/" title={t("feature4Title")} icon="/assets/feature-4.svg" iconActive="/assets/feature-4-active.svg">
                                         {t("feature4Description")}
                                     </ListItem>
                                 </div>
@@ -55,9 +55,12 @@ export function NavGroup() {
                                     <div className=" relative w-full h-[12rem] my-3">
                                         <Image fill src="/assets/qr-update.png" className=" rounded-lg object-cover" alt={t("qrUpdateAlt")} quality={100} />
                                     </div>
-                                    <Link href="/changelog">
-                                        <Button className=" px-0 md:px-0 has-[>svg]:pl-0 has-[>svg]:pr-0" variant="ghost">{t("updateVersionButton")} <ArrowUpRight /></Button>
-                                    </Link>
+
+                                    <NavigationMenuLink className=" w-fit data-[active=true]:focus:bg-transparent data-[active=true]:hover:bg-transparent group data-[active=true]:bg-transparent data-[active=true]:text-primary hover:bg-transparent hover:text-primary focus:bg-transparent focus:text-primary" asChild>
+                                        <Link href="/changelog">
+                                            <Button className=" px-0 md:px-0 has-[>svg]:pl-0 has-[>svg]:pr-0" variant="ghost">{t("updateVersionButton")} <ArrowUpRight className=" group-hover:text-primary" /></Button>
+                                        </Link>
+                                    </NavigationMenuLink>
                                 </div>
                             </li>
                             <div className=" col-span-2 mb-1">
@@ -72,9 +75,11 @@ export function NavGroup() {
                                             })}
                                         </p>
                                     </div>
-                                    <Link href="/demo">
-                                        <Button>{t("getDemoButton")}</Button>
-                                    </Link>
+                                    <NavigationMenuLink className="data-[active=true]:focus:bg-transparent data-[active=true]:hover:bg-transparent data-[active=true]:bg-transparent data-[active=true]:text-transparent hover:bg-transparent hover:text-transparent focus:bg-transparent focus:text-transparent" asChild>
+                                        <Link href="/demo">
+                                            <Button>{t("getDemoButton")}</Button>
+                                        </Link>
+                                    </NavigationMenuLink>
                                 </div>
                             </div>
                         </ul>
@@ -92,13 +97,13 @@ export function NavGroup() {
                             <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("verticals")}</span>
                                 <div>
-                                    <ListItem href="/use-cases/moving-companies" title={t("useCase1Title")} icon="/assets/use-case-1.svg" iconActive="/assets/use-case-1-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/use-cases/moving-companies" title={t("useCase1Title")} icon="/assets/use-case-1.svg" iconActive="/assets/use-case-1-active.svg">
                                         {t("useCase1Description")}
                                     </ListItem>
-                                    <ListItem href="/use-cases/junk-removers" title={t("useCase2Title")} icon="/assets/use-case-2.svg" iconActive="/assets/use-case-2-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/use-cases/junk-removers" title={t("useCase2Title")} icon="/assets/use-case-2.svg" iconActive="/assets/use-case-2-active.svg">
                                         {t("useCase2Description")}
                                     </ListItem>
-                                    <ListItem href="/use-cases/import-management" title={t("useCase3Title")} icon="/assets/use-case-3.svg" iconActive="/assets/use-case-3-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/use-cases/import-management" title={t("useCase3Title")} icon="/assets/use-case-3.svg" iconActive="/assets/use-case-3-active.svg">
                                         {t("useCase3Description")}
                                     </ListItem>
                                 </div>
@@ -115,9 +120,11 @@ export function NavGroup() {
                                     <p className=" text-sm">
                                         {t("customerStoryDescription")}
                                     </p>
-                                    <Link href="/customer-stories/online-movers-miami">
-                                        <Button className=" text-primary px-0 md:px-0 has-[>svg]:pl-0 has-[>svg]:pr-0" variant="ghost">{t("readCustomerStoryButton")}<ArrowRight /></Button>
-                                    </Link>
+                                    <NavigationMenuLink className=" w-fit data-[active=true]:focus:bg-transparent data-[active=true]:hover:bg-transparent group data-[active=true]:bg-transparent data-[active=true]:text-primary hover:bg-transparent hover:text-primary focus:bg-transparent focus:text-primary" asChild>
+                                        <Link href="/customer-stories/online-movers-miami">
+                                            <Button className=" text-primary px-0 md:px-0 has-[>svg]:pl-0 has-[>svg]:pr-0" variant="ghost">{t("readCustomerStoryButton")}<ArrowRight className=" group-hover:text-primary" /></Button>
+                                        </Link>
+                                    </NavigationMenuLink>
                                 </div>
                             </li>
                             <div className=" col-span-2 mb-1">
@@ -128,9 +135,11 @@ export function NavGroup() {
                                         <h6 className=" text-[15px] font-medium">{t("tailoredSolutionTitle")}</h6>
                                         <p className=" text-sm text-foreground opacity-70">{t("tailoredSolutionDescription")}</p>
                                     </div>
-                                    <Link href="/demo">
-                                        <Button>{t("talkToSalesButton")}</Button>
-                                    </Link>
+                                    <NavigationMenuLink className="data-[active=true]:focus:bg-transparent data-[active=true]:hover:bg-transparent data-[active=true]:bg-transparent data-[active=true]:text-transparent hover:bg-transparent hover:text-transparent focus:bg-transparent focus:text-transparent" asChild>
+                                        <Link href="/custom-solutions">
+                                            <Button>{t("talkToSalesButton")}</Button>
+                                        </Link>
+                                    </NavigationMenuLink>
                                 </div>
                             </div>
                         </ul>
@@ -148,13 +157,13 @@ export function NavGroup() {
                             <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("resources")}</span>
                                 <div>
-                                    <ListItem href="/customer-stories" title={t("resource1Title")} icon="/assets/resource-1.svg" iconActive="/assets/resource-1-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/customer-stories" title={t("resource1Title")} icon="/assets/resource-1.svg" iconActive="/assets/resource-1-active.svg">
                                         {t("resource1Description")}
                                     </ListItem>
-                                    <ListItem href="/demo" title={t("resource2Title")} icon="/assets/resource-2.svg" iconActive="/assets/resource-2-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/demo" title={t("resource2Title")} icon="/assets/resource-2.svg" iconActive="/assets/resource-2-active.svg">
                                         {t("resource2Description")}
                                     </ListItem>
-                                    <ListItem href="/faqs" title={t("resource3Title")} icon="/assets/resource-3.svg" iconActive="/assets/resource-3-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/faqs" title={t("resource3Title")} icon="/assets/resource-3.svg" iconActive="/assets/resource-3-active.svg">
                                         {t("resource3Description")}
                                     </ListItem>
                                 </div>
@@ -164,13 +173,13 @@ export function NavGroup() {
                             <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("company")}</span>
                                 <div>
-                                    <ListItem href="/careers" title={t("resource4Title")} icon="/assets/resource-4.svg" iconActive="/assets/resource-4-active.svg">
+                                    <ListItem comingSoon={false} hiring={true} href="/careers" title={t("resource4Title")} icon="/assets/resource-4.svg" iconActive="/assets/resource-4-active.svg">
                                         {t("resource4Description")}
                                     </ListItem>
-                                    <ListItem href="/legals/privacy" title={t("resource5Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/legals/privacy" title={t("resource5Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                         {t("resource5Description")}
                                     </ListItem>
-                                    <ListItem href="/custom-solutions" title={t("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/custom-solutions" title={t("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
                                         {t("resource6Description")}
                                     </ListItem>
                                 </div>
@@ -190,8 +199,10 @@ function ListItem({
     href,
     icon,
     iconActive,
+    comingSoon,
+    hiring,
     ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string; icon: string; iconActive: string; title: string; children: React.ReactNode }): React.JSX.Element {
+}: React.ComponentPropsWithoutRef<"li"> & { href: string; icon: string; iconActive: string; title: string; comingSoon: boolean; hiring: boolean; children: React.ReactNode }): React.JSX.Element {
     const [isHovered, setIsHovered] = React.useState(false);
     return (
         <li
@@ -208,7 +219,7 @@ function ListItem({
                         <Image priority width={26} height={26} src={isHovered ? iconActive : icon} alt={title || "Icon"} />
                     </div>
                     <div className=" ml-4">
-                        <div className="text-[15px] leading-none font-medium">{title}</div>
+                        <div className="text-[15px] leading-transparent font-medium">{title} {comingSoon && (<span className=" uppercase text-primary bg-primary/10 border border-primary rounded-full text-xs px-1.5 ml-1 py-0.5">Coming Soon</span>)} {hiring && (<span className="  uppercase text-primary bg-primary/10 border border-primary rounded-full text-xs px-1.5 ml-1 py-0.5">We&apos;re Hiring</span>)}</div>
                         <p className="text-muted-foreground line-clamp-3 mt-1 text-sm leading-snug">
                             {children}
                         </p>

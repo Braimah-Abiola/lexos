@@ -69,12 +69,16 @@ const Navigation = () => {
                         <Separator orientation="vertical" className="h-full bg-black opacity-20" />
                     </span>
                     <div className=" inline-flex gap-2 z-50 mr-2">
-                        <Button variant="ghost">
-                            {t("signIn")}
-                        </Button>
-                        <Button className="has-[>svg]:pr-5 md:has-[>svg]:pr-3">
-                            {t("join")}
-                            <ArrowUpRight className=" hidden md:block" /></Button>
+                        <Link href="/login">
+                            <Button variant="ghost">
+                                {t("signIn")}
+                            </Button>
+                        </Link>
+                        <Link href="/demo">
+                            <Button className="has-[>svg]:pr-5 md:has-[>svg]:pr-3">
+                                {t("join")}
+                                <ArrowUpRight className=" hidden md:block" /></Button>
+                        </Link>
                     </div>
                     <MobileNavigation />
                 </aside>

@@ -19,10 +19,11 @@ export function AllChangelogs() {
           </p>
           <div className=" w-full h-auto aspect-video md:aspect-auto md:h-[28rem] relative">
             <Image
+              quality={40}
               src="/assets/qr-update.png"
               alt={t("image1Alt")}
               fill
-              className="rounded-xl object-cover h-20 md:h-44 lg:h-60 w-full"
+              className="rounded-xl object-cover"
             />
           </div>
         </div>
@@ -40,10 +41,11 @@ export function AllChangelogs() {
           </p>
           <div className=" w-full h-auto aspect-video md:aspect-auto md:h-[28rem] relative">
             <Image
+              quality={40}
               src="/assets/update-2.png"
               alt={t("image2Alt")}
               fill
-              className="rounded-xl object-cover border border-black/20 h-20 md:h-44 lg:h-60 w-full"
+              className="rounded-xl object-cover border border-black/20"
             />
           </div>
         </div>
@@ -61,7 +63,7 @@ export function AllChangelogs() {
     },
   ];
   return (
-    <Wrapper className="w-full -mt-[32rem] md:-mt-[48rem] mb-40">
+    <Wrapper className="w-full -mt-[65dvh] md:-mt-[76vh] mb-40">
       <div className=" max-w-6xl mx-auto">
         <Timeline data={data} />
       </div>
