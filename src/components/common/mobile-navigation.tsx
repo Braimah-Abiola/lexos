@@ -231,7 +231,7 @@ const MobileNavigation = () => {
                                   <ListItem onClick={closeMobileNav} href="/legals/privacy" title="Legals" icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                     View our terms, privacy policy, and other legal info.
                                   </ListItem>
-                                  <ListItem onClick={closeMobileNav} href="/support" title="Support" icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
+                                  <ListItem onClick={closeMobileNav} href="/custom-solutions" title="Support" icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
                                     Need help or want to learn more? Reach out to our support team.
                                   </ListItem>
                                 </div>
