@@ -19,7 +19,7 @@ const MovingCompanies = () => {
                         <Stars />
                         <p>{t("problemBadgeText")}</p>
                     </span>
-                    <h2 className="mt-2 font-manrope text-5xl font-bold text-center">{t("challengesTitle")}</h2>
+                    <h2 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center">{t("challengesTitle")}</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-10">
                         <ProblemCard title={t("challenge1Title")} description={t("challenge1Description")} />
@@ -35,7 +35,7 @@ const MovingCompanies = () => {
                         <CircleCheck />
                         <p>{t("solutionBadgeText")}</p>
                     </span>
-                    <h2 className="mt-2 font-manrope text-5xl font-bold text-center" dangerouslySetInnerHTML={{ __html: t.raw("solutionTitle") }}></h2>
+                    <h2 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center" dangerouslySetInnerHTML={{ __html: t.raw("solutionTitle") }}></h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-10">
                         <SolutionCard title={t("solution1Title")} description={t("solution1Description")} />
@@ -61,7 +61,7 @@ const MovingCompanies = () => {
                     <div className="flex flex-col gap-4">
                         <div className=" flex flex-col gap-8 border-l pl-8">
                             <p className=" font-medium text-foreground text-lg">{t("stat1Title")}</p>
-                            <h6 className=" font-semibold text-primary text-5xl">{t("stat1Value")}</h6>
+                            <h6 className=" font-semibold text-primary text-4xl md text-4xl:md:text-5xl">{t("stat1Value")}</h6>
                         </div>
                         <span className="text-[15px] text-foreground opacity-70" dangerouslySetInnerHTML={{ __html: t.raw("stat1Description") }}></span>
                     </div>
@@ -69,7 +69,7 @@ const MovingCompanies = () => {
                     <div className="flex flex-col gap-4">
                         <div className=" flex flex-col gap-8 border-l pl-8">
                             <p className=" font-medium text-foreground text-lg">{t("stat2Title")}</p>
-                            <h6 className=" font-semibold text-primary text-5xl">{t("stat2Value")}</h6>
+                            <h6 className=" font-semibold text-primary text-4xl md text-4xl:md:text-5xl">{t("stat2Value")}</h6>
                         </div>
                         <span className="text-[15px] text-foreground opacity-70" dangerouslySetInnerHTML={{ __html: t.raw("stat2Description") }}></span>
                     </div>
@@ -77,7 +77,7 @@ const MovingCompanies = () => {
                     <div className="flex flex-col gap-4">
                         <div className=" flex flex-col gap-8 border-l pl-8">
                             <p className=" font-medium text-foreground text-lg">{t("stat3Title")}</p>
-                            <h6 className=" font-semibold text-primary text-5xl">{t("stat3Value")}</h6>
+                            <h6 className=" font-semibold text-primary text-4xl md text-4xl:md:text-5xl">{t("stat3Value")}</h6>
                         </div>
                         <span className="text-[15px] text-foreground opacity-70" dangerouslySetInnerHTML={{ __html: t.raw("stat3Description") }}></span>
                     </div>

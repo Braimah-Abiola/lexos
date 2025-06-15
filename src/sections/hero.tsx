@@ -70,14 +70,15 @@ const Hero = () => {
                     variants={heroContentVariants}
                     className=" pt-12 z-20 w-full flex flex-col items-center bg-gradient-to-b rounded-xl border border-input border-t-0 overflow-hidden from-white to-primary h-full relative"
                 >
-                    <Link href="/customer-stories/online-movers-miami"></Link>
-                    <motion.div variants={itemVariants} className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
-                        <Image width={24} height={24} src="/assets/miami.png" alt={t("onlineMoversMiamiAlt")} />
-                        <span className=" text-sm flex gap-1">
-                            <span className=" hidden md:inline-flex">{t("onlineMoversMiamiText")}</span> {t("aiTransformsInventoryText")}
-                        </span>
-                        <ArrowRight className=" size-4" />
-                    </motion.div>
+                    <Link href="/customer-stories/online-movers-miami">
+                        <motion.div variants={itemVariants} className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
+                            <Image width={24} height={24} src="/assets/miami.png" alt={t("onlineMoversMiamiAlt")} />
+                            <span className=" text-sm flex gap-1">
+                                <span className=" hidden md:inline-flex">{t("onlineMoversMiamiText")}</span> {t("aiTransformsInventoryText")}
+                            </span>
+                            <ArrowRight className=" size-4" />
+                        </motion.div>
+                    </Link>
                     <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center px-4 md:px-0">
                         {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "}
                         <span className=" relative md:ml-2 md:pl-2 pr-2">

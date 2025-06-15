@@ -100,14 +100,17 @@ const Footer = () => {
                                 <Link href="/changelog">
                                     <p>{t("resourceLink1")}</p>
                                 </Link>
-                                <Link href="/demo">
+                                <Link href="/login">
                                     <p>{t("resourceLink2")}</p>
                                 </Link>
-                                <Link href="">
+                                <Link href="/demo">
                                     <p>{t("resourceLink3")}</p>
                                 </Link>
                                 <Link href="tel:+6174987863">
                                     <p>{t("resourceLink4")}</p>
+                                </Link>
+                                <Link href="mailto:info@lexosmove.com">
+                                    <p>info@lexosmove.com</p>
                                 </Link>
                             </div>
                         </div>
@@ -120,9 +123,6 @@ const Footer = () => {
                                 </Link>
                                 <Link href="/legals/terms">
                                     <p>{t("legalLink2")}</p>
-                                </Link>
-                                <Link href="/sitemap">
-                                    <p>{t("legalLink3")}</p>
                                 </Link>
                             </div>
                         </div>
@@ -153,15 +153,21 @@ const Footer = () => {
 
                 <div className=" w-full flex items-end justify-between md:mt-28">
                     <div className="hidden md:flex md:flex-wrap gap-4">
-                        <div className=" h-11 w-11 flex items-center justify-center aspect-square rounded-full bg-white text-primary">
-                            <FaLinkedin size={20} />
-                        </div>
-                        <div className=" h-11 w-11 flex items-center justify-center aspect-square rounded-full bg-white text-primary">
-                            <FaInstagram size={20} />
-                        </div>
-                        <div className=" h-11 w-11 flex items-center justify-center aspect-square rounded-full bg-white text-primary">
-                            <FaFacebook size={20} />
-                        </div>
+                        <Link href="https://www.linkedin.com/company/lexosmove/">
+                            <div className=" h-11 w-11 flex items-center justify-center aspect-square rounded-full bg-white text-primary">
+                                <FaLinkedin size={20} />
+                            </div>
+                        </Link>
+                        <Link href="https://www.instagram.com/lexosmove">
+                            <div className=" h-11 w-11 flex items-center justify-center aspect-square rounded-full bg-white text-primary">
+                                <FaInstagram size={20} />
+                            </div>
+                        </Link>
+                        <Link href="https://www.facebook.com/profile.php?id=61566701220718">
+                            <div className=" h-11 w-11 flex items-center justify-center aspect-square rounded-full bg-white text-primary">
+                                <FaFacebook size={20} />
+                            </div>
+                        </Link>
                     </div>
 
                     <div className="flex flex-col text-white">
