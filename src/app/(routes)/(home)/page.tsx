@@ -1,4 +1,4 @@
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import CustomerStories from "@/sections/customer-stories";
 import Faq from "@/sections/faq";
 import Hero from "@/sections/hero";
@@ -17,7 +17,7 @@ const HomePage = () => {
             <CustomerStories />
             <Pricing />
             <Faq />
-            <Cta />
+            <Cta2 />
         </main>
     );
 }

@@ -1,9 +1,9 @@
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 
 const TermsPage = () => {
     return (
         <div>
-            <Cta />
+            <Cta2 />
         </div>
     );
 }

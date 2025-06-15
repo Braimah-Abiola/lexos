@@ -1,3 +1,4 @@
+import CustomerStoryCard from "@/components/common/customer-story-card";
 import Wrapper from "@/components/common/wrapper";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -6,8 +7,10 @@ import Link from "next/link";
 
 const CustomerStoryHero = () => {
     const t = useTranslations("CustomerStoriesHero");
+    const t2 = useTranslations("CustomerStoriesMarquee");
+
     return (
-        <section className=" w-full h-screen">
+        <section className=" w-full h-fit md:h-screen min-h-screen">
             <Wrapper className="px-2 md:px-6 w-full h-full">
                 <div className=" h-full w-full relative flex flex-col items-center pt-20 md:pt-32">
                     <Link href="/customer-stories/online-movers-miami">
@@ -45,15 +48,55 @@ const CustomerStoryHero = () => {
 
                         <div className="flex flex-col gap-2 items-center">
                             <div className=" inline-flex items-center -space-x-3">
-                                <Image width={40} height={40} src="/assets/company-1.png" className="" quality={100} alt={t("company1Alt")} />
-                                <Image width={40} height={40} src="/assets/company-2.png" className="" quality={100} alt={t("company2Alt")} />
-                                <Image width={40} height={40} src="/assets/company-3.png" className="" quality={100} alt={t("company3Alt")} />
+                                <Image width={40} height={40} src="/assets/featured-1.png" className="" quality={100} alt="Featured company" />
+                                <Image width={40} height={40} src="/assets/featured-2.png" className="" quality={100} alt="Featured company" />
+                                <Image width={40} height={40} src="/assets/featured-3.png" className="" quality={100} alt="Featured company" />
+                                <Image width={40} height={40} src="/assets/featured-4.png" className="" quality={100} alt="Featured company" />
+                                <Image width={40} height={40} src="/assets/featured-5.png" className="" quality={100} alt="Featured company" />
 
                             </div>
                             <span className=" text-foreground opacity-70">{t("stat3Label")}</span>
 
                         </div>
                     </div>
+                    <Wrapper className=" md:px-6 mt-8 flex flex-col gap-4 items-center md:hidden">
+                        <CustomerStoryCard
+                            logo="/assets/story-1.png"
+                            detailedCase
+                            name={t2("story1Name")}
+                            picture="/assets/customer-1.png"
+                            position={t2("story1Position")}
+                            review={t2("story1Review")}
+                            url="/customer-stories/online-movers-miami"
+                        />
+                        <CustomerStoryCard
+                            logo="/assets/story-2.png"
+                            detailedCase={false}
+                            name={t2("story2Name")}
+                            picture="/assets/customer-2.png"
+                            position={t2("story2Position")}
+                            review={t2("story2Review")}
+                            url="/"
+                        />
+                        <CustomerStoryCard
+                            logo="/assets/story-3.png"
+                            detailedCase={false}
+                            name={t2("story3Name")}
+                            picture="/assets/customer-3.png"
+                            position={t2("story3Position")}
+                            review={t2("story3Review")}
+                            url="/"
+                        />
+                        <CustomerStoryCard
+                            logo="/assets/story-4.png"
+                            detailedCase={false}
+                            name={t2("story4Name")}
+                            picture="/assets/customer-4.png"
+                            position={t2("story4Position")}
+                            review={t2("story4Review")}
+                            url="/"
+                        />
+                    </Wrapper>
                     <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("heroBackgroundAlt")} />
                 </div>
             </Wrapper>

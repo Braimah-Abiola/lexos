@@ -1,7 +1,7 @@
 import ProblemCard from "@/components/common/problem-card";
 import SolutionCard from "@/components/common/solution-card";
 import Wrapper from "@/components/common/wrapper";
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import FaqImportManagement from "@/sections/faq-import-management";
 import UseCaseHero3 from "@/sections/use-case-hero-3";
 import { CircleCheck, Stars } from "lucide-react";
@@ -84,7 +84,7 @@ const ImportManagement = () => {
                 </div>
             </Wrapper>
             <FaqImportManagement />
-            <Cta />
+            <Cta2 />
         </div>
     );
 }

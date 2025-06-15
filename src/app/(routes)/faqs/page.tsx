@@ -1,5 +1,5 @@
 import AllFaq from "@/sections/all-faqs";
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import FaqsHero from "@/sections/faqs-hero";
 
 const Faqs = () => {
@@ -7,7 +7,7 @@ const Faqs = () => {
         <div>
             <FaqsHero />
             <AllFaq />
-            <Cta />
+            <Cta2 />
         </div>
     );
 }

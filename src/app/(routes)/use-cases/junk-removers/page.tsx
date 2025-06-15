@@ -1,12 +1,12 @@
 import ProblemCard from "@/components/common/problem-card";
 import SolutionCard from "@/components/common/solution-card";
 import Wrapper from "@/components/common/wrapper";
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import FaqJunkRemovers from "@/sections/faq-junk-removers";
 import UseCaseHero2 from "@/sections/use-case-hero-2";
 import { CircleCheck, Stars } from "lucide-react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const JunkRemovers = () => {
     const t = useTranslations("JunkRemovers");
@@ -84,7 +84,7 @@ const JunkRemovers = () => {
                 </div>
             </Wrapper>
             <FaqJunkRemovers />
-            <Cta />
+            <Cta2 />
         </div>
     );
 }

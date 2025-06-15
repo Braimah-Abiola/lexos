@@ -1,9 +1,9 @@
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import Faq from "@/sections/faq";
-import PricingHero from "@/sections/pricing-hero";
 import PriceComparison from "@/sections/price-comparison";
-import SocialProof from "@/sections/social-proof";
 import PricingCards from "@/sections/pricing-cards";
+import PricingHero from "@/sections/pricing-hero";
+import SocialProof from "@/sections/social-proof";
 
 const Pricing = () => {
     return (
@@ -15,7 +15,7 @@ const Pricing = () => {
             <PriceComparison />
             <SocialProof />
             <Faq />
-            <Cta />
+            <Cta2 />
         </main>
     );
 }

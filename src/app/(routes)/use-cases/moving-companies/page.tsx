@@ -1,12 +1,12 @@
 import ProblemCard from "@/components/common/problem-card";
 import SolutionCard from "@/components/common/solution-card";
 import Wrapper from "@/components/common/wrapper";
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import FaqMoving from "@/sections/faq-moving";
 import UseCaseHero1 from "@/sections/use-case-hero-1";
 import { CircleCheck, Stars } from "lucide-react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const MovingCompanies = () => {
     const t = useTranslations("MovingCompanies");
@@ -84,7 +84,7 @@ const MovingCompanies = () => {
                 </div>
             </Wrapper>
             <FaqMoving />
-            <Cta />
+            <Cta2 />
         </div>
     );
 }

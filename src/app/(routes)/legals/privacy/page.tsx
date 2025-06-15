@@ -1,5 +1,5 @@
 import Wrapper from "@/components/common/wrapper";
-import Cta from "@/sections/cta";
+import Cta2 from "@/sections/cta-2";
 import { File } from "lucide-react";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ const PrivacyPolicyPage = () => {
                 <Wrapper className="px-2 md:px-6 w-full h-full">
                     <div className=" h-full w-full relative flex flex-col items-center pt-20">
                         <span className=" bg-white text-primary rounded-full pl-2 py-1.5 pr-3 inline-flex items-center gap-2">
-                            <File  className=" size-5" />
+                            <File className=" size-5" />
                             <p className=" text-foreground">Legals</p>
                         </span>
                         <h1 className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center">
@@ -179,7 +179,7 @@ const PrivacyPolicyPage = () => {
 
                 </Wrapper>
             </section>
-            <Cta />
+            <Cta2 />
         </div>
     );
 }
