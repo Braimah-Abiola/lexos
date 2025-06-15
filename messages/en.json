@@ -52,8 +52,10 @@
     "company": "Company",
     "resource4Title": "Careers",
     "resource4Description": "Join our growing team & help us refine core platform.",
-    "resource5Title": "Legals",
-    "resource5Description": "View our terms, privacy policy, and other legal info.",
+    "resource5Title": "Privacy Policy",
+    "resource5Description": "View and read the Lexos privacy policy",
+    "resource7Title": "Terms & Conditions",
+    "resource7Description": "View and read the Lexos terms & conditions",
     "resource6Title": "Support",
     "resource6Description": "Need help or want to learn more? Reach out to our support team."
   },
@@ -65,7 +67,7 @@
     "mainHeadingPart2": "with",
     "aiTechnologyText": "AI technology",
     "subHeading": "Our AI transforms photos into inventories with weight and volume for each item, and syncs to your CRM in seconds.",
-    "subHeadingMobile": "Turn photos into complete inventories, synced to your CRM in seconds",
+    "subHeadingMobile": "Turn photos into complete inventories, synced to your CRM in seconds.",
     "getStartedButton": "Get Started Now",
     "bookDemoButton": "Book Demo",
     "videoPosterAlt": "Demo poster"
@@ -90,7 +92,7 @@
   "Statistics": {
     "badgeText": "Statistics",
     "title": "Our Impact by the Numbers",
-    "description": "Our proven AI technology is transforming inventory management, delivering results for businesses worldwide",
+    "description": "Our proven AI technology delivers results for businesses worldwide.",
     "caseStudiesButton": "Case Studies",
     "bookDemoButton": "Book Demo",
     "stat1Title": "Operational Cost Reduction",
@@ -649,7 +651,7 @@
     "badgeText": "Calendly",
     "imageAlt": "Hero background",
     "title": "Custom Solutions",
-    "desription": "Custom tailored solutions to meet your unique business needs. Whether you require specialized software, integration with existing systems."
+    "desription": "Tailored solutions to meet your unique business needs. Whether you require specialized software, integration with existing systems."
   },
   "Contact": {
     "title": "For More Information",

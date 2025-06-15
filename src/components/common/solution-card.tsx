@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const SolutionCard = ({ title, description }: { title: string; description: string; }) => {
+const SolutionCard = ({ title, description, id }: { title: string; description: string; id: string; }) => {
     return (
-        <div className=" w-full border bg-white hover:bg-accent rounded-2xl border-black/10 flex flex-col items-start p-6">
+        <div id={id} className=" w-full border bg-white hover:bg-accent rounded-2xl border-black/10 flex flex-col items-start p-6">
             <div className=" h-14 w-14 aspect-square rounded-xl border border-black/10 flex items-center justify-center">
                 <Image width={32} height={32} src="/assets/solution.svg" alt={title} />
             </div>

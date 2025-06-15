@@ -22,7 +22,7 @@ const CustomerStoryHero = () => {
                     </Link>
                     <h1 className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center">
                         {t("titlePart1")} <br className=" hidden md:block" />
-                        <span className=" relative md:ml-2 pl-2 pr-2">
+                        <span className=" relative md:ml-2 md:pl-2 pr-2">
                             {t("titlePart2")}
                             <div className=" bg-primary/40 border-2 border-primary -z-[1] absolute inset-0 hidden md:block">
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -left-[5px]" />
@@ -59,46 +59,47 @@ const CustomerStoryHero = () => {
 
                         </div>
                     </div>
-                    <Wrapper className=" md:px-6 mt-8 flex flex-col gap-4 items-center md:hidden">
-                        <CustomerStoryCard
-                            logo="/assets/story-1.png"
-                            detailedCase
-                            name={t2("story1Name")}
-                            picture="/assets/customer-1.png"
-                            position={t2("story1Position")}
-                            review={t2("story1Review")}
-                            url="/customer-stories/online-movers-miami"
-                        />
-                        <CustomerStoryCard
-                            logo="/assets/story-2.png"
-                            detailedCase={false}
-                            name={t2("story2Name")}
-                            picture="/assets/customer-2.png"
-                            position={t2("story2Position")}
-                            review={t2("story2Review")}
-                            url="/"
-                        />
-                        <CustomerStoryCard
-                            logo="/assets/story-3.png"
-                            detailedCase={false}
-                            name={t2("story3Name")}
-                            picture="/assets/customer-3.png"
-                            position={t2("story3Position")}
-                            review={t2("story3Review")}
-                            url="/"
-                        />
-                        <CustomerStoryCard
-                            logo="/assets/story-4.png"
-                            detailedCase={false}
-                            name={t2("story4Name")}
-                            picture="/assets/customer-4.png"
-                            position={t2("story4Position")}
-                            review={t2("story4Review")}
-                            url="/"
-                        />
-                    </Wrapper>
+
                     <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("heroBackgroundAlt")} />
                 </div>
+            </Wrapper>
+            <Wrapper className=" md:px-6 mt-8 flex flex-col gap-4 items-center md:hidden">
+                <CustomerStoryCard
+                    logo="/assets/story-1.png"
+                    detailedCase
+                    name={t2("story1Name")}
+                    picture="/assets/customer-1.png"
+                    position={t2("story1Position")}
+                    review={t2("story1Review")}
+                    url="/customer-stories/online-movers-miami"
+                />
+                <CustomerStoryCard
+                    logo="/assets/story-2.png"
+                    detailedCase={false}
+                    name={t2("story2Name")}
+                    picture="/assets/customer-2.png"
+                    position={t2("story2Position")}
+                    review={t2("story2Review")}
+                    url="/"
+                />
+                <CustomerStoryCard
+                    logo="/assets/story-3.png"
+                    detailedCase={false}
+                    name={t2("story3Name")}
+                    picture="/assets/customer-3.png"
+                    position={t2("story3Position")}
+                    review={t2("story3Review")}
+                    url="/"
+                />
+                <CustomerStoryCard
+                    logo="/assets/story-4.png"
+                    detailedCase={false}
+                    name={t2("story4Name")}
+                    picture="/assets/customer-4.png"
+                    position={t2("story4Position")}
+                    review={t2("story4Review")}
+                    url="/"
+                />
             </Wrapper>
         </section>
     );

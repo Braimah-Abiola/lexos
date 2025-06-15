@@ -22,9 +22,9 @@ const MovingCompanies = () => {
                     <h2 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center">{t("challengesTitle")}</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-10">
-                        <ProblemCard title={t("challenge1Title")} description={t("challenge1Description")} />
-                        <ProblemCard title={t("challenge2Title")} description={t("challenge2Description")} />
-                        <ProblemCard title={t("challenge3Title")} description={t("challenge3Description")} />
+                        <ProblemCard href="#solution-1" title={t("challenge1Title")} description={t("challenge1Description")} />
+                        <ProblemCard href="#solution-2" title={t("challenge2Title")} description={t("challenge2Description")} />
+                        <ProblemCard href="#solution-3" title={t("challenge3Title")} description={t("challenge3Description")} />
                     </div>
                 </div>
             </Wrapper>
@@ -38,9 +38,9 @@ const MovingCompanies = () => {
                     <h2 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center" dangerouslySetInnerHTML={{ __html: t.raw("solutionTitle") }}></h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-10">
-                        <SolutionCard title={t("solution1Title")} description={t("solution1Description")} />
-                        <SolutionCard title={t("solution2Title")} description={t("solution2Description")} />
-                        <SolutionCard title={t("solution3Title")} description={t("solution3Description")} />
+                        <SolutionCard id="solution-1" title={t("solution1Title")} description={t("solution1Description")} />
+                        <SolutionCard id="solution-2" title={t("solution2Title")} description={t("solution2Description")} />
+                        <SolutionCard id="solution-3" title={t("solution3Title")} description={t("solution3Description")} />
                     </div>
                 </div>
             </Wrapper>

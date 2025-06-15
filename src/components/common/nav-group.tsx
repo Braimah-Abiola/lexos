@@ -179,6 +179,9 @@ export function NavGroup() {
                                     <ListItem comingSoon={false} hiring={false} href="/legals/privacy" title={t("resource5Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                         {t("resource5Description")}
                                     </ListItem>
+                                    <ListItem comingSoon={false} hiring={false} href="/legals/terms" title={t("resource7Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
+                                        {t("resource7Description")}
+                                    </ListItem>
                                     <ListItem comingSoon={false} hiring={false} href="/custom-solutions" title={t("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
                                         {t("resource6Description")}
                                     </ListItem>

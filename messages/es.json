@@ -54,6 +54,8 @@
     "resource4Description": "Únete a nuestro equipo en crecimiento y ayúdanos a refinar la plataforma central.",
     "resource5Title": "Legales",
     "resource5Description": "Consulta nuestros términos, política de privacidad y otra información legal.",
+    "resource7Title": "Términos y Condiciones",
+    "resource7Description": "Ver y leer los términos y condiciones de Lexos",
     "resource6Title": "Soporte",
     "resource6Description": "¿Necesitas ayuda o quieres saber más? Contacta a nuestro equipo de soporte."
   },
@@ -65,7 +67,7 @@
     "mainHeadingPart2": "con",
     "aiTechnologyText": "tecnología de IA",
     "subHeading": "Nuestra IA transforma fotos en inventarios con peso y volumen para cada artículo, y se sincroniza con tu CRM en segundos.",
-    "subHeadingMobile": "Convierte fotos en inventarios completos, sincronizados con tu CRM en segundos",
+    "subHeadingMobile": "Convierte fotos en inventarios completos, sincronizados con tu CRM en segundos.",
     "getStartedButton": "Comenzar Ahora",
     "bookDemoButton": "Reservar Demo",
     "videoPosterAlt": "Póster de demostración"
@@ -90,7 +92,7 @@
   "Statistics": {
     "badgeText": "Estadísticas",
     "title": "Nuestro Impacto en Números",
-    "description": "Nuestra probada tecnología de IA está transformando la gestión de inventarios, ofreciendo resultados tangibles para empresas de todo el mundo.",
+    "description": "Nuestra tecnología de IA probada ofrece resultados para empresas de todo el mundo.",
     "caseStudiesButton": "Casos de Estudio",
     "bookDemoButton": "Reservar Demo",
     "stat1Title": "Reducción de Costos Operativos",
@@ -649,7 +651,7 @@
     "badgeText": "Calendly",
     "imageAlt": "Fondo de héroe",
     "title": "Soluciones Personalizadas",
-    "desription": "Soluciones personalizadas para satisfacer las necesidades únicas de su negocio. Ya sea que necesite software especializado o integración con sistemas existentes."
+    "desription": "Soluciones para satisfacer las necesidades únicas de su negocio. Ya sea que necesite software especializado o integración con sistemas existentes."
   },
   "Contact": {
     "title": "Para Más Información",

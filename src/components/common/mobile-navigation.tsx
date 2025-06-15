@@ -234,6 +234,9 @@ const MobileNavigation = () => {
                                   <ListItem onClick={closeMobileNav} href="/legals/privacy" title={th("resource5Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                     {th("resource5Description")}
                                   </ListItem>
+                                  <ListItem onClick={closeMobileNav} href="/legals/terms" title={th("resource7Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
+                                    {th("resource7Description")}
+                                  </ListItem>
                                   <ListItem onClick={closeMobileNav} href="/custom-solutions" title={th("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
                                     {th("resource6Description")}
                                   </ListItem>

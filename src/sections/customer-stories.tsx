@@ -93,15 +93,15 @@ const CustomerStories = () => {
                 </div>
             </Wrapper>
 
-            <div className="w-full relative mt-6 md:mt-16">
-                <div className="pl-2.5 md:pl-20 2xl:pl-[20rem] pr-2.5 md:pr-0">
+            <div className="w-full relative mt-6 md:mt-16 h-full">
+                <div className="pl-2.5 md:pl-20 2xl:pl-[20rem] pr-2.5 md:pr-0 h-full">
                     <div
                         ref={scrollContainerRef}
                         className={cn(
-                            "overflow-x-auto scroll-smooth scrollbar-hide pb-4"
+                            "overflow-x-auto scroll-smooth scrollbar-hide pb-4 h-full"
                         )}
                     >
-                        <div className="flex gap-4 md:gap-8 w-max pr-2.5 md:pr-20 lg:pr-32">
+                        <div className="flex gap-4 md:gap-8 h-full w-max pr-2.5 md:pr-20 lg:pr-32">
                             {/* Attach ref to the first card */}
                             <div ref={cardRef}>
                                 <CustomerStoryCard
