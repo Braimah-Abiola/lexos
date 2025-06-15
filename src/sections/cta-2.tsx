@@ -13,7 +13,7 @@ const Cta2 = () => {
                 <div className=" h-full w-full relative flex flex-col md:flex-row z-10">
                     <div className=" w-full md:w-[60%] pt-12 md:pt-0">
                         <div className=" h-full flex flex-col items-center md:items-start justify-center md:pl-20 max-w-lg z-20 relative">
-                            <Image width={60} height={60} src="/assets/logo-icon.png" className=" md:ml-4" quality={100} alt={t("logoAlt")} />
+                            <Image width={60} height={60} src="/assets/logo-icon.png" className=" md:ml-4 scale-90 md:scale-100" quality={100} alt={t("logoAlt")} />
                             <h2 className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center md:text-start">
                                 <span className=" md:ml-4">{t("titlePart1")}</span> <br className=" hidden md:block" />
                                 <span className=" relative md:ml-2 md:pl-2 pr-2">

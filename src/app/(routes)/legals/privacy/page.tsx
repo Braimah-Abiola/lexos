@@ -596,9 +596,136 @@ const PrivacyPolicyPage = () => {
                             <li>Participation in customer surveys or contests; and</li>
                             <li>Facilitation in the delivery of our Services and to respond to your inquiries.</li>
                         </ul>
-                        {/* Placeholder for "How do we use and share your personal information?" and subsequent California-specific content if needed */}
+                        <ul className="list-disc list-inside pl-5 mb-4 space-y-1">
+                            <li>Receiving help through our customer support channels;</li>
+                            <li>Participation in customer surveys or contests; and</li>
+                            <li>Facilitation in the delivery of our Services and to respond to your inquiries.</li>
+                        </ul>
+
+                        <h3 className="text-lg font-semibold mb-2 mt-6">How do we use and share your personal information?</h3>
+                        <p className="mb-4">
+                            We will use and retain the collected personal information as needed to provide the Services or for:
+                        </p>
+                        <ul className="list-disc list-inside pl-5 mb-4 space-y-1">
+                            <li>Category A - As long as the user has an account with us.</li>
+                            <li>Category B - As long as the user has an account with us.</li>
+                            <li>Category K - As long as the user has an account with us.</li>
+                        </ul>
+
+                        <h4 className="text-md font-semibold mb-1 mt-4">Sources of Personal Information</h4>
+                        <p className="mb-4">
+                            Learn more about the sources of personal information we collect in &quot;<a href="#what-information-collect" className="text-primary hover:underline">WHAT INFORMATION DO WE COLLECT?</a>&quot;
+                        </p>
+
+                        <h4 className="text-md font-semibold mb-1 mt-4">How We Use and Share Personal Information</h4>
+                        <p className="mb-4">
+                            Learn more about how we use your personal information in the section, &quot;<a href="#how-we-process" className="text-primary hover:underline">HOW DO WE PROCESS YOUR INFORMATION?</a>&quot;
+                        </p>
+
+                        <h4 className="text-md font-semibold mb-1 mt-4">Will your information be shared with anyone else?</h4>
+                        <p className="mb-4">
+                            We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more about how we disclose personal information to in the section, &quot;<a href="#when-and-with-whom-share" className="text-primary hover:underline">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a>&quot;
+                        </p>
+                        <p className="mb-4">
+                            We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be &quot;selling&quot; of your personal information.
+                        </p>
+                        <p className="mb-4">
+                            We have not sold or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. We have disclosed the following categories of personal information to third parties for a business or commercial purpose in the preceding twelve (12) months:
+                        </p>
+                        <ul className="list-disc list-inside pl-5 mb-4 space-y-1">
+                            <li>Category A. Identifiers</li>
+                            <li>Category B. Personal information as defined in the California Customer Records law</li>
+                        </ul>
+                        <p className="mb-4">
+                            The categories of third parties to whom we disclosed personal information for a business or commercial purpose can be found under &quot;<a href="#when-and-with-whom-share" className="text-primary hover:underline">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a>&quot;
+                        </p>
+                        <h3 className="text-lg font-semibold mb-2 mt-6">Your Rights</h3>
+                        <p className="mb-4">
+                            You have rights under certain US state data protection laws. However, these rights are not absolute, and in certain cases, we may decline your request as permitted by law. These rights include:
+                        </p>
+                        <ul className="list-disc list-inside pl-5 mb-4 space-y-1">
+                            <li>Right to know whether or not we are processing your personal data</li>
+                            <li>Right to access your personal data</li>
+                            <li>Right to correct inaccuracies in your personal data</li>
+                            <li>Right to request the deletion of your personal data</li>
+                            <li>Right to obtain a copy of the personal data you previously shared with us</li>
+                            <li>Right to non-discrimination for exercising your rights</li>
+                            <li>Right to opt out of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California&apos;s privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects (&quot;profiling&quot;)</li>
+                        </ul>
+                        <p className="mb-4">
+                            Depending upon the state where you live, you may also have the following rights:
+                        </p>
+                        <ul className="list-disc list-inside pl-5 mb-4 space-y-1">
+                            <li>Right to access the categories of personal data being processed (as permitted by applicable law, including the privacy law in Minnesota)</li>
+                            <li>Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in California, Delaware, and Maryland)</li>
+                            <li>Right to obtain a list of specific third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in Minnesota and Oregon)</li>
+                            <li>Right to review, understand, question, and correct how personal data has been profiled (as permitted by applicable law, including the privacy law in Minnesota)</li>
+                            <li>Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including the privacy law in California)</li>
+                            <li>Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including the privacy law in Florida)</li>
+                        </ul>
+
+                        <h3 className="text-lg font-semibold mb-2 mt-6">How to Exercise Your Rights</h3>
+                        <p className="mb-4">
+                            To exercise these rights, you can contact us by submitting a <a href="https://app.termly.io/notify/3e7aab22-908a-499c-a306-a2b52c75f23d" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">data subject access request</a>, by emailing us at <a href="mailto:info@lexosmove.com" className="text-primary hover:underline">info@lexosmove.com</a>, or by referring to the contact details at the bottom of this document.
+                        </p>
+                        <p className="mb-4">
+                            Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.
+                        </p>
+
+                        <h4 className="text-md font-semibold mb-1 mt-4">Request Verification</h4>
+                        <p className="mb-4">
+                            Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud prevention purposes.
+                        </p>
+                        <p className="mb-4">
+                            If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.
+                        </p>
+
+                        <h4 className="text-md font-semibold mb-1 mt-4">Appeals</h4>
+                        <p className="mb-4">
+                            Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at <a href="mailto:info@lexosmove.com" className="text-primary hover:underline">info@lexosmove.com</a>. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.
+                        </p>
+
+                        <h4 className="text-md font-semibold mb-1 mt-4">California &quot;Shine The Light&quot; Law</h4>
+                        <p className="mb-4">
+                            California Civil Code Section 1798.83, also known as the &quot;Shine The Light&quot; law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section &quot;<a href="#how-contact-us" className="text-primary hover:underline">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>&quot;
+                        </p>
                     </div>
-                
+                    <div className="my-8">
+                        <h2 id="user-feedback" className="text-2xl font-semibold mb-3 text-primary">13. USER FEEDBACK AND COMMUNICATION</h2>
+                        <p className="mb-4">
+                            We may use the information you provide at sign-up, including your email address and phone number, to contact you for feedback regarding our services and to improve your user experience. This communication may include, but is not limited to: Product Feedback: We may reach out to you via email or phone to request your input on how we can improve our Services or to conduct user surveys. Service Updates: We may contact you with updates or changes to the features of our product and invite your feedback on those changes. Opt-out Option: You have the right to opt-out of receiving feedback requests at any time. You can do so by following the instructions provided in the communication or by contacting our support team directly. By using our services, you consent to receiving these communications as part of our efforts to enhance the product experience.
+                        </p>
+                    </div>
+
+                    <div className="my-8">
+                        <h2 id="updates-to-notice" className="text-2xl font-semibold mb-3 text-primary">14. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+                        <p className="mb-4">
+                            <strong>In Short:</strong> Yes, we will update this notice as necessary to stay compliant with relevant laws.
+                        </p>
+                        <p className="mb-4">
+                            We may update this Privacy Notice from time to time. The updated version will be indicated by an updated &quot;Revised&quot; date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.
+                        </p>
+                    </div>
+
+                    <div className="my-8">
+                        <h2 id="how-contact-us" className="text-2xl font-semibold mb-3 text-primary">15. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+                        <p className="mb-2">
+                            If you have questions or comments about this notice, you may email us at <a href="mailto:info@lexosmove.com" className="text-primary hover:underline">info@lexosmove.com</a> or contact us by post at:
+                        </p>
+                        <address className="not-italic">
+                            Lexos Inc.<br />
+                            108 West 13th Street<br />
+                            Wilmington, DE 19801<br />
+                            United States
+                        </address>
+                    </div>
+
+                    <div className="my-8">
+                        <h2 id="review-update-delete-data" className="text-2xl font-semibold mb-3 text-primary">16. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
+                        <p className="mb-4">
+                            Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please fill out and submit a <a href="https://app.termly.io/notify/3e7aab22-908a-499c-a306-a2b52c75f23d" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">data subject access request</a>.
+                        </p>
+                    </div>
                 </Wrapper>
             </section>
             <div className=" h-28" />

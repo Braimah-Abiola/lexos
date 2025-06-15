@@ -79,7 +79,7 @@ export default function LocaleSwitcherSelect({
                   </span>
                   <div className="ml-2 w-[1rem]">
                     {item.value === defaultValue && (
-                      <CheckIcon className="h-5 w-5 text-foreground" />
+                      <CheckIcon className="h-5 w-5 text-primary" />
                     )}
                   </div>
                 </Select.Item>

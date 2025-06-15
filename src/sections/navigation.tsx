@@ -75,9 +75,9 @@ const Navigation = () => {
                             </Button>
                         </Link>
                         <Link href="/demo">
-                            <Button className="has-[>svg]:pr-5 md:has-[>svg]:pr-3">
+                            <Button className=" group has-[>svg]:pr-5 md:has-[>svg]:pr-3">
                                 {t("join")}
-                                <ArrowUpRight className=" hidden md:block" /></Button>
+                                <ArrowUpRight className=" hidden md:block group-hover:rotate-45 ease-in-out duration-300 transition-transform" /></Button>
                         </Link>
                     </div>
                     <MobileNavigation />
