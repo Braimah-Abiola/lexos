@@ -15,7 +15,7 @@ const CustomerStoryHero = () => {
                     <div className=" max-w-[31rem]">
                         <span className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
                             <Image width={24} height={24} src="/assets/miami.png" alt={t("logoAlt")} />
-                            <span className=" text-sm">{t("companyName")}<span className=" hidden md:inline-flex">{t("lexosSuffix")}</span></span>
+                            <span className=" text-sm">{t("companyName")}<span className=" hidden md:inline-flex pl-1">{t("lexosSuffix")}</span></span>
                             <span className=" text-sm text-primary">{t("caseStudyBadge")}</span>
                         </span>
                         <h1 className=" mt-2 font-manrope text-4xl md:text-5xl font-bold text-start">
