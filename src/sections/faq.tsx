@@ -71,7 +71,7 @@ const Faq = () => {
                             <h4 className=" font-medium text-lg">{t("stillHaveQuestionsTitle")}</h4>
                             <p className=" text-base text-foreground opacity-70">{t("stillHaveQuestionsDescription")}</p>
                         </div>
-                        <Link href="/demo">
+                        <Link href="/custom-solutions">
                             <Button className=" mt-4 md:mt-0">{t("contactUsButton")} <ArrowRight /></Button>
                         </Link>
                     </div>

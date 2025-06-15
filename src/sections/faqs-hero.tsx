@@ -1,7 +1,8 @@
 import Wrapper from "@/components/common/wrapper";
 import { MessageCircleQuestion } from "lucide-react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import AllFaq from "./all-faqs";
 
 const FaqsHero = () => {
     const t = useTranslations("FaqsHero");
@@ -19,6 +20,7 @@ const FaqsHero = () => {
                     <p className=" max-w-[48ch] mt-2 text-center text-base text-foreground opacity-70">
                         {t("description")}
                     </p>
+                    <AllFaq />
 
                     <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />
                 </div>
