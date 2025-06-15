@@ -27,11 +27,8 @@ const ChangelogHero = () => {
                         {t("description")}
                     </p>
                     <aside className=" inline-flex gap-4 items-center mt-4 z-50">
-                        <Link href="/login">
-                            <Button>{t("getStartedButton")}</Button>
-                        </Link>
                         <Link href="/demo">
-                            <Button variant="outline">{t("bookDemoButton")}</Button>
+                            <Button>{t("getStartedButton")}</Button>
                         </Link>
                     </aside>
                     <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />

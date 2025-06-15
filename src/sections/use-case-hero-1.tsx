@@ -18,7 +18,7 @@ const UseCaseHero1 = () => {
                             <ArrowRight className=" size-4" />
                         </span>
                     </Link>
-                    <h1 className=" text-4xl md:text-5xl font-bold font-manrope text-white mt-2" dangerouslySetInnerHTML={{ __html: t.raw("title") }}></h1>
+                    <h1 className=" text-4xl md:text-5xl font-bold font-manrope text-white mt-2 max-w-2xl" dangerouslySetInnerHTML={{ __html: t.raw("title") }}></h1>
                     <p className=" text-base mt-2 text-white font-normal max-w-xl">{t("description")}</p>
                     <Link className=" mt-6" href="/demo">
                         <Button>{t("bookDemoButton")} <ArrowUpRight /></Button>

@@ -39,15 +39,6 @@ export function AllChangelogs() {
           <p className="text-foreground/70 text-base md:mt-4 mb-8">
             {t("description2")}
           </p>
-          <div className=" w-full h-auto aspect-video md:aspect-auto md:h-[28rem] relative">
-            <Image
-              quality={40}
-              src="/assets/update-2.png"
-              alt={t("image2Alt")}
-              fill
-              className="rounded-xl object-cover border border-black/20"
-            />
-          </div>
         </div>
       ),
     },
