@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
 
                     <aside className="inline-flex gap-3 text-sm">
-                        <Link href="/demo">
+                        <Link href="/login">
                             <Button variant="ghost" className=" text-white/70 hover:text-white hover:bg-transparent hover:underline">{t("signInButton")}</Button>
                         </Link>
                         <Link href="/demo">
