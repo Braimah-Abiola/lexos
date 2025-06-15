@@ -6,15 +6,23 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, ArrowRight, Stars } from "lucide-react";
 import { useTranslations } from "next-intl"; // Import useTranslations
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const CustomerStories = () => {
     const t = useTranslations("CustomerStories"); // Initialize useTranslations
     const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const cardRef = useRef<HTMLDivElement>(null); // Add this ref
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);
 
-    const SCROLL_AMOUNT = 580;
+    // Dynamically get card width
+    const getCardWidth = useCallback(() => {
+        if (cardRef.current) {
+            return cardRef.current.offsetWidth + 16; // 16px = gap-4, adjust if you change gap
+        }
+        // fallback to a default value if not rendered yet
+        return 320;
+    }, []);
 
     const updateScrollButtons = () => {
         if (!scrollContainerRef.current) return;
@@ -39,11 +47,12 @@ const CustomerStories = () => {
 
     const handleScroll = (direction: "left" | "right") => {
         if (!scrollContainerRef.current) return;
+        const cardWidth = getCardWidth();
         const currentScrollLeft = scrollContainerRef.current.scrollLeft;
         const newScrollLeft =
             direction === "left"
-                ? currentScrollLeft - SCROLL_AMOUNT
-                : currentScrollLeft + SCROLL_AMOUNT;
+                ? currentScrollLeft - cardWidth
+                : currentScrollLeft + cardWidth;
         scrollContainerRef.current.scrollTo({
             left: newScrollLeft,
             behavior: "smooth",
@@ -92,16 +101,19 @@ const CustomerStories = () => {
                             "overflow-x-auto scroll-smooth scrollbar-hide pb-4"
                         )}
                     >
-                        <div className="flex gap-8 w-max pr-2.5 md:pr-20 lg:pr-32">
-                            <CustomerStoryCard
-                                logo="/assets/story-1.png"
-                                detailedCase
-                                name={t("story1Name")}
-                                picture="/assets/customer-1.png"
-                                position={t("story1Position")}
-                                review={t("story1Review")}
-                                url="/customer-stories/online-movers-miami"
-                            />
+                        <div className="flex gap-4 md:gap-8 w-max pr-2.5 md:pr-20 lg:pr-32">
+                            {/* Attach ref to the first card */}
+                            <div ref={cardRef}>
+                                <CustomerStoryCard
+                                    logo="/assets/story-1.png"
+                                    detailedCase
+                                    name={t("story1Name")}
+                                    picture="/assets/customer-1.png"
+                                    position={t("story1Position")}
+                                    review={t("story1Review")}
+                                    url="/customer-stories/online-movers-miami"
+                                />
+                            </div>
                             <CustomerStoryCard
                                 logo="/assets/story-7.png"
                                 detailedCase={false}
