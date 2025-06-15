@@ -62,13 +62,13 @@ const Hero = () => {
 
 
     return (
-        <section className=" relative h-[120vh] md:h-[100vh]">
+        <section className=" relative h-fit md:h-[1080px]">
             <Wrapper className="h-full w-full px-2 md:px-6">
                 <motion.div
                     initial="hidden"
                     animate="visible"
                     variants={heroContentVariants}
-                    className=" pt-12 z-20 w-full flex flex-col items-center bg-gradient-to-b rounded-xl border border-input border-t-0 overflow-hidden from-white to-primary h-full relative"
+                    className=" pt-12 pb-4 md:pb-0 z-20 w-full flex flex-col items-center bg-gradient-to-b rounded-xl border border-input border-t-0 overflow-hidden from-white to-primary h-full relative"
                 >
                     <Link href="/customer-stories/online-movers-miami">
                         <motion.div variants={itemVariants} className=" pl-1.5 pr-3 py-1.5 inline-flex items-center gap-2 bg-white border border-black/10 rounded-full">
@@ -79,7 +79,7 @@ const Hero = () => {
                             <ArrowRight className=" size-4" />
                         </motion.div>
                     </Link>
-                    <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-[42px] leading-10 md:text-5xl md:leading-[60px] font-bold text-center px-4 md:px-0">
+                    <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-4xl leading-10 md:text-5xl md:leading-[60px] font-bold text-center px-4 md:px-0">
                         {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "}
                         <span className=" relative md:ml-2 md:pl-2 pr-2">
                             {t("aiTechnologyText")}
@@ -105,8 +105,13 @@ const Hero = () => {
                             </div>
                         </span>{" "}
                     </motion.h1>
-                    <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 max-w-[52ch] text-center mt-2 px-6 md:px-0">
+                    <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 max-w-[52ch] text-center mt-2 px-6 md:px-0 hidden md:block">
                         {t.rich("subHeading", {
+                            br: () => <br className=" hidden md:block" />
+                        })}
+                    </motion.p>
+                    <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 max-w-[52ch] text-center mt-2 px-6 md:px-0  md:hidden">
+                        {t.rich("subHeadingMobile", {
                             br: () => <br className=" hidden md:block" />
                         })}
                     </motion.p>
@@ -115,10 +120,10 @@ const Hero = () => {
                             <Button>{t("getStartedButton")}</Button>
                         </Link>
                     </motion.div>
-                    <motion.div variants={videoVariants} className=" mt-8 max-w-6xl w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-t-3xl p-2 pb-0 h-[48rem] mx-auto">
+                    <motion.div variants={videoVariants} className=" mt-8 max-w-6xl w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-xl md:rounded-3xl md:rounded-b-none p-1 md:p-2 md:pb-0 h-auto aspect-video md:h-[48rem] mx-auto">
                         <div className=" w-full h-full rounded-t-2xl">
                             <video
-                                className="w-full h-full object-cover rounded-t-2xl"
+                                className="w-full h-full object-cover rounded-lg md:rounded-2xl md:rounded-b-none"
                                 src="/assets/demo.mp4"
                                 autoPlay
                                 loop

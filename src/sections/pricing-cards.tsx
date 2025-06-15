@@ -52,7 +52,7 @@ const Heading = ({ selected, setSelected }: HeadingProps) => {
               className="data-[state=checked]:bg-primary"
             />
             {selected === "M" && pathname !== "/pricing" && (
-              <div className="absolute right-[-110px] top-0">
+              <div className="absolute right-[-110px] top-0 hidden md:block">
                 <CTAArrow />
               </div>
             )}
@@ -74,7 +74,7 @@ const Heading = ({ selected, setSelected }: HeadingProps) => {
 const CTAArrow = () => {
   const t = useTranslations("PricingCards");
   return (
-    <div className="absolute -right-[60px] -top-2">
+    <div className="absolute md:-right-[60px] md:-top-2">
       <motion.svg
         width="44"
         height="80"
@@ -112,7 +112,7 @@ interface PriceCardProps {
 const PriceCards = ({ selected }: PriceCardProps) => {
   const t = useTranslations("PricingCards");
   return (
-    <div className="flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 lg:gap-4 md:max-w-5xl px-6 md:px-0 mx-auto w-full relative z-10 mt-8 md:mt-0">
+    <div className="flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 lg:gap-4 md:max-w-5xl px-6 md:px-0 mx-auto w-full relative z-10 mt-4 md:mt-0">
       {/* GROWTH */}
       <div className="w-full bg-white px-5 pt-5 pb-10 border border-black/10 rounded-2xl">
         <p className="text-xl font-semibold font-manrope">{t("growthTitle")}</p>
