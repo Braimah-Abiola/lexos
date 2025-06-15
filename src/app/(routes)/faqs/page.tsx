@@ -5,7 +5,7 @@ const Faqs = () => {
     return (
         <div>
             <FaqsHero />
-            <div className=" h-28" />
+            <div className=" md:h-28" />
             <Cta2 />
         </div>
     );
