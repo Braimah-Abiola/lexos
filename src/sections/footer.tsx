@@ -46,16 +46,16 @@ const Footer = () => {
                         <div className="flex flex-col col-span-2 md:col-span-1 gap-4 text-white">
                             <span className=" text-base font-medium">{t("productTitle")}</span>
                             <div className="flex flex-col gap-3 text-sm">
-                                <Link href="">
+                                <Link href="/">
                                     <p>{t("productFeature1")}</p>
                                 </Link>
-                                <Link href="">
+                                <Link href="/">
                                     <p>{t("productFeature2")}</p>
                                 </Link>
-                                <Link href="">
+                                <Link href="/">
                                     <p>{t("productFeature3")}</p>
                                 </Link>
-                                <Link href="">
+                                <Link href="/">
                                     <p>{t("productFeature4")}</p>
                                 </Link>
                             </div>

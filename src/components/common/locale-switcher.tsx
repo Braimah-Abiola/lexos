@@ -12,12 +12,12 @@ export default function LocaleSwitcher() {
         {
           value: "en",
           label: t("en"),
-          src: "/assets/us-flag.svg",
+          src: "/assets/us-flag.png",
         },
         {
           value: "es",
           label: t("es"),
-          src: "/assets/spain-flag.svg",
+          src: "/assets/spain-flag.png",
         },
       ]}
       label={t("label")}

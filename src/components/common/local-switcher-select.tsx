@@ -47,10 +47,11 @@ export default function LocaleSwitcherSelect({
         >
           <Image
             src={selectedFlag}
+            quality={100}
             alt={selectedItem?.label || "Selected language"}
             className="object-contain"
-            width={26}
-            height={26}
+            width={28}
+            height={28}
           />
           <ChevronDown className=" shrink-0 flex-nowrap h-4 w-4 text-foreground" />
         </Select.Trigger>
@@ -71,8 +72,9 @@ export default function LocaleSwitcherSelect({
                     className="object-contain mr-2 h-6 w-6"
                     src={item.src}
                     alt={item.label}
-                    width={24}
-                    height={24}
+                    quality={100}
+                    width={28}
+                    height={28}
                   />
                   <span className="text-foreground flex-1 min-w-[120px]">
                     {item.label}

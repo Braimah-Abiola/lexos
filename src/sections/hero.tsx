@@ -1,5 +1,6 @@
 "use client";
 
+import { AuroraText } from "@/components/common/aurora";
 import Wrapper from "@/components/common/wrapper";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -80,8 +81,8 @@ const Hero = () => {
                         </motion.div>
                     </Link>
                     <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-4xl leading-10 md:text-5xl md:leading-[60px] font-bold text-center px-4 md:px-0">
-                        {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "}
-                        <span className=" relative md:ml-2 md:pl-2 pr-2">
+                        {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "} <br className=" md:hidden" />
+                        <AuroraText className=" relative md:ml-2 md:pl-2 pr-2">
                             {t("aiTechnologyText")}
                             <div
                                 className="border-2 border-primary -z-[1] absolute inset-0 hidden md:block"
@@ -103,7 +104,7 @@ const Hero = () => {
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -left-[5px]" />
                                 <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -right-[5px]" />
                             </div>
-                        </span>{" "}
+                        </AuroraText>{" "}
                     </motion.h1>
                     <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 max-w-[52ch] text-center mt-2 px-6 md:px-0 hidden md:block">
                         {t.rich("subHeading", {
