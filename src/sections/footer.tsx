@@ -88,7 +88,7 @@ const Footer = () => {
                                 <Link href="/use-cases/junk-removers">
                                     <p>{t("useCaseLink2")}</p>
                                 </Link>
-                                <Link href="use-cases/import-management">
+                                <Link href="/use-cases/import-management">
                                     <p>{t("useCaseLink3")}</p>
                                 </Link>
                             </div>

@@ -9,7 +9,7 @@ const Pricing = () => {
     return (
         <main>
             <PricingHero />
-            <div className=" -mt-[72vh] md:hidden ">
+            <div className=" -mt-[70vh] md:hidden ">
                 <PricingCards />
             </div>
             <PriceComparison />
