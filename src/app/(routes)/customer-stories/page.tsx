@@ -10,7 +10,7 @@ const CustomerStories = () => {
             <CustomerStoryHero />
             <CustomerStoriesMarquee />
 
-            <div className=" mt-20 md:mt-0 py-12 mb-40 bg-accent">
+            <div className=" mt-20 md:mt-40 py-12 mb-40 bg-accent">
                 <Statistics />
             </div>
             <Cta2 />

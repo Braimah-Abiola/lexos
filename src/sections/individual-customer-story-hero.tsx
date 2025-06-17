@@ -9,7 +9,7 @@ import Link from "next/link";
 const CustomerStoryHero = () => {
     const t = useTranslations("CustomerStoryHero");
     return (
-        <section className=" py-20">
+        <section className=" pt-20 md:pt-20 md:pb-20">
             <Wrapper className="flex flex-col md:flex-row items-start gap-8 md:gap-0 md:items-center md:max-w-[1480px]">
                 <div className=" w-full">
                     <div className=" max-w-[31rem]">

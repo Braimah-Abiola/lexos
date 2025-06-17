@@ -63,7 +63,7 @@ const Hero = () => {
 
 
     return (
-        <section className=" relative h-fit md:h-[1080px]">
+        <section className=" relative h-fit md:h-fit">
             <Wrapper className="h-full w-full px-2 md:px-6">
                 <motion.div
                     initial="hidden"
@@ -82,28 +82,8 @@ const Hero = () => {
                     </Link>
                     <motion.h1 variants={itemVariants} className=" mt-2 font-manrope text-4xl leading-10 md:text-5xl md:leading-[60px] font-bold text-center px-4 md:px-0">
                         {t("mainHeadingPart1")} <br className=" hidden md:block" /> {t("mainHeadingPart2")}{" "} <br className=" md:hidden" />
-                        <AuroraText className=" relative md:ml-2 md:pl-2 pr-2">
+                        <AuroraText className=" relative">
                             {t("aiTechnologyText")}
-                            <div
-                                className="border-2 border-primary -z-[1] absolute inset-0 hidden md:block"
-                            >
-                                <motion.div
-                                    className="bg-primary/40 absolute inset-0"
-                                    initial={{ clipPath: "inset(0 0 100% 0)" }}
-                                    animate={{ clipPath: "inset(0 0 0% 0)" }}
-                                    transition={{
-                                        duration: 1.2,
-                                        ease: "easeInOut",
-                                        repeat: Infinity,
-                                        repeatType: "mirror",
-                                        repeatDelay: 0.5,
-                                    }}
-                                />
-                                <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -left-[5px]" />
-                                <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -top-[5px] -right-[5px]" />
-                                <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -left-[5px]" />
-                                <div className=" h-2 w-2 aspect-square rotate-45 flex-nowrap bg-primary absolute -bottom-[5px] -right-[5px]" />
-                            </div>
                         </AuroraText>{" "}
                     </motion.h1>
                     <motion.p variants={itemVariants} className=" text-base text-foreground opacity-70 max-w-[52ch] text-center mt-2 px-6 md:px-0 hidden md:block">
@@ -121,7 +101,7 @@ const Hero = () => {
                             <Button>{t("getStartedButton")}</Button>
                         </Link>
                     </motion.div>
-                    <motion.div variants={videoVariants} className=" mt-8 max-w-6xl w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-xl md:rounded-3xl md:rounded-b-none p-1 md:p-2 md:pb-0 h-auto aspect-video md:h-[48rem] mx-auto">
+                    <motion.div variants={videoVariants} className=" mt-8 max-w-3xl xl:max-w-5xl 2xl:max-w-6xl w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-xl md:rounded-3xl md:rounded-b-none p-1 md:p-2 md:pb-0 h-auto aspect-video mx-auto">
                         <div className=" w-full h-full rounded-t-2xl">
                             <video
                                 className="w-full h-full object-cover rounded-lg md:rounded-2xl md:rounded-b-none"

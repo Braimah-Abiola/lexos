@@ -49,16 +49,16 @@ export default function LocaleSwitcherSelect({
             src={selectedFlag}
             quality={100}
             alt={selectedItem?.label || "Selected language"}
-            className="object-contain"
-            width={28}
-            height={28}
+            className="object-contain shrink-0"
+            width={22}
+            height={22}
           />
           <ChevronDown className=" shrink-0 flex-nowrap h-4 w-4 text-foreground" />
         </Select.Trigger>
         <Select.Portal>
           <Select.Content
             align="start"
-            className="min-w-[8rem] overflow-hidden rounded-sm bg-white py-1 shadow-md z-[999] relative border border-input"
+            className="min-w-[8rem] md:-ml-1.5 overflow-hidden rounded-sm bg-white py-1 shadow-md z-[999] relative border border-input"
             position="popper"
           >
             <Select.Viewport>
@@ -69,7 +69,7 @@ export default function LocaleSwitcherSelect({
                   value={item.value}
                 >
                   <Image
-                    className="object-contain mr-2 h-6 w-6"
+                    className="object-contain mr-2 md:mr-2.5 h-6 w-6"
                     src={item.src}
                     alt={item.label}
                     quality={100}

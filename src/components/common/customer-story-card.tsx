@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { Button } from "../ui/button";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "../ui/button";
 
 const CustomerStoryCard = ({ logo, detailedCase, review, name, position, picture, url }: { logo: string; detailedCase: boolean; review: string; name: string; position: string; url: string; picture: string; }) => {
     return (
-        <div className=" p-6 flex flex-col justify-between items-start w-full max-w-[90vw] h-max md:max-w-lg bg-accent rounded-xl border border-black/10 hover:bg-gradient-to-r from-accent to-primary/30">
+        <div className=" p-6 flex flex-col justify-between items-start w-full max-w-[90vw] md:min-h-[18rem] md:max-w-lg bg-accent rounded-xl border border-black/10 hover:bg-gradient-to-r from-accent to-primary/30">
             <div className=" w-full">
                 <div className=" w-full flex items-center justify-between">
                     <div className=" relative w-[140px] md:w-[110px] h-[40px]">

@@ -125,16 +125,16 @@ const MobileNavigation = () => {
                               <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{th("features")}</span>
                                 <div className="flex flex-col gap-3">
-                                  <ListItem onClick={closeMobileNav} href="/" title={th("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
+                                  <ListItem onClick={closeMobileNav} href="/changelog" title={th("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
                                     {th("feature1Description")}
                                   </ListItem>
-                                  <ListItem onClick={closeMobileNav} href="/" title={th("feature2Title")} icon="/assets/feature-2.svg" iconActive="/assets/feature-2-active.svg">
+                                  <ListItem onClick={closeMobileNav} href="/changelog" title={th("feature2Title")} icon="/assets/feature-2.svg" iconActive="/assets/feature-2-active.svg">
                                     {th("feature2Description")}
                                   </ListItem>
-                                  <ListItem onClick={closeMobileNav} href="/" title={th("feature3Title")} icon="/assets/feature-3.svg" iconActive="/assets/feature-3-active.svg">
+                                  <ListItem onClick={closeMobileNav} href="/changelog" title={th("feature3Title")} icon="/assets/feature-3.svg" iconActive="/assets/feature-3-active.svg">
                                     {th("feature3Description")}
                                   </ListItem>
-                                  <ListItem onClick={closeMobileNav} href="/" title={th("feature4Title")} icon="/assets/feature-4.svg" iconActive="/assets/feature-4-active.svg">
+                                  <ListItem onClick={closeMobileNav} href="/changelog" title={th("feature4Title")} icon="/assets/feature-4.svg" iconActive="/assets/feature-4-active.svg">
                                     {th("feature4Description")}
                                   </ListItem>
                                 </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 const CustomerStoryDetails = () => {
     const t = useTranslations("CustomerStoryDetails");
     return (
-        <section id="case" className=" md:py-20 md:max-w-3xl mx-auto flex flex-col items-start px-4 md:px-0">
+        <section id="case" className=" py-20 md:py-20 md:max-w-3xl mx-auto flex flex-col items-start px-4 md:px-0">
             <h4 className=" font-semibold text-xl md:text-2xl mb-4 md:mb-6">{t("caseStudyTitle")}</h4>
             <p className=" text-base md:text-lg font-normal text-foreground">
                 {t("paragraph1")}

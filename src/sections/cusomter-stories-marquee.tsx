@@ -9,46 +9,9 @@ import { useTranslations } from "next-intl";
 const CustomerStoriesMarquee = () => {
     const t = useTranslations("CustomerStoriesMarquee");
     return (
-        <section className=" hidden md:block -mt-[30rem] mb-40">
+        <section className=" hidden md:block">
             <Wrapper className=" md:px-6 flex flex-col items-center">
-                <Marquee pauseOnHover className=" [--gap:1rem] [--duration:30s]">
-                    <CustomerStoryCard
-                        logo="/assets/story-1.png"
-                        detailedCase
-                        name={t("story1Name")}
-                        picture="/assets/customer-1.png"
-                        position={t("story1Position")}
-                        review={t("story1Review")}
-                        url="/customer-stories/online-movers-miami"
-                    />
-                    <CustomerStoryCard
-                        logo="/assets/story-2.png"
-                        detailedCase={false}
-                        name={t("story2Name")}
-                        picture="/assets/customer-2.png"
-                        position={t("story2Position")}
-                        review={t("story2Review")}
-                        url="/"
-                    />
-                    <CustomerStoryCard
-                        logo="/assets/story-3.png"
-                        detailedCase={false}
-                        name={t("story3Name")}
-                        picture="/assets/customer-3.png"
-                        position={t("story3Position")}
-                        review={t("story3Review")}
-                        url="/"
-                    />
-                    <CustomerStoryCard
-                        logo="/assets/story-4.png"
-                        detailedCase={false}
-                        name={t("story4Name")}
-                        picture="/assets/customer-4.png"
-                        position={t("story4Position")}
-                        review={t("story4Review")}
-                        url="/"
-                    />
-                </Marquee>
+                
                 <div className=" w-full h-fit relative">
                     <div className="pointer-events-none absolute z-20 inset-y-0 left-0 w-[12%] bg-gradient-to-r from-background"></div>
 
