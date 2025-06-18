@@ -111,7 +111,7 @@ const Hero = () => {
                                 playsInline
                                 poster="/assets/poster.png"
                             >
-                                <source src="/assets/product-video.mov" type="video/mov" />
+                                <source src="/assets/product-video.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
