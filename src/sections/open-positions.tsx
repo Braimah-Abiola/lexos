@@ -33,7 +33,7 @@ const OpenPositions = () => {
     };
 
     return (
-        <section className=" -mt-[58vh] px-2 md:px-0 md:-mt-[65vh] z-20 relative mb-20">
+        <section className=" -mt-[58vh] px-2 md:px-0 md:-mt-[60vh] z-20 relative mb-20">
             <Wrapper className="flex flex-col gap-8 md:gap-16">
                 <motion.div
                     className=" w-full flex flex-col md:flex-row items-start justify-between md:px-6 max-w-5xl mx-auto gap-6 md:gap-12"

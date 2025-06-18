@@ -51,10 +51,12 @@ const Solutions = () => {
                     <div className=" h-auto aspect-video bg-gradient-to-b from-[#D9D5FB]/50 to-primary px-1 py-1 md:px-2 md:py-2 rounded-xl md:rounded-2xl w-[95%] mx-auto">
                         <div className=" w-full h-full relative rounded-lg md:rounded-xl overflow-hidden">
                             <video
-                                src="https://res.cloudinary.com/dlnsqeeos/video/upload/v1750239697/Landing_Page_pqbzby.mov"
+                                src="/assets/demo.mp4"
                                 autoPlay
                                 loop
+                                muted
                                 playsInline
+                                poster="/assets/demo-poster.png"
                                 className="w-full h-full object-cover"
                             />
                         </div>

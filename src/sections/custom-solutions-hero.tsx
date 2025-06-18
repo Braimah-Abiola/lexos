@@ -15,10 +15,10 @@ const CustomSolutionsHero = () => {
                         <p className=" text-foreground">{t("badgeText")}</p>
                     </span>
                     <h1 className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center">
-                        Custom Solutions
+                        {t("title")}
                     </h1>
                     <p className=" max-w-[56ch] px-8 md:px-0 mt-2 text-center text-base text-foreground opacity-70">
-                        Custom tailored solutions to meet your unique business needs. Whether you require specialized software, integration with existing systems.
+                        {t("description")}
                     </p>
                     <div className=" w-full">
                         <SupportCalendly />

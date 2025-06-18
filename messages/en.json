@@ -6,7 +6,7 @@
   },
   "ChangelogDialog": {
     "whatsNew": "What's New - June 2025"
-  }
+  },
   "Header": {
     "signIn": "Sign In",
     "join": "Join Lexos",
@@ -281,7 +281,7 @@
   },
   "CareersHero": {
     "badgeText": "Careers",
-    "title": "Join Our Growing Team.",
+    "title": "Join Our Growing Team",
     "description": "We're seeking innovators ready to build cutting-edge AI solutions that transform how companies handle inventory.",
     "imageAlt": "Hero background"
   },
@@ -541,7 +541,7 @@
   "UseCaseHero2": {
     "badgeLogoAlt": "Online Movers Miami",
     "badgeText": "Online Movers Miami: Customer Story",
-    "title": "Optimize Every Haul with Smart Junk Removal Inventory.",
+    "title": "Optimize Every Haul with Smart Junk Removal Inventory",
     "description": "Transform how you quote and execute junk removal. Our AI instantly provides accurate weight and volume from photos, ensuring precise pricing, maximized truck capacity, and efficient operations.",
     "bookDemoButton": "Book Demo",
     "backgroundImageAlt": "Junk Removers"
@@ -597,7 +597,7 @@
   "UseCaseHero1": {
     "badgeLogoAlt": "Online Movers Miami",
     "badgeText": "Online Movers Miami: Customer Story",
-    "title": "Streamline Every Move with AI-Powered Inventory.",
+    "title": "Streamline Every Move with AI-Powered Inventory",
     "description": "Empower your moving business with unparalleled accuracy and efficiency. Our AI transforms pre-move photos into precise, volumetric inventories, streamlining estimates, packing, and logistics from start to finish.",
     "bookDemoButton": "Book Demo",
     "backgroundImageAlt": "Moving Companies"
@@ -620,7 +620,7 @@
     "solution3Title": "Solution 3",
     "solution3Description": "Inventories instantly sync to your CRM with volume and weight, ready for quoting or dispatch.",
     "quoteImageAlt": "Quote",
-    "testimonialText": "Just in the 2 surveys I have done, Lexos has helped me land <span class=\" bg-primary text-white\">two jobs for about $20k! Not to mention the amount of admin time the software eliminates</span>",
+    "testimonialText": "Just in the 2 surveys I have done, Lexos has helped me land <span class=\" bg-primary text-white\">two jobs for about $20k! Not to mention the amount of admin time the software eliminates.</span>",
     "customerImageAlt": "Lexos customer",
     "customerName": "Sara Bauman",
     "customerRole": "Inside Sales Manager @ All Service Moving",
@@ -654,7 +654,7 @@
     "badgeText": "Calendly",
     "imageAlt": "Hero background",
     "title": "Custom Solutions",
-    "desription": "Tailored solutions to meet your unique business needs. Whether you require specialized software, integration with existing systems."
+    "desription": "Custom tailored solutions to meet your unique business needs — whether you require specialized software or integration with existing systems."
   },
   "Contact": {
     "title": "For More Information",
@@ -664,5 +664,15 @@
   "MobileNavigation": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
+  },
+  "Login": {
+    "logoAlt": "Logo",
+    "title": "Welcome Back",
+    "description": "We are happy to see you again. You can continue where you left off by logging in.",
+    "emailPlaceholder": "Email address",
+    "passwordPlaceholder": "Password",
+    "forgotPassword": "Forgot Password?",
+    "signInButton": "Sign In",
+    "backgroundAlt": "Background"
   }
 }

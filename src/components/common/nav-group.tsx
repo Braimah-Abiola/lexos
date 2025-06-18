@@ -32,16 +32,16 @@ export function NavGroup() {
                             <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("features")}</span>
                                 <div>
-                                    <ListItem comingSoon={false} hiring={false} href="/" title={t("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/changelog" title={t("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
                                         {t("feature1Description")}
                                     </ListItem>
-                                    <ListItem comingSoon={false} hiring={false} href="/" title={t("feature2Title")} icon="/assets/feature-2.svg" iconActive="/assets/feature-2-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/changelog" title={t("feature2Title")} icon="/assets/feature-2.svg" iconActive="/assets/feature-2-active.svg">
                                         {t("feature2Description")}
                                     </ListItem>
-                                    <ListItem comingSoon={false} hiring={false} href="/" title={t("feature3Title")} icon="/assets/feature-3.svg" iconActive="/assets/feature-3-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} href="/changelog" title={t("feature3Title")} icon="/assets/feature-3.svg" iconActive="/assets/feature-3-active.svg">
                                         {t("feature3Description")}
                                     </ListItem>
-                                    <ListItem comingSoon={true} hiring={false} href="/" title={t("feature4Title")} icon="/assets/feature-4.svg" iconActive="/assets/feature-4-active.svg">
+                                    <ListItem comingSoon={true} hiring={false} href="/changelog" title={t("feature4Title")} icon="/assets/feature-4.svg" iconActive="/assets/feature-4-active.svg">
                                         {t("feature4Description")}
                                     </ListItem>
                                 </div>

@@ -115,7 +115,7 @@
     "story1Review": "Solíamos pasar demasiado tiempo uniendo fotos y redactando listas de inventario. Lexos lo hace por nosotros en minutos. Nuestro equipo ya no teme a las encuestas.",
     "story2Name": "Julia",
     "story2Position": "Gerente de Ventas @ Flash Moving & Storage",
-    "story2Review": "La sincronización con el CRM fue sorprendentemente fluida. También nos permite tener la información de nuestros clientes en un solo lugar. Le ha ahorrado mucho tiempo a Flash, especialmente durante la temporada alta.",
+    "story2Review": "La fluida sincronización con el CRM centraliza los datos de los clientes y le ha ahorrado a Flash mucho tiempo, especialmente en temporada alta.",
     "story3Name": "Michael Cattan",
     "story3Position": "Propietario @ Michael’s Moving & Storage",
     "story3Review": "Hemos probado muchas herramientas a lo largo de los años, pero Lexos es la primera que realmente se adapta a cómo trabajamos. Es simple y le da a mi equipo un inventario completo, sin complicaciones.",
@@ -249,7 +249,7 @@
     "signUpButton": "Registrarse",
     "mailingListTitle": "Lista de Correo",
     "mailingListDescription": "Desbloquea información sobre el futuro del inventario. Suscríbete para recibir actualizaciones exclusivas, tendencias de la industria y estrategias de eficiencia para tu negocio.",
-    "emailPlaceholder": "Introduce tu dirección de correo electrónico",
+    "emailPlaceholder": "Tu correo electrónico",
     "subscribeButton": "Suscribirse",
     "productTitle": "Producto",
     "productFeature1": "Creación de Inventario con IA",
@@ -281,7 +281,7 @@
   },
   "CareersHero": {
     "badgeText": "Empleo",
-    "title": "Únete a Nuestro Equipo en Crecimiento.",
+    "title": "Únete a Nuestro Equipo en Crecimiento",
     "description": "Buscamos innovadores listos para construir soluciones de IA de vanguardia que transformen la forma en que las empresas manejan el inventario.",
     "imageAlt": "Fondo de héroe"
   },
@@ -541,7 +541,7 @@
   "UseCaseHero2": {
     "badgeLogoAlt": "Online Movers Miami",
     "badgeText": "Online Movers Miami: Historia de Cliente",
-    "title": "Optimiza Cada Transporte con Inventario Inteligente de Eliminación de Basura.",
+    "title": "Optimiza Cada Transporte con Inventario Inteligente de Eliminación de Basura",
     "description": "Transforma cómo cotizas y ejecutas la eliminación de basura. Nuestra IA proporciona instantáneamente peso y volumen precisos a partir de fotos, asegurando precios exactos, capacidad de camión maximizada y operaciones eficientes.",
     "bookDemoButton": "Reservar Demo",
     "backgroundImageAlt": "Transportistas de Basura"
@@ -597,7 +597,7 @@
   "UseCaseHero1": {
     "badgeLogoAlt": "Online Movers Miami",
     "badgeText": "Online Movers Miami: Historia de Cliente",
-    "title": "Optimiza Cada Mudanza con Inventario Impulsado por IA.",
+    "title": "Optimiza Cada Mudanza con Inventario Impulsado por IA",
     "description": "Potencia tu negocio de mudanzas con una precisión y eficiencia incomparables. Nuestra IA transforma las fotos previas a la mudanza en inventarios volumétricos precisos, optimizando las estimaciones, el embalaje y la logística de principio a fin.",
     "bookDemoButton": "Reservar Demo",
     "backgroundImageAlt": "Empresas de Mudanzas"
@@ -620,7 +620,7 @@
     "solution3Title": "Solución 3",
     "solution3Description": "Los inventarios se sincronizan instantáneamente con tu CRM con volumen y peso, listos para cotizar o despachar.",
     "quoteImageAlt": "Cita",
-    "testimonialText": "¡Solo en las 2 encuestas que he realizado, Lexos me ha ayudado a conseguir <span class=\" bg-primary text-white\">dos trabajos por aproximadamente $20k! Sin mencionar la cantidad de tiempo administrativo que el software elimina</span>",
+    "testimonialText": "¡Solo en las 2 encuestas que he realizado, Lexos me ha ayudado a conseguir <span class=\" bg-primary text-white\">dos trabajos por aproximadamente $20k! Sin mencionar la cantidad de tiempo administrativo que el software elimina.</span>",
     "customerImageAlt": "Cliente de Lexos",
     "customerName": "Sara Bauman",
     "customerRole": "Gerente de Ventas Internas @ All Service Moving",
@@ -654,7 +654,7 @@
     "badgeText": "Calendly",
     "imageAlt": "Fondo de héroe",
     "title": "Soluciones Personalizadas",
-    "description": "Soluciones para satisfacer las necesidades únicas de tu negocio. Ya sea que necesites software especializado o integración con sistemas existentes."
+    "description": "Soluciones personalizadas a medida para satisfacer las necesidades únicas de tu negocio, ya sea que necesites software especializado o integración con sistemas existentes."
   },
   "Contact": {
     "title": "Para Más Información",
@@ -664,5 +664,15 @@
   "MobileNavigation": {
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
+  },
+  "Login": {
+    "logoAlt": "Logo",
+    "title": "Bienvenido de Nuevo",
+    "description": "Nos alegra verte de nuevo. Puedes continuar donde lo dejaste iniciando sesión.",
+    "emailPlaceholder": "Dirección de correo electrónico",
+    "passwordPlaceholder": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "signInButton": "Iniciar Sesión",
+    "backgroundAlt": "Fondo"
   }
 }
