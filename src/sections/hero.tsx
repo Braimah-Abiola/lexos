@@ -106,6 +106,7 @@ const Hero = () => {
                             <video
                                 className="w-full h-full object-cover rounded-lg md:rounded-2xl md:rounded-b-none"
                                 autoPlay
+                                controls
                                 loop
                                 muted
                                 playsInline
