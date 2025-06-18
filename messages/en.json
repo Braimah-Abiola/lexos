@@ -4,6 +4,9 @@
     "en": "English",
     "label": "Language"
   },
+  "ChangelogDialog": {
+    "whatsNew": "What's New - June 2025"
+  }
   "Header": {
     "signIn": "Sign In",
     "join": "Join Lexos",

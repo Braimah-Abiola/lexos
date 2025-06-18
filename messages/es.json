@@ -4,6 +4,9 @@
     "en": "Inglés",
     "label": "Idioma"
   },
+  "ChangelogDialog": {
+    "whatsNew": "Novedades - Junio 2025"
+  },
   "Header": {
     "signIn": "Iniciar Sesión",
     "join": "Unirse a Lexos",

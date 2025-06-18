@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -28,6 +29,10 @@ export function ChangelogDialog({
   description,
   imageSrc,
 }: ChangelogDialogProps) {
+
+  const t = useTranslations("ChangelogDialog");
+
+
   const [open, setOpen] = useState(false);
   const router = useRouter();
 
@@ -96,7 +101,7 @@ export function ChangelogDialog({
         </div>
         <DialogHeader className="space-y-0 -mt-4">
           <span className=" mx-auto mb-2 w-fit inline-flex items-center justify-center pl-4 border border-primary/5 bg-primary/10 rounded-full pr-4 py-1 transition ease-out hover:text-primary hover:duration-300">
-            <span className="font-medium text-sm md:text-base text-primary">What&apos;s New - June 2025</span>
+            <span className="font-medium text-sm md:text-base text-primary">{t("whatsNew")}</span>
           </span>
           <DialogTitle className="text-foreground text-center font-medium text-lg md:text-2xl tracking-tight">
             {title}
