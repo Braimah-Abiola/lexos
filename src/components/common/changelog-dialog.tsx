@@ -78,10 +78,10 @@ export function ChangelogDialog({
 
   return (
     <Dialog open={open} onOpenChange={handleClose}>
-      <DialogContent className="bg-white border-black/5 rounded-2xl p-2 focus:border-none focus:outline-none">
+      <DialogContent className="bg-white border-black/5 rounded-2xl p-1 md:p-2 focus:border-none focus:outline-none">
         <DialogClose>
-          <div className="bg-white hover:bg-secondary hover:text-primary cursor-pointer h-12 aspect-square rounded-full flex items-center justify-center border border-black/5 absolute -top-20 md:-top-16 right-1/2 translate-x-1/2 md:translate-x-0 md:right-[-4rem]">
-            <X />
+          <div className="bg-white hover:bg-secondary hover:text-primary cursor-pointer h-9 md:h-12 aspect-square rounded-full flex items-center justify-center border border-black/5 absolute -top-14 md:-top-16 right-1/2 translate-x-1/2 md:translate-x-0 md:right-[-4rem]">
+            <X className=" size-4 md:size-6" />
           </div>
         </DialogClose>
         <div className="relative w-full h-60 md:h-72 overflow-hidden rounded-t-xl -mt-4">
@@ -96,13 +96,13 @@ export function ChangelogDialog({
         </div>
         <DialogHeader className="space-y-0 -mt-4">
           <span className=" mx-auto mb-2 w-fit inline-flex items-center justify-center pl-4 border border-primary/5 bg-primary/10 rounded-full pr-4 py-1 transition ease-out hover:text-primary hover:duration-300">
-            <span className="font-medium text-primary">What&apos;s New - June 2025</span>
+            <span className="font-medium text-sm md:text-base text-primary">What&apos;s New - June 2025</span>
           </span>
-          <DialogTitle className="text-foreground text-center font-medium text-2xl tracking-tight">
+          <DialogTitle className="text-foreground text-center font-medium text-lg md:text-2xl tracking-tight">
             {title}
           </DialogTitle>
         </DialogHeader>
-        <p className="text-base text-foreground/70 text-center px-4 -mt-4 font-normal">
+        <p className=" text-sm md:text-base text-foreground/70 text-center px-4 -mt-4 font-normal">
           {description}
         </p>
         <DialogFooter className="sm:justify-between gap-4 px-4 pb-4 mt-0">

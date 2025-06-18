@@ -102,8 +102,7 @@ const CustomerStories = () => {
                         )}
                     >
                         <div className="flex gap-4 md:gap-8 h-full w-max pr-2.5 md:pr-20 lg:pr-32">
-                            {/* Attach ref to the first card */}
-                            <div ref={cardRef}>
+                            <div className="" ref={cardRef}>
                                 <CustomerStoryCard
                                     logo="/assets/story-1.png"
                                     detailedCase
@@ -168,8 +167,6 @@ const CustomerStories = () => {
                                 review={t("story5Review")}
                                 url="/"
                             />
-
-
                             <CustomerStoryCard
                                 logo="/assets/story-8.png"
                                 detailedCase={false}

@@ -123,7 +123,6 @@ const MobileNavigation = () => {
                           <AccordionContent>
                             <div className="flex flex-col items-start gap-4 z-1 relative">
                               <div className="flex flex-col gap-2">
-                                <span className=" font-medium text-sm uppercase opacity-50 pt-2">{th("features")}</span>
                                 <div className="flex flex-col gap-3">
                                   <ListItem onClick={closeMobileNav} href="/changelog" title={th("feature1Title")} icon="/assets/feature-1.svg" iconActive="/assets/feature-1-active.svg">
                                     {th("feature1Description")}
@@ -170,7 +169,6 @@ const MobileNavigation = () => {
                           <AccordionContent>
                             <div className="flex flex-col items-start gap-4 z-1 relative">
                               <div className="flex flex-col gap-2">
-                                <span className=" font-medium text-sm uppercase opacity-50 pt-2">{th("verticals")}</span>
                                 <div className="flex flex-col gap-3">
                                   <ListItem onClick={closeMobileNav} href="/use-cases/moving-companies" title={th("useCase1Title")} icon="/assets/use-case-1.svg" iconActive="/assets/use-case-1-active.svg">
                                     {th("useCase1Description")}

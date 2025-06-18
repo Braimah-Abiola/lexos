@@ -25,7 +25,7 @@ const SupportCalendly = () => {
   }, []);
 
   return (
-    <div className="overflow-y-hidden px-6 md:px-0 -mt-[65dvh] md:-mt-[80vh] relative z-20">
+    <div className="overflow-y-hidden px-2 mt-4 md:mt-0 md:px-0 relative z-20 w-full">
       <InlineWidget
         styles={{
           height: height,

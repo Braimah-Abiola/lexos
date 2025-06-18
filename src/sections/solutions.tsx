@@ -21,7 +21,7 @@ const Solutions = () => {
 
             <Separator className=" w-full mt-12" orientation="horizontal" />
             <Wrapper className="flex flex-col items-center">
-                <div className=" max-w-7xl mx-auto w-full border-l border-r">
+                <div className=" max-w-7xl mx-auto w-full border-l border-r pb-20">
                     <div className=" w-full grid grid-cols-1 md:grid-cols-2">
                         <div className="flex flex-col items-center md:items-start border-b border-r md:pl-20 pt-12 pb-12">
                             <Image width={80} height={80} src="/assets/solution-1.png" alt="" />
@@ -48,9 +48,15 @@ const Solutions = () => {
                         </div>
                     </div>
 
-                    <div className=" h-[36rem] hidden md:block overflow-clip bg-gradient-to-b from-[#D9D5FB] to-primary px-2 pt-10 rounded-t-[2rem] w-[95%] mx-auto">
-                        <div className=" w-full h-full relative">
-                            <Image fill src="/assets/preview.png" className=" object-cover object-top" alt="" />
+                    <div className=" h-auto aspect-video bg-gradient-to-b from-[#D9D5FB]/50 to-primary px-1 py-1 md:px-2 md:py-2 rounded-xl md:rounded-2xl w-[95%] mx-auto">
+                        <div className=" w-full h-full relative rounded-lg md:rounded-xl overflow-hidden">
+                            <video
+                                src="https://res.cloudinary.com/dlnsqeeos/video/upload/v1750239697/Landing_Page_pqbzby.mov"
+                                autoPlay
+                                loop
+                                playsInline
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
                 </div>
