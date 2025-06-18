@@ -105,13 +105,15 @@ const Hero = () => {
                         <div className=" w-full h-full rounded-t-2xl">
                             <video
                                 className="w-full h-full object-cover rounded-lg md:rounded-2xl md:rounded-b-none"
-                                src="/assets/product-video.mp4"
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
                                 poster="/assets/poster.png"
-                            />
+                            >
+                                <source src="/assets/product-video.mov" type="video/mov" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </motion.div>
                     <div className="absolute inset-0 h-full w-full -z-1 rounded-xl bg-[linear-gradient(to_right,#B2B2B2_1px,transparent_1px),linear-gradient(to_bottom,#B2B2B2_1px,transparent_1px)] bg-[size:6rem_4rem] opacity-20"></div>
