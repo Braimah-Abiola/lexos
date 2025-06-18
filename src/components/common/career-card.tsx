@@ -41,7 +41,7 @@ const CareerCard = (
                     <CircleDollarSign /> <p>{compensation}</p>
                 </div>
                 <span className=" md:hidden inline-flex bg-primary/10 rounded-full py-0.5  pl-1 pr-4 border border-primary/50 text-primary items-center gap-2">
-                    <Image width={24} height={24} src="/assets/us-flag.png" alt="United States" />
+                    <Image width={24} height={24} src="/assets/flag-us.png" alt="United States" />
                     <p>
                         {location}
                     </p>
