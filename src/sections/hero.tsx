@@ -105,7 +105,7 @@ const Hero = () => {
                         <div className=" w-full h-full rounded-t-2xl">
                             <video
                                 className="w-full h-full object-cover rounded-lg md:rounded-2xl md:rounded-b-none"
-                                src="https://res.cloudinary.com/dlnsqeeos/video/upload/v1750287416/product-video_ylsdkq.mp4"
+                                src="/assets/product-video.mp4"
                                 autoPlay
                                 loop
                                 muted
