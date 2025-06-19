@@ -71,9 +71,9 @@ const AllFaq = () => {
     );
 
     return (
-        <section className=" mt-8 relative z-20 mb-40">
-            <Wrapper className="flex flex-col items-center">
-                <div className="mb-8 flex flex-wrap items-center justify-center gap-2 md:gap-3">
+        <section className=" mt-8 relative z-20 mb-40 w-full">
+            <Wrapper className="flex flex-col items-center w-full">
+                <div className="mb-8 flex flex-wrap items-center justify-center gap-2 md:gap-3 w-full">
                     {faqCategories.map((category) => (
                         <Button
                             key={category}
@@ -91,7 +91,7 @@ const AllFaq = () => {
                     ))}
                 </div>
 
-                <div className=" w-full max-w-3xl">
+                <div className=" w-full max-w-2xl">
                     {filteredFaqs.length > 0 ? (
                         <Accordion className="flex flex-col gap-2" type="single" collapsible>
                             {filteredFaqs.map((faq) => (

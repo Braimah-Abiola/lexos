@@ -127,7 +127,7 @@
     "story5Review": "Customers really like how easy it is to take photos through Lexos, and we love that we get clean inventories back without chasing them down.",
     "story6Name": "Lu Annatone",
     "story6Position": "Owner @ The Junk Removers",
-    "story6Review": "Having a fully itemized inventory cleaned up our entire process—especially in an industry where everything we handle is, well, junk.",
+    "story6Review": "Having a fully itemized inventory cleaned up our entire process-especially in an industry where everything we handle is junk.",
     "story7Name": "Sara Bauman",
     "story7Position": "Inside Sales Manager @  All Service Moving",
     "story7Review": "Just in the 2 surveys I have done, Lexos has helped me land two jobs for about $20k! Not to mention the amount of admin time the software eliminates.",
@@ -442,7 +442,7 @@
     "story5Review": "Customers really like how easy it is to take photos through Lexos, and we love that we get clean inventories back without chasing them down.",
     "story6Name": "Lu Annatone",
     "story6Position": "Owner @ The Junk Removers",
-    "story6Review": "Having a fully itemized inventory cleaned up our entire process—especially in an industry where everything we handle is, well, junk.",
+    "story6Review": "Having a fully itemized inventory cleaned up our entire process-especially in an industry where everything we handle is junk.",
     "story7Name": "Sara Bauman",
     "story7Position": "Inside Sales Manager @  All Service Moving",
     "story7Review": "Just in the 2 surveys I have done, Lexos has helped me land two jobs for about $20k! Not to mention the amount of admin time the software eliminates.",
@@ -654,7 +654,7 @@
     "badgeText": "Calendly",
     "imageAlt": "Hero background",
     "title": "Custom Solutions",
-    "desription": "Custom tailored solutions to meet your unique business needs — whether you require specialized software or integration with existing systems."
+    "description": "Custom tailored solutions to meet your unique business needs — whether you require specialized software or integration with existing systems."
   },
   "Contact": {
     "title": "For More Information",
@@ -673,6 +673,31 @@
     "passwordPlaceholder": "Password",
     "forgotPassword": "Forgot Password?",
     "signInButton": "Sign In",
+    "backgroundAlt": "Background"
+  },
+  "ForgotPassword": {
+    "logoAlt": "Logo",
+    "title": "Forgot Password",
+    "description": "Enter the email associated with your account to reset your password.",
+    "emailPlaceholder": "Email Address",
+    "rememberPassword": "Remember Password?",
+    "sendResetButton": "Send Reset Email",
+    "backgroundAlt": "Background"
+  },
+  "VerifyForgotPassword": {
+    "logoAlt": "Logo",
+    "title": "Check your email",
+    "description": "We've sent a 6 digit verification code to your email address.",
+    "verify": "Verify",
+    "backgroundAlt": "Background"
+  },
+  "NewPassword": {
+    "logoAlt": "Logo",
+    "title": "Set New Password",
+    "description": "Enter new password combination.",
+    "passwordPlaceholder": "Enter Password",
+    "repeatPasswordPlaceholder": "Repeat Password",
+    "resetButton": "Reset Password",
     "backgroundAlt": "Background"
   }
 }

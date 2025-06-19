@@ -127,7 +127,7 @@
     "story5Review": "A los clientes realmente les gusta lo fácil que es tomar fotos a través de Lexos, y nos encanta recibir inventarios limpios sin tener que perseguirlos.",
     "story6Name": "Lu Annatone",
     "story6Position": "Propietario @ The Junk Removers",
-    "story6Review": "Tener un inventario completamente detallado limpió todo nuestro proceso, especialmente en una industria donde todo lo que manejamos es, bueno, basura.",
+    "story6Review": "Tener un inventario completamente detallado optimizó todo nuestro proceso, especialmente en una industria donde todo lo que manejamos son trastos",
     "story7Name": "Sara Bauman",
     "story7Position": "Gerente de Ventas Internas @  All Service Moving",
     "story7Review": "¡Solo en las 2 encuestas que he realizado, Lexos me ha ayudado a conseguir dos trabajos por aproximadamente $20k! Sin mencionar la cantidad de tiempo administrativo que el software elimina.",
@@ -442,7 +442,7 @@
     "story5Review": "A los clientes realmente les gusta lo fácil que es tomar fotos a través de Lexos, y nos encanta recibir inventarios limpios sin tener que perseguirlos.",
     "story6Name": "Lu Annatone",
     "story6Position": "Propietario @ The Junk Removers",
-    "story6Review": "Tener un inventario completamente detallado limpió todo nuestro proceso, especialmente en una industria donde todo lo que manejamos es, bueno, basura.",
+    "story6Review": "Tener un inventario completamente detallado optimizó todo nuestro proceso, especialmente en una industria donde todo lo que manejamos son trastos",
     "story7Name": "Sara Bauman",
     "story7Position": "Gerente de Ventas Internas @  All Service Moving",
     "story7Review": "¡Solo en las 2 encuestas que he realizado, Lexos me ha ayudado a conseguir dos trabajos por aproximadamente $20k! Sin mencionar la cantidad de tiempo administrativo que el software elimina.",
@@ -673,6 +673,31 @@
     "passwordPlaceholder": "Contraseña",
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "signInButton": "Iniciar Sesión",
+    "backgroundAlt": "Fondo"
+  },
+  "ForgotPassword": {
+    "logoAlt": "Logo",
+    "title": "Olvidé mi Contraseña",
+    "description": "Introduce el correo electrónico asociado a tu cuenta para restablecer tu contraseña.",
+    "emailPlaceholder": "Dirección de correo electrónico",
+    "rememberPassword": "¿Recuerdas la contraseña?",
+    "sendResetButton": "Enviar Correo de Restablecimiento",
+    "backgroundAlt": "Fondo"
+  },
+  "VerifyForgotPassword": {
+    "logoAlt": "Logo",
+    "title": "Revisa tu correo electrónico",
+    "description": "Hemos enviado un código de verificación de 6 dígitos a tu dirección de correo electrónico.",
+    "verify": "Verificar",
+    "backgroundAlt": "Fondo"
+  },
+  "NewPassword": {
+    "logoAlt": "Logo",
+    "title": "Establecer Nueva Contraseña",
+    "description": "Introduce una nueva combinación de contraseña.",
+    "passwordPlaceholder": "Introduce la Contraseña",
+    "repeatPasswordPlaceholder": "Repite la Contraseña",
+    "resetButton": "Restablecer Contraseña",
     "backgroundAlt": "Fondo"
   }
 }

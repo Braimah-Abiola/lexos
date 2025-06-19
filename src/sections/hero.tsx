@@ -101,7 +101,7 @@ const Hero = () => {
                             <Button>{t("getStartedButton")}</Button>
                         </Link>
                     </motion.div>
-                    <motion.div variants={videoVariants} className=" mt-8 max-w-3xl xl:max-w-5xl 2xl:max-w-[920px] w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-xl md:rounded-3xl md:rounded-b-none p-1 md:p-2 md:pb-0 h-auto aspect-video mx-auto">
+                    <motion.div variants={videoVariants} className=" mt-8 max-w-3xl xl:max-w-5xl 2xl:max-w-[1000px] w-[92%] md:w-full bg-white/40 border border-white/50 backdrop-blur-3xl rounded-xl md:rounded-3xl md:rounded-b-none p-1 md:p-2 md:pb-0 h-auto aspect-video mx-auto">
                         <div className=" w-full h-full rounded-t-2xl">
                             <video
                                 className="w-full h-full object-cover rounded-lg md:rounded-2xl md:rounded-b-none"
