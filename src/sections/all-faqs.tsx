@@ -71,7 +71,7 @@ const AllFaq = () => {
     );
 
     return (
-        <section className=" mt-8 relative z-20 mb-40 w-full">
+        <section className="relative z-20 mb-40 w-full -mt-[64vh] md:-mt-[68vh]">
             <Wrapper className="flex flex-col items-center w-full">
                 <div className="mb-8 flex flex-wrap items-center justify-center gap-2 md:gap-3 w-full">
                     {faqCategories.map((category) => (

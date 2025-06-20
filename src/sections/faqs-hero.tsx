@@ -2,12 +2,11 @@ import Wrapper from "@/components/common/wrapper";
 import { MessageCircleQuestion } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import AllFaq from "./all-faqs";
 
 const FaqsHero = () => {
     const t = useTranslations("FaqsHero");
     return (
-        <section className=" w-full h-fit min-h-screen">
+        <section className=" w-full h-screen">
             <Wrapper className="px-2 md:px-6 w-full h-full">
                 <div className=" h-full w-full relative flex flex-col items-center pt-20">
                     <span className=" bg-white text-primary rounded-full pl-2 py-1.5 pr-3 inline-flex items-center gap-2">
@@ -20,8 +19,6 @@ const FaqsHero = () => {
                     <p className=" max-w-[48ch] mt-2 text-center text-base text-foreground opacity-70">
                         {t("description")}
                     </p>
-                    
-                    <AllFaq />
 
                     <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />
                 </div>
