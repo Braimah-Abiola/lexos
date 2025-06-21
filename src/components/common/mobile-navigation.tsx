@@ -113,7 +113,7 @@ const MobileNavigation = () => {
                 exit="hide"
                 className="fixed top-0 inset-0 w-full h-[100dvh] overflow-y-scroll bg-white flex flex-col pt-24"
               >
-                <div className=" w-full bg-gradient-to-b from-white to-transparent z-10 h-28 fixed top-0" />
+                <div className=" w-full bg-gradient-to-b from-white to-transparent z-10 h-28 fixed top-0 left-0 inset-x-0" />
                 <div className=" w-full container">
                   <motion.ul
                     variants={listVariants}
