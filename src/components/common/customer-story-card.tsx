@@ -9,7 +9,7 @@ const CustomerStoryCard = ({ logo, detailedCase, review, name, position, picture
             <div className=" w-full">
                 <div className=" w-full flex items-center justify-between">
                     <div className=" relative w-[140px] md:w-[110px] h-[40px]">
-                        <Image fill src={logo} className=" object-contain" alt={name} />
+                        <Image fill src={logo} sizes="(max-width: 768px) 140px, 110px" className=" object-contain" alt={name} />
                     </div>
                     {detailedCase && (
                         <Link href={url}>
@@ -20,7 +20,7 @@ const CustomerStoryCard = ({ logo, detailedCase, review, name, position, picture
                 <p className=" mt-4 md:text-lg font-normal">{review}</p>
             </div>
             <div className="flex items-center gap-4 mt-6">
-                <Image width={44} height={44} src={picture} className=" object-cover" alt={name} />
+                <Image width={44} height={44} src={picture} className=" object-cover h-auto aspect-square" alt={name} />
                 <div className=" flex flex-col items-start gap-0">
                     <p className=" font-medium md:text-lg">{name}</p>
                     <span className=" font-normal text-sm md:text-base text-foreground opacity-70">{position}</span>

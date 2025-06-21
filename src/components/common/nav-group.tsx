@@ -54,7 +54,7 @@ export function NavGroup() {
                                     <h6 className=" text-[15px] font-medium ">{t("updateTitle")}</h6>
                                     <p className=" text-sm">{t("updateDescription")}</p>
                                     <div className=" relative w-full h-[12rem] my-3">
-                                        <Image fill src="/assets/qr-update.png" className=" rounded-lg object-cover" alt={t("qrUpdateAlt")} quality={100} />
+                                        <Image fill src="/assets/qr-update.png" sizes="(max-width: 1023px) 200px, 390px" className=" rounded-lg object-cover" alt={t("qrUpdateAlt")} quality={50} />
                                     </div>
 
                                     <NavigationMenuLink className=" w-fit data-[active=true]:focus:bg-transparent data-[active=true]:hover:bg-transparent group data-[active=true]:bg-transparent data-[active=true]:text-primary hover:bg-transparent hover:text-primary focus:bg-transparent focus:text-primary" asChild>
@@ -115,7 +115,7 @@ export function NavGroup() {
                                 <div className=" bg-accent rounded-lg w-full h-full p-3">
                                     <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("customerStory")}</span>
                                     <div className=" relative w-full h-[12rem] mb-3 mt-2">
-                                        <Image fill src="/assets/case.png" className=" rounded-lg object-cover" alt={t("customerStoryAlt")} quality={100} />
+                                        <Image fill src="/assets/case.png" sizes="(max-width: 1023px) 200px, 390px" className=" rounded-lg object-cover" alt={t("customerStoryAlt")} quality={50} />
                                     </div>
                                     <h6 className=" font-medium text-[15px] ">{t("customerStoryTitle")}</h6>
                                     <p className=" text-sm">

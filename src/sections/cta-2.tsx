@@ -13,8 +13,8 @@ const Cta2 = () => {
                 <div className=" h-full w-full relative flex flex-col md:flex-row z-10">
                     <div className=" w-full md:w-[60%] pt-12 md:pt-0">
                         <div className=" h-full flex flex-col items-center md:items-start justify-center md:pl-20 max-w-lg z-20 relative">
-                            <Image width={60} height={60} src="/assets/logo-icon.png" className=" md:ml-4 scale-90 md:scale-100" quality={100} alt={t("logoAlt")} />
-                            <h2 className=" mt-2 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center md:text-start">
+                            <Image width={60} height={60} src="/assets/logo-icon.png" className=" md:ml-4 scale-90 md:scale-100 h-auto aspect-square" quality={100} alt={t("logoAlt")} />
+                            <h2 className=" mt-2 md:mt-4 font-manrope text-4xl md:text-5xl md:leading-[60px] font-bold text-center md:text-start">
                                 <span className=" md:ml-4">{t("titlePart1")}</span> <br className=" hidden md:block" />
                                 <span className=" relative md:ml-2 md:pl-2 pr-2">
                                     {t("titlePart2")}
@@ -42,12 +42,12 @@ const Cta2 = () => {
                                     <h6 className=" font-semibold text-4xl text-foreground">{t("stat2Value")}</h6>
                                 </div>
 
-                                <div className=" inline-flex items-center -space-x-3 mt-8">
-                                    <Image width={52} height={52} src="/assets/featured-1.png" className="" quality={100} alt={t("company1Alt")} />
-                                    <Image width={52} height={52} src="/assets/featured-2.png" className="" quality={100} alt={t("company2Alt")} />
-                                    <Image width={52} height={52} src="/assets/featured-3.png" className="" quality={100} alt={t("company3Alt")} />
-                                    <Image width={52} height={52} src="/assets/featured-4.png" className="" quality={100} alt={t("company3Alt")} />
-                                    <Image width={52} height={52} src="/assets/featured-5.png" className="" quality={100} alt={t("company3Alt")} />
+                                <div className=" inline-flex items-center -space-x-5 mt-8">
+                                    <Image width={52} height={52} src="/assets/featured-1.png" className=" object-cover h-auto aspect-square" quality={50} alt={t("company1Alt")} />
+                                    <Image width={52} height={52} src="/assets/featured-2.png" className=" object-cover h-auto aspect-square" quality={50} alt={t("company2Alt")} />
+                                    <Image width={52} height={52} src="/assets/featured-3.png" className=" object-cover h-auto aspect-square" quality={50} alt={t("company3Alt")} />
+                                    <Image width={52} height={52} src="/assets/featured-4.png" className=" object-cover h-auto aspect-square" quality={50} alt={t("company3Alt")} />
+                                    <Image width={52} height={52} src="/assets/featured-5.png" className=" object-cover h-auto aspect-square" quality={50} alt={t("company3Alt")} />
 
                                 </div>
                             </div>
@@ -55,10 +55,10 @@ const Cta2 = () => {
                     </div>
 
                     <div className=" w-[100%] h-[48rem] relative mt-12 md:mt-0 rounded-b-2xl">
-                        <Image fill src="/assets/happy-client.png" className=" object-cover object-top md:object-contain rounded-b-2xl md:rounded-b-none " alt={t("happyClientImageAlt")} />
+                        <Image fill src="/assets/happy-client.png" quality={75} sizes="(max-width: 768px) 100vw, 40vw" className=" object-cover object-top md:object-contain rounded-b-2xl md:rounded-b-none " alt={t("happyClientImageAlt")} />
                     </div>
 
-                    <Image fill quality={100} priority src="/assets/cta-bg.svg" className=" overflow-clip border rounded-2xl object-cover object-top z-[-1]" alt={t("backgroundImageAlt")} />
+                    <Image fill quality={50} priority src="/assets/cta-bg.svg" className=" overflow-clip border rounded-2xl object-cover object-top z-[-1]" alt={t("backgroundImageAlt")} />
                 </div>
             </Wrapper>
         </section >
