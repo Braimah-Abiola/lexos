@@ -1,3 +1,4 @@
+"use client";
 
 import DemoHero from "@/sections/demo-hero";
 
