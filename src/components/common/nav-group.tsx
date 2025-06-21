@@ -17,6 +17,7 @@ import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { Button } from "../ui/button"
 import { Separator } from "../ui/separator"
+import { cn } from "@/lib/utils"
 
 
 export function NavGroup() {
@@ -173,13 +174,13 @@ export function NavGroup() {
                             <div className="flex flex-col gap-2">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{t("company")}</span>
                                 <div>
-                                    <ListItem comingSoon={false} hiring={true} href="/careers" title={t("resource4Title")} icon="/assets/resource-4.svg" iconActive="/assets/resource-4-active.svg">
+                                    <ListItem comingSoon={false} hiring={true} descriptionClassName=" max-w-[28ch]" href="/careers" title={t("resource4Title")} icon="/assets/resource-4.svg" iconActive="/assets/resource-4-active.svg">
                                         {t("resource4Description")}
                                     </ListItem>
                                     <ListItem comingSoon={false} hiring={false} href="/legals/privacy" title={t("resource5Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                         {t("resource5Description")}
                                     </ListItem>
-                                    <ListItem comingSoon={false} hiring={false} href="/legals/terms" title={t("resource7Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
+                                    <ListItem comingSoon={false} hiring={false} descriptionClassName="max-w-[28ch]" href="/legals/terms" title={t("resource7Title")} icon="/assets/resource-5.svg" iconActive="/assets/resource-5-active.svg">
                                         {t("resource7Description")}
                                     </ListItem>
                                     <ListItem comingSoon={false} hiring={false} href="/custom-solutions" title={t("resource6Title")} icon="/assets/resource-6.svg" iconActive="/assets/resource-6-active.svg">
@@ -204,8 +205,9 @@ function ListItem({
     iconActive,
     comingSoon,
     hiring,
+    descriptionClassName,
     ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string; icon: string; iconActive: string; title: string; comingSoon: boolean; hiring: boolean; children: React.ReactNode }): React.JSX.Element {
+}: React.ComponentPropsWithoutRef<"li"> & { href: string; icon: string; iconActive: string; title: string; comingSoon: boolean; hiring: boolean; children: React.ReactNode; descriptionClassName?: string; }): React.JSX.Element {
     const [isHovered, setIsHovered] = React.useState(false);
     return (
         <li
@@ -221,9 +223,9 @@ function ListItem({
                     >
                         <Image priority width={26} height={26} src={isHovered ? iconActive : icon} alt={title || "Icon"} />
                     </div>
-                    <div className=" ml-4">
+                    <div className=" ml-4 flex-1">
                         <div className="text-[15px] leading-transparent font-medium">{title} {comingSoon && (<span className=" uppercase text-primary bg-primary/10 border border-primary rounded-full text-xs px-1.5 ml-1 py-0.5">Coming Soon</span>)} {hiring && (<span className="  uppercase text-primary bg-primary/10 border border-primary rounded-full text-xs px-1.5 ml-1 py-0.5">We&apos;re Hiring</span>)}</div>
-                        <p className="text-muted-foreground line-clamp-3 mt-1 text-sm leading-snug">
+                        <p className={cn("text-muted-foreground line-clamp-3 mt-1 text-sm leading-snug", descriptionClassName)}>
                             {children}
                         </p>
                     </div>

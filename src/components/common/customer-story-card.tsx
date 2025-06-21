@@ -17,13 +17,13 @@ const CustomerStoryCard = ({ logo, detailedCase, review, name, position, picture
                         </Link>
                     )}
                 </div>
-                <p className=" mt-4 text-lg font-normal">{review}</p>
+                <p className=" mt-4 md:text-lg font-normal">{review}</p>
             </div>
             <div className="flex items-center gap-4 mt-6">
                 <Image width={44} height={44} src={picture} className=" object-cover" alt={name} />
                 <div className=" flex flex-col items-start gap-0">
-                    <p className=" font-medium text-lg">{name}</p>
-                    <span className=" font-normal text-base text-foreground opacity-70">{position}</span>
+                    <p className=" font-medium md:text-lg">{name}</p>
+                    <span className=" font-normal text-sm md:text-base text-foreground opacity-70">{position}</span>
                 </div>
             </div>
         </div>

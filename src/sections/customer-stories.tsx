@@ -70,26 +70,6 @@ const CustomerStories = () => {
                     <h2 className="mt-2 font-manrope text-4xl md:text-5xl font-bold text-center">
                         {t("title")}
                     </h2>
-
-                    {/* <div className=" hidden md:grid md:grid-cols-5 gap-8 px-20 mt-12">
-                        <div className="border-t-[2px] border-t-primary">
-                            <Image width={180} height={60} src="/assets/olympia-logo.png" className=" object-contain mt-4" quality={100} alt="Olympia" />
-                        </div>
-
-                        <div className="border-t-[2px] border-t-black/10">
-                            <Image width={190} height={60} src="/assets/maximoving.png" className=" object-contain mt-2" quality={100} alt="Olympia" />
-                        </div>
-
-                        <div className="border-t-[2px] border-t-black/10">
-                            <Image width={184} height={60} src="/assets/armstrong.png" className=" object-contain mt-6" quality={100} alt="Olympia" />
-                        </div>
-                        <div className="border-t-[2px] border-t-black/10">
-                            <Image width={168} height={60} src="/assets/allegiance.png" className=" object-contain mt-2" quality={100} alt="Olympia" />
-                        </div>
-                        <div className="border-t-[2px] border-t-black/10">
-                            <Image width={150} height={60} src="/assets/pink-zebra.png" className=" object-contain mt-1 ml-4" quality={100} alt="Olympia" />
-                        </div>
-                    </div> */}
                 </div>
             </Wrapper>
 

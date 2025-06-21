@@ -26,7 +26,7 @@ const AllFaq = () => {
     const tFaqMoving = useTranslations("FaqMoving");
     const tFaqJunkRemovers = useTranslations("FaqJunkRemovers");
     const tFaqImportManagement = useTranslations("FaqImportManagement");
-    const tFaqLanding = useTranslations("Faq"); // Landing page FAQs
+    const tFaqLanding = useTranslations("Faq");
 
     const faqCategories = [
         tAllFaqs("categoryMovers"),
@@ -36,25 +36,21 @@ const AllFaq = () => {
     ];
 
     const allFaqData: FaqItem[] = [
-        // Movers FAQs (from FaqMoving namespace)
         { id: "movers-1", question: tFaqMoving("q1"), answer: tFaqMoving("a1"), category: tAllFaqs("categoryMovers") },
         { id: "movers-2", question: tFaqMoving("q2"), answer: tFaqMoving("a2"), category: tAllFaqs("categoryMovers") },
         { id: "movers-3", question: tFaqMoving("q3"), answer: tFaqMoving("a3"), category: tAllFaqs("categoryMovers") },
         { id: "movers-4", question: tFaqMoving("q4"), answer: tFaqMoving("a4"), category: tAllFaqs("categoryMovers") },
 
-        // Junk Removers FAQs (from FaqJunkRemovers namespace)
         { id: "junk-1", question: tFaqJunkRemovers("q1"), answer: tFaqJunkRemovers("a1"), category: tAllFaqs("categoryJunkRemovers") },
         { id: "junk-2", question: tFaqJunkRemovers("q2"), answer: tFaqJunkRemovers("a2"), category: tAllFaqs("categoryJunkRemovers") },
         { id: "junk-3", question: tFaqJunkRemovers("q3"), answer: tFaqJunkRemovers("a3"), category: tAllFaqs("categoryJunkRemovers") },
         { id: "junk-4", question: tFaqJunkRemovers("q4"), answer: tFaqJunkRemovers("a4"), category: tAllFaqs("categoryJunkRemovers") },
 
-        // Importers FAQs (from FaqImportManagement namespace)
         { id: "importers-1", question: tFaqImportManagement("q1"), answer: tFaqImportManagement("a1"), category: tAllFaqs("categoryImporters") },
         { id: "importers-2", question: tFaqImportManagement("q2"), answer: tFaqImportManagement("a2"), category: tAllFaqs("categoryImporters") },
         { id: "importers-3", question: tFaqImportManagement("q3"), answer: tFaqImportManagement("a3"), category: tAllFaqs("categoryImporters") },
         { id: "importers-4", question: tFaqImportManagement("q4"), answer: tFaqImportManagement("a4"), category: tAllFaqs("categoryImporters") },
 
-        // Other FAQs (from Faq namespace q1-q6, then dataSecured Q&A)
         { id: "other-1", question: tFaqLanding("q1Title"), answer: tFaqLanding("q1Answer"), category: tAllFaqs("categoryOther") },
         { id: "other-2", question: tFaqLanding("q2Title"), answer: tFaqLanding("q2Answer"), category: tAllFaqs("categoryOther") },
         { id: "other-3", question: tFaqLanding("q3Title"), answer: tFaqLanding("q3Answer"), category: tAllFaqs("categoryOther") },
@@ -71,7 +67,7 @@ const AllFaq = () => {
     );
 
     return (
-        <section className="relative z-20 mb-40 w-full -mt-[64vh] md:-mt-[68vh]">
+        <section className="relative z-20 mb-40 w-full -mt-[64vh] md:-mt-[64vh]">
             <Wrapper className="flex flex-col items-center w-full">
                 <div className="mb-8 flex flex-wrap items-center justify-center gap-2 md:gap-3 w-full">
                     {faqCategories.map((category) => (

@@ -55,8 +55,8 @@ const AccordionContent = React.forwardRef<
     className="overflow-hidden  cursor-pointer text-base md:text-lg text-forground opacity-80 font-montserrat transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
-    <div className={cn("pb-6 pt-0", className)}>
-      <Separator className=" w-full mb-5" orientation="horizontal" />
+    <div className={cn("pb-6 md:pb-4 pt-0", className)}>
+      <Separator className=" w-full mb-5 md:mb-2" orientation="horizontal" />
       <p className=" max-w-[60ch]">
         {children}
       </p>
