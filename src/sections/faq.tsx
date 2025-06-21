@@ -68,8 +68,8 @@ const Faq = () => {
                     </Accordion>
                     <div className=" w-full border border-black/5 rounded-xl mt-2 py-3 px-4 flex flex-col md:flex-row items-start md:items-center md:justify-between">
                         <div className=" flex flex-col items-start md:gap-2">
-                            <h4 className=" font-medium text-lg">{t("stillHaveQuestionsTitle")}</h4>
-                            <p className=" text-base text-foreground opacity-70">{t("stillHaveQuestionsDescription")}</p>
+                            <h4 className=" font-medium text-base md:text-lg">{t("stillHaveQuestionsTitle")}</h4>
+                            <p className=" text-sm md:text-base text-foreground opacity-70">{t("stillHaveQuestionsDescription")}</p>
                         </div>
                         <Link href="/custom-solutions">
                             <Button className=" mt-4 md:mt-0">{t("contactUsButton")} <ArrowRight /></Button>

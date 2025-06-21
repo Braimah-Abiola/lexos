@@ -98,7 +98,7 @@ const MobileNavigation = () => {
                 initial="hide"
                 animate="show"
                 exit="hide"
-                className="fixed top-0 inset-0 w-full h-[100dvh] overflow-y-scroll bg-white rounded-b-3xl flex flex-col pt-24"
+                className="fixed top-0 inset-0 w-full h-[100dvh] overflow-y-scroll bg-white flex flex-col pt-24"
               >
                 <div className=" w-full bg-gradient-to-b from-white to-transparent z-10 h-28 fixed top-0" />
                 <div className=" w-full container">
@@ -143,7 +143,7 @@ const MobileNavigation = () => {
                               <h6 className=" text-[15px] font-medium ">{th("updateTitle")}</h6>
                               <p className=" text-sm">{th("updateDescription")}</p>
                               <div className=" relative w-full h-[12rem] my-3">
-                                <Image fill src="/assets/qr-update.png" className=" rounded-lg object-cover" alt={th("qrUpdateAlt")} quality={100} />
+                                <Image fill src="/assets/qr-update.png" sizes="100vw" className=" rounded-lg object-cover" alt={th("qrUpdateAlt")} quality={40} />
                               </div>
                               <Link onClick={closeMobileNav} href="/changelog">
                                 <Button className=" px-0 md:px-0 has-[>svg]:pl-0 has-[>svg]:pr-0" variant="ghost">{th("updateVersionButton")} <ArrowUpRight /></Button>
@@ -184,7 +184,7 @@ const MobileNavigation = () => {
                               <div className=" bg-accent rounded-lg w-full h-full p-3 mt-4">
                                 <span className=" font-medium text-sm uppercase opacity-50 pt-2">{th("customerStory")}</span>
                                 <div className=" relative w-full h-[12rem] mb-3 mt-2">
-                                  <Image fill src="/assets/case.png" className=" rounded-lg object-cover" alt={th("customerStoryAlt")} quality={100} />
+                                  <Image fill src="/assets/case.png" sizes="100vw" className=" rounded-lg object-cover" alt={th("customerStoryAlt")} quality={40} />
                                 </div>
                                 <h6 className=" font-medium text-[15px] ">{th("customerStoryTitle")}</h6>
                                 <p className=" text-sm">

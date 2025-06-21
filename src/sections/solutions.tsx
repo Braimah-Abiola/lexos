@@ -24,26 +24,26 @@ const Solutions = () => {
                 <div className=" max-w-7xl mx-auto w-full border-l border-r pb-20">
                     <div className=" w-full grid grid-cols-1 md:grid-cols-2">
                         <div className="flex flex-col items-center md:items-start border-b border-r md:pl-20 pt-12 pb-12">
-                            <Image width={80} height={80} src="/assets/solution-1.png" alt="" />
-                            <h3 className=" font-plex-sans font-semibold text-2xl text-foreground">{t("step1Title")}</h3>
+                            <Image width={80} height={80} quality={40} src="/assets/solution-1.png" alt="" />
+                            <h3 className=" font-plex-sans font-semibold text-xl md:text-2xl text-foreground">{t("step1Title")}</h3>
                             <p className=" text-foreground text-base text-center md:text-start px-12 md:px-0 opacity-70">{t("step1Description")}</p>
                         </div>
 
                         <div className="flex flex-col items-center md:items-start border-b md:pl-20 pt-12 pb-12">
-                            <Image width={80} height={80} src="/assets/solution-2.png" alt="" />
-                            <h3 className=" font-plex-sans font-semibold text-2xl text-foreground">{t("step2Title")}</h3>
+                            <Image width={80} height={80} quality={40} src="/assets/solution-2.png" alt="" />
+                            <h3 className=" font-plex-sans font-semibold text-xl md:text-2xl text-foreground">{t("step2Title")}</h3>
                             <p className=" text-foreground text-base text-center md:text-start px-12 md:px-0 opacity-70">{t("step2Description")}</p>
                         </div>
 
                         <div className="flex flex-col items-center md:items-start border-r border-b md:border-b-0 md:pl-20 pt-12 pb-12">
-                            <Image width={80} height={80} src="/assets/solution-3.png" alt="" />
-                            <h3 className=" font-plex-sans font-semibold text-2xl text-foreground">{t("step3Title")}</h3>
+                            <Image width={80} height={80} quality={40} src="/assets/solution-3.png" alt="" />
+                            <h3 className=" font-plex-sans font-semibold text-xl md:text-2xl text-foreground">{t("step3Title")}</h3>
                             <p className=" text-foreground text-base text-center md:text-start px-12 md:px-0 opacity-70">{t("step3Description")}</p>
                         </div>
 
                         <div className="flex flex-col items-center md:items-start md:pl-20 pt-12 pb-12">
-                            <Image width={80} height={80} src="/assets/solution-4.png" alt="" />
-                            <h3 className=" font-plex-sans font-semibold text-2xl text-foreground">{t("step4Title")}</h3>
+                            <Image width={80} height={80} quality={40} src="/assets/solution-4.png" alt="" />
+                            <h3 className=" font-plex-sans font-semibold text-xl md:text-2xl text-foreground">{t("step4Title")}</h3>
                             <p className=" text-foreground text-base text-center md:text-start px-12 md:px-0 opacity-70">{t("step4Description")}</p>
                         </div>
                     </div>

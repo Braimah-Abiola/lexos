@@ -31,7 +31,7 @@ const ChangelogHero = () => {
                             <Button>{t("getStartedButton")}</Button>
                         </Link>
                     </aside>
-                    <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />
+                    <Image fill quality={30} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />
                 </div>
             </Wrapper>
         </section>
