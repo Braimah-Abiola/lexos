@@ -20,7 +20,7 @@ const DemoLoading = () => {
                     <p className=" max-w-[48ch] px-8 md:px-0 mt-2 text-center text-base text-foreground opacity-70">
                         {t("description")}
                     </p>
-                    <div className="w-full max-w-4xl mt-4">
+                    <div className="w-full max-w-4xl mt-4 px-4 md:px-0">
                         <Skeleton className="h-[900px] w-full" />
                     </div>
 

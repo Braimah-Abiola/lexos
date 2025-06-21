@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Calendly = dynamic(() => import("@/components/common/calendly"), {
     loading: () => (
-        <div className="w-full max-w-4xl mx-auto mt-4">
+        <div className="w-full max-w-4xl mx-auto mt-4 md:mt-8">
             <Skeleton className="h-[900px] w-full" />
         </div>
     ),

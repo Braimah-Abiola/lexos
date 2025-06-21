@@ -2,20 +2,9 @@ import Wrapper from "@/components/common/wrapper";
 import { Skeleton } from "@/components/ui/skeleton";
 import { CalendarCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 
-
-const SupportCalendly = dynamic(() => import("@/components/common/support-calendly"), {
-    loading: () => (
-        <div className="w-full max-w-4xl mx-auto mt-4 md:mt-8">
-            <Skeleton className="h-[900px] w-full" />
-        </div>
-    ),
-    ssr: false,
-});
-
-const CustomSolutionsHero = () => {
+const CustomSolutionsLoading = () => {
     const t = useTranslations("CustomSolutionsHero");
     return (
         <section className=" w-full h-fit pb-20 md:pb-40 md:min-h-screen">
@@ -31,8 +20,8 @@ const CustomSolutionsHero = () => {
                     <p className=" max-w-[56ch] px-8 md:px-0 mt-2 text-center text-base text-foreground opacity-70">
                         {t("description")}
                     </p>
-                    <div className=" w-full">
-                        <SupportCalendly />
+                    <div className="w-full max-w-4xl mt-4 px-4 md:px-0">
+                        <Skeleton className="h-[900px] w-full" />
                     </div>
 
                     <Image fill quality={50} priority src="/assets/hero-bg-1.svg" className=" opacity-80 rounded-t-xl object-cover object-top z-[-1]" alt={t("imageAlt")} />
@@ -42,4 +31,4 @@ const CustomSolutionsHero = () => {
     );
 }
 
-export default CustomSolutionsHero;
+export default CustomSolutionsLoading;
