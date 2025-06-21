@@ -28,6 +28,31 @@ const MobileNavigation = () => {
     setMobileNav(!mobileNav);
   };
 
+  const listVariants = {
+    show: {
+      transition: {
+        staggerChildren: 0.07,
+      },
+    },
+    hide: {
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    show: {
+      y: 0,
+      opacity: 1,
+    },
+    hide: {
+      y: 20,
+      opacity: 0,
+    },
+  };
+
   return (
     <header className="sticky top-0 inset-x-0 p-0 lg:hidden">
       <nav className="mx-auto">
@@ -78,21 +103,9 @@ const MobileNavigation = () => {
                 variants={{
                   hide: {
                     y: "-100%",
-                    transition: {
-                      type: "spring",
-                      bounce: 0.2,
-                      when: "afterChildren",
-                      staggerChildren: 0.25,
-                    },
                   },
                   show: {
                     y: "0%",
-                    transition: {
-                      type: "spring",
-                      bounce: 0.2,
-                      when: "beforeChildren",
-                      staggerChildren: 0.25,
-                    },
                   },
                 }}
                 initial="hide"
@@ -103,20 +116,13 @@ const MobileNavigation = () => {
                 <div className=" w-full bg-gradient-to-b from-white to-transparent z-10 h-28 fixed top-0" />
                 <div className=" w-full container">
                   <motion.ul
-                    variants={{
-                      hide: {
-                        y: "25%",
-                        opacity: 0,
-                      },
-                      show: {
-                        y: "0%",
-                        opacity: 1,
-                      },
-                    }}
+                    variants={listVariants}
+                    initial="hide"
+                    animate="show"
+                    exit="hide"
                     className="list-none px-4"
                   >
-
-                    <li>
+                    <motion.li variants={itemVariants}>
                       <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                           <AccordionTrigger>{th("product")}</AccordionTrigger>
@@ -152,8 +158,8 @@ const MobileNavigation = () => {
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li variants={itemVariants}>
                       <Link
                         onClick={closeMobileNav}
                         href="/pricing"
@@ -161,8 +167,8 @@ const MobileNavigation = () => {
                       >
                         {th("pricing")}
                       </Link>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li variants={itemVariants}>
                       <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                           <AccordionTrigger>{th("useCases")}</AccordionTrigger>
@@ -198,8 +204,8 @@ const MobileNavigation = () => {
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li variants={itemVariants}>
                       <Link
                         onClick={closeMobileNav}
                         href="/#about"
@@ -207,9 +213,9 @@ const MobileNavigation = () => {
                       >
                         {th("aboutUs")}
                       </Link>
-                    </li>
+                    </motion.li>
 
-                    <li>
+                    <motion.li variants={itemVariants}>
                       <Accordion type="single" collapsible>
                         <AccordionItem value="item-1">
                           <AccordionTrigger>{th("resources")}</AccordionTrigger>
@@ -244,7 +250,7 @@ const MobileNavigation = () => {
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>
-                    </li>
+                    </motion.li>
                   </motion.ul>
 
                 </div>
